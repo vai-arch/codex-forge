@@ -29,11 +29,11 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
+        "Rand al'Thor",
         "Dragon Reborn",
         "Two Rivers",
-        "sheepherder",
         "channeler",
-        "taveren"
+        "ta'veren"
       ]
     },
     {
@@ -43,10 +43,11 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
-        "female channelers",
+        "Aes Sedai",
         "White Tower",
         "Three Oaths",
-        "Ajahs"
+        "Ajah",
+        "channeling"
       ]
     },
     {
@@ -56,9 +57,11 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
+        "Moiraine",
         "Aes Sedai",
         "Blue Ajah",
-        "searches for Dragon Reborn"
+        "Dragon Reborn",
+        "Lan"
       ]
     },
     {
@@ -68,8 +71,10 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
-        "male half of One Power",
-        "tainted",
+        "saidin",
+        "One Power",
+        "taint",
+        "male channelers",
         "madness"
       ]
     },
@@ -80,8 +85,9 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
+        "White Tower",
         "Tar Valon",
-        "Aes Sedai headquarters",
+        "Aes Sedai",
         "Amyrlin Seat"
       ]
     },
@@ -92,11 +98,12 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
+        "Perrin",
         "Two Rivers",
-        "blacksmith",
         "Wolfbrother",
-        "taveren",
-        "yellow eyes"
+        "wolves",
+        "ta'veren",
+        "blacksmith"
       ]
     },
     {
@@ -106,9 +113,11 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
-        "female half of One Power",
-        "must surrender to",
-        "flows"
+        "saidar",
+        "One Power",
+        "female channelers",
+        "Aes Sedai",
+        "channeling"
       ]
     },
     {
@@ -119,10 +128,11 @@
       "temporal_limit": null,
       "expected_topics": [
         "Mat",
+        "Matrim Cauthon",
         "Two Rivers",
-        "trickster",
-        "lucky",
-        "taveren"
+        "ta'veren",
+        "luck",
+        "dagger"
       ]
     },
     {
@@ -132,10 +142,11 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
+        "Tel'aran'rhiod",
         "World of Dreams",
-        "dangerous",
-        "reflection of real world",
-        "Dreamers"
+        "Dreamer",
+        "Wise Ones",
+        "Aes Sedai"
       ]
     },
     {
@@ -145,11 +156,12 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
+        "Lan",
         "Warder",
         "Moiraine",
         "Malkier",
-        "uncrowned king",
-        "best swordsman"
+        "sword",
+        "bond"
       ]
     },
     {
@@ -159,10 +171,10 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
-        "bonded to Aes Sedai",
-        "enhanced abilities",
-        "sense emotions",
-        "guardian"
+        "Warder",
+        "Aes Sedai",
+        "bond",
+        "compulsion"
       ]
     },
     {
@@ -172,10 +184,11 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
+        "Nynaeve",
         "Wisdom",
         "Two Rivers",
-        "strong channeler",
         "Healing",
+        "channeling",
         "block"
       ]
     },
@@ -186,10 +199,11 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
-        "Lews Therin reborn",
-        "fight Dark One",
-        "break the world",
-        "prophecy"
+        "Dragon Reborn",
+        "Rand",
+        "Lews Therin",
+        "prophecy",
+        "Last Battle"
       ]
     },
     {
@@ -199,10 +213,12 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
+        "Egwene",
         "Two Rivers",
-        "innkeeper's daughter",
+        "Aes Sedai",
         "Dreamer",
-        "strong channeler"
+        "Amyrlin",
+        "channeling"
       ]
     },
     {
@@ -212,10 +228,11 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
+        "Dark One",
         "Shai'tan",
-        "imprisoned",
-        "Creator's opposite",
-        "evil force"
+        "Creator",
+        "prison",
+        "Bore"
       ]
     },
     {
@@ -225,10 +242,11 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
-        "Dark One's servants",
+        "Forsaken",
+        "Dark One",
         "Age of Legends",
-        "powerful channelers",
-        "sealed"
+        "Chosen",
+        "channeling"
       ]
     },
     {
@@ -238,9 +256,11 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
-        "Power-wrought item",
-        "increase channeling strength",
-        "safe to use"
+        "angreal",
+        "sa'angreal",
+        "One Power",
+        "channeling",
+        "ter'angreal"
       ]
     },
     {
@@ -250,10 +270,12 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
-        "Daughter-Heir of Andor",
+        "Elayne",
+        "Andor",
         "Caemlyn",
-        "channeler",
-        "white"
+        "Daughter-Heir",
+        "channeling",
+        "Aes Sedai"
       ]
     },
     {
@@ -263,10 +285,12 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
+        "Two Rivers",
         "Andor",
-        "isolated region",
         "Emond's Field",
-        "homeland of main characters"
+        "Rand",
+        "Perrin",
+        "Mat"
       ]
     },
     {
@@ -276,10 +300,11 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
-        "island city",
+        "Tar Valon",
         "White Tower",
-        "Aes Sedai home",
-        "between nations"
+        "Aes Sedai",
+        "Amyrlin Seat",
+        "island"
       ]
     },
     {
@@ -289,11 +314,11 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
+        "Thom",
         "gleeman",
-        "court bard",
-        "knives",
-        "entertainer",
-        "mysterious past"
+        "bard",
+        "daggers",
+        "court-bard"
       ]
     },
     {
@@ -303,10 +328,11 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
+        "Trollocs",
         "Shadowspawn",
-        "half-human half-animal",
-        "serve Dark One",
-        "twisted"
+        "Dark One",
+        "Myrddraal",
+        "Blight"
       ]
     },
     {
@@ -316,9 +342,11 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
-        "more powerful than angreal",
-        "extremely rare",
-        "vastly increase Power"
+        "sa'angreal",
+        "angreal",
+        "One Power",
+        "channeling",
+        "Callandor"
       ]
     },
     {
@@ -328,10 +356,12 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
-        "sees visions",
+        "Min",
         "viewings",
-        "future glimpses",
-        "dresses like boy"
+        "visions",
+        "Rand",
+        "Elayne",
+        "Aviendha"
       ]
     },
     {
@@ -341,394 +371,8 @@
       "difficulty": "easy",
       "temporal_limit": null,
       "expected_topics": [
-        "seven Ajahs",
-        "Aes Sedai factions",
-        "different purposes",
-        "colored"
-      ]
-    },
-    {
-      "question_id": 26,
-      "question": "What is the Blight?",
-      "category": "concept",
-      "difficulty": "easy",
-      "temporal_limit": null,
-      "expected_topics": [
-        "corrupted land",
-        "Dark One's influence",
-        "northern border",
-        "dangerous"
-      ]
-    },
-    {
-      "question_id": 27,
-      "question": "Who is Aviendha?",
-      "category": "character",
-      "difficulty": "easy",
-      "temporal_limit": null,
-      "expected_topics": [
-        "Aiel",
-        "Maiden of the Spear",
-        "Wise One apprentice",
-        "can channel"
-      ]
-    },
-    {
-      "question_id": 28,
-      "question": "What is a ter'angreal?",
-      "category": "magic_system",
-      "difficulty": "easy",
-      "temporal_limit": null,
-      "expected_topics": [
-        "Power-wrought object",
-        "specific function",
-        "varied purposes",
-        "mysterious"
-      ]
-    },
-    {
-      "question_id": 29,
-      "question": "What is the Horn of Valere?",
-      "category": "concept",
-      "difficulty": "easy",
-      "temporal_limit": null,
-      "expected_topics": [
-        "legendary artifact",
-        "call heroes",
-        "great pattern",
-        "must be found"
-      ]
-    },
-    {
-      "question_id": 30,
-      "question": "Who are the Aiel?",
-      "category": "concept",
-      "difficulty": "easy",
-      "temporal_limit": null,
-      "expected_topics": [
-        "desert people",
-        "Waste",
-        "fierce warriors",
-        "face veils",
-        "ji'e'toh"
-      ]
-    },
-    {
-      "question_id": 31,
-      "question": "What is the Karaethon Cycle?",
-      "category": "prophecy",
-      "difficulty": "easy",
-      "temporal_limit": null,
-      "expected_topics": [
-        "prophecies of Dragon",
-        "foretell events",
-        "Dragon Reborn"
-      ]
-    },
-    {
-      "question_id": 32,
-      "question": "What are the Three Oaths?",
-      "category": "concept",
-      "difficulty": "easy",
-      "temporal_limit": null,
-      "expected_topics": [
-        "Aes Sedai binding",
-        "cannot lie",
-        "not make weapons",
-        "not use Power as weapon"
-      ]
-    },
-    {
-      "question_id": 33,
-      "question": "Who is Loial?",
-      "category": "character",
-      "difficulty": "easy",
-      "temporal_limit": null,
-      "expected_topics": [
-        "Ogier",
-        "Treesinger",
-        "scholar",
-        "large",
-        "long-lived",
-        "stedding"
-      ]
-    },
-    {
-      "question_id": 34,
-      "question": "What is Caemlyn?",
-      "category": "concept",
-      "difficulty": "easy",
-      "temporal_limit": null,
-      "expected_topics": [
-        "capital of Andor",
-        "Lion Throne",
-        "Elayne's home",
-        "major city"
-      ]
-    },
-    {
-      "question_id": 35,
-      "question": "What is a Myrddraal?",
-      "category": "concept",
-      "difficulty": "easy",
-      "temporal_limit": null,
-      "expected_topics": [
-        "Fade",
-        "Shadowspawn",
-        "eyeless",
-        "commands Trollocs",
-        "feared"
-      ]
-    },
-    {
-      "question_id": 36,
-      "question": "What is channeling?",
-      "category": "magic_system",
-      "difficulty": "easy",
-      "temporal_limit": null,
-      "expected_topics": [
-        "using One Power",
-        "weaving flows",
-        "five elements",
-        "requires ability"
-      ]
-    },
-    {
-      "question_id": 37,
-      "question": "Who is Siuan Sanche?",
-      "category": "character",
-      "difficulty": "easy",
-      "temporal_limit": null,
-      "expected_topics": [
-        "Amyrlin Seat",
-        "Blue Ajah",
-        "deposed",
-        "strong leader"
-      ]
-    },
-    {
-      "question_id": 38,
-      "question": "What is the Eye of the World?",
-      "category": "concept",
-      "difficulty": "easy",
-      "temporal_limit": null,
-      "expected_topics": [
-        "pool of pure saidin",
-        "Green Man guards",
-        "prophecy",
-        "book title"
-      ]
-    },
-    {
-      "question_id": 39,
-      "question": "Who are the Children of the Light?",
-      "category": "concept",
-      "difficulty": "easy",
-      "temporal_limit": null,
-      "expected_topics": [
-        "Whitecloaks",
-        "hate Aes Sedai",
-        "fanatics",
-        "white cloaks",
-        "hunt Darkfriends"
-      ]
-    },
-    {
-      "question_id": 40,
-      "question": "What is Tarmon Gai'don?",
-      "category": "prophecy",
-      "difficulty": "easy",
-      "temporal_limit": null,
-      "expected_topics": [
-        "Last Battle",
-        "Dragon vs Dark One",
-        "end times",
-        "prophecy"
-      ]
-    },
-    {
-      "question_id": 41,
-      "question": "How does Rand's relationship with the One Power evolve from The Eye of the World to The Dragon Reborn?",
-      "category": "character",
-      "difficulty": "medium",
-      "temporal_limit": 3,
-      "expected_topics": [
-        "fear",
-        "acceptance",
-        "learning",
-        "wild talent",
-        "Lews Therin",
-        "progression"
-      ]
-    },
-    {
-      "question_id": 42,
-      "question": "Describe the relationship between Moiraine and Lan.",
-      "category": "character",
-      "difficulty": "medium",
-      "temporal_limit": null,
-      "expected_topics": [
-        "Warder bond",
-        "mutual respect",
-        "dedication",
-        "unspoken understanding",
-        "partnership"
-      ]
-    },
-    {
-      "question_id": 43,
-      "question": "What is the difference between saidin and saidar?",
-      "category": "magic_system",
-      "difficulty": "medium",
-      "temporal_limit": null,
-      "expected_topics": [
-        "male vs female",
-        "seize vs surrender",
-        "tainted vs pure",
-        "different approaches"
-      ]
-    },
-    {
-      "question_id": 44,
-      "question": "How does Egwene's path to becoming Aes Sedai develop through the first five books?",
-      "category": "character",
-      "difficulty": "medium",
-      "temporal_limit": 5,
-      "expected_topics": [
-        "novice",
-        "Accepted",
-        "captured",
-        "Dreamer",
-        "growth",
-        "Wise Ones"
-      ]
-    },
-    {
-      "question_id": 45,
-      "question": "Explain the Warder bond and its effects on both Aes Sedai and Warder.",
-      "category": "concept",
-      "difficulty": "medium",
-      "temporal_limit": null,
-      "expected_topics": [
-        "emotional connection",
-        "enhanced abilities",
-        "sense location",
-        "death consequences",
-        "compulsion"
-      ]
-    },
-    {
-      "question_id": 46,
-      "question": "What happens at Falme in The Great Hunt?",
-      "category": "plot_event",
-      "difficulty": "medium",
-      "temporal_limit": 2,
-      "expected_topics": [
-        "Horn blown",
-        "Heroes summoned",
-        "Rand battles",
-        "sky battle",
-        "Seanchan"
-      ]
-    },
-    {
-      "question_id": 47,
-      "question": "How does Perrin discover and develop his wolf abilities?",
-      "category": "character",
-      "difficulty": "medium",
-      "temporal_limit": null,
-      "expected_topics": [
-        "yellow eyes",
-        "Elyas",
-        "wolf dreams",
-        "acceptance",
-        "two sides",
-        "struggle"
-      ]
-    },
-    {
-      "question_id": 48,
-      "question": "What is the significance of Callandor?",
-      "category": "concept",
-      "difficulty": "medium",
-      "temporal_limit": null,
-      "expected_topics": [
-        "Crystal Sword",
-        "powerful sa'angreal",
-        "Stone of Tear",
-        "Dragon prophecy",
-        "flawed"
-      ]
-    },
-    {
-      "question_id": 49,
-      "question": "Describe Mat's transformation after visiting Rhuidean.",
-      "category": "character",
-      "difficulty": "medium",
-      "temporal_limit": 4,
-      "expected_topics": [
-        "memories",
-        "Old Tongue",
-        "military knowledge",
-        "ashandarei",
-        "changed personality"
-      ]
-    },
-    {
-      "question_id": 50,
-      "question": "What are the five elements used in channeling and what do they represent?",
-      "category": "magic_system",
-      "difficulty": "medium",
-      "temporal_limit": null,
-      "expected_topics": [
-        "Fire",
-        "Water",
-        "Earth",
-        "Air",
-        "Spirit",
-        "different affinities",
-        "weaving"
-      ]
-    },
-    {
-      "question_id": 51,
-      "question": "How do the Seanchan use channelers differently than in the Westlands?",
-      "category": "concept",
-      "difficulty": "medium",
-      "temporal_limit": null,
-      "expected_topics": [
-        "damane",
-        "sul'dam",
-        "leashed",
-        "enslaved",
-        "a'dam",
-        "property"
-      ]
-    },
-    {
-      "question_id": 52,
-      "question": "What is Min's viewing ability and how does it work?",
-      "category": "character",
-      "difficulty": "medium",
-      "temporal_limit": null,
-      "expected_topics": [
-        "sees images",
-        "future events",
-        "always true",
-        "cannot control",
-        "interpretation"
-      ]
-    },
-    {
-      "question_id": 53,
-      "question": "Describe the structure and purpose of the different Ajahs.",
-      "category": "concept",
-      "difficulty": "medium",
-      "temporal_limit": null,
-      "expected_topics": [
-        "seven Ajahs",
-        "colors",
-        "purposes",
+        "Ajah",
+        "Aes Sedai",
         "Blue",
         "Red",
         "Green",
@@ -739,18 +383,421 @@
       ]
     },
     {
+      "question_id": 26,
+      "question": "What is the Blight?",
+      "category": "concept",
+      "difficulty": "easy",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Blight",
+        "Dark One",
+        "Shadowspawn",
+        "Shayol Ghul",
+        "Trollocs"
+      ]
+    },
+    {
+      "question_id": 27,
+      "question": "Who is Aviendha?",
+      "category": "character",
+      "difficulty": "easy",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Aviendha",
+        "Aiel",
+        "Maiden of the Spear",
+        "Wise One",
+        "Rand",
+        "channeling"
+      ]
+    },
+    {
+      "question_id": 28,
+      "question": "What is a ter'angreal?",
+      "category": "magic_system",
+      "difficulty": "easy",
+      "temporal_limit": null,
+      "expected_topics": [
+        "ter'angreal",
+        "angreal",
+        "One Power",
+        "Age of Legends"
+      ]
+    },
+    {
+      "question_id": 29,
+      "question": "What is the Horn of Valere?",
+      "category": "concept",
+      "difficulty": "easy",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Horn of Valere",
+        "Heroes",
+        "Mat",
+        "Hawkwing",
+        "Pattern"
+      ]
+    },
+    {
+      "question_id": 30,
+      "question": "Who are the Aiel?",
+      "category": "concept",
+      "difficulty": "easy",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Aiel",
+        "Waste",
+        "Maidens",
+        "Wise Ones",
+        "ji'e'toh",
+        "Car'a'carn"
+      ]
+    },
+    {
+      "question_id": 31,
+      "question": "What is the Karaethon Cycle?",
+      "category": "prophecy",
+      "difficulty": "easy",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Karaethon Cycle",
+        "Dragon Reborn",
+        "prophecy",
+        "Rand"
+      ]
+    },
+    {
+      "question_id": 32,
+      "question": "What are the Three Oaths?",
+      "category": "concept",
+      "difficulty": "easy",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Three Oaths",
+        "Aes Sedai",
+        "Oath Rod",
+        "White Tower"
+      ]
+    },
+    {
+      "question_id": 33,
+      "question": "Who is Loial?",
+      "category": "character",
+      "difficulty": "easy",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Loial",
+        "Ogier",
+        "stedding",
+        "Treesinger",
+        "Ways"
+      ]
+    },
+    {
+      "question_id": 34,
+      "question": "What is Caemlyn?",
+      "category": "concept",
+      "difficulty": "easy",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Caemlyn",
+        "Andor",
+        "Elayne",
+        "Lion Throne",
+        "palace"
+      ]
+    },
+    {
+      "question_id": 35,
+      "question": "What is a Myrddraal?",
+      "category": "concept",
+      "difficulty": "easy",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Myrddraal",
+        "Fade",
+        "Shadowspawn",
+        "Trollocs",
+        "Dark One"
+      ]
+    },
+    {
+      "question_id": 36,
+      "question": "What is channeling?",
+      "category": "magic_system",
+      "difficulty": "easy",
+      "temporal_limit": null,
+      "expected_topics": [
+        "channeling",
+        "One Power",
+        "saidin",
+        "saidar",
+        "weaving",
+        "flows"
+      ]
+    },
+    {
+      "question_id": 37,
+      "question": "Who is Siuan Sanche?",
+      "category": "character",
+      "difficulty": "easy",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Siuan Sanche",
+        "Amyrlin Seat",
+        "Blue Ajah",
+        "Moiraine",
+        "stilling"
+      ]
+    },
+    {
+      "question_id": 38,
+      "question": "What is the Eye of the World?",
+      "category": "concept",
+      "difficulty": "easy",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Eye of the World",
+        "Green Man",
+        "saidin",
+        "Rand",
+        "Forsaken"
+      ]
+    },
+    {
+      "question_id": 39,
+      "question": "Who are the Children of the Light?",
+      "category": "concept",
+      "difficulty": "easy",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Children of the Light",
+        "Whitecloaks",
+        "Amadicia",
+        "Darkfriends",
+        "Questioners"
+      ]
+    },
+    {
+      "question_id": 40,
+      "question": "What is Tarmon Gai'don?",
+      "category": "prophecy",
+      "difficulty": "easy",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Tarmon Gai'don",
+        "Last Battle",
+        "Dragon Reborn",
+        "Dark One",
+        "prophecy"
+      ]
+    },
+    {
+      "question_id": 41,
+      "question": "How does Rand's relationship with the One Power evolve from The Eye of the World to The Dragon Reborn?",
+      "category": "character",
+      "difficulty": "medium",
+      "temporal_limit": 3,
+      "expected_topics": [
+        "Rand",
+        "One Power",
+        "channeling",
+        "Dragon Reborn",
+        "Lews Therin"
+      ]
+    },
+    {
+      "question_id": 42,
+      "question": "Describe the relationship between Moiraine and Lan.",
+      "category": "character",
+      "difficulty": "medium",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Moiraine",
+        "Lan",
+        "Warder",
+        "bond",
+        "Aes Sedai"
+      ]
+    },
+    {
+      "question_id": 43,
+      "question": "What is the difference between saidin and saidar?",
+      "category": "magic_system",
+      "difficulty": "medium",
+      "temporal_limit": null,
+      "expected_topics": [
+        "saidin",
+        "saidar",
+        "One Power",
+        "channeling",
+        "taint"
+      ]
+    },
+    {
+      "question_id": 44,
+      "question": "How does Egwene's path to becoming Aes Sedai develop through the first five books?",
+      "category": "character",
+      "difficulty": "medium",
+      "temporal_limit": 5,
+      "expected_topics": [
+        "Egwene",
+        "Aes Sedai",
+        "novice",
+        "Accepted",
+        "Wise Ones",
+        "Dreamer"
+      ]
+    },
+    {
+      "question_id": 45,
+      "question": "Explain the Warder bond and its effects on both Aes Sedai and Warder.",
+      "category": "concept",
+      "difficulty": "medium",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Warder",
+        "Aes Sedai",
+        "bond",
+        "Lan",
+        "Moiraine"
+      ]
+    },
+    {
+      "question_id": 46,
+      "question": "What happens at Falme in The Great Hunt?",
+      "category": "plot_event",
+      "difficulty": "medium",
+      "temporal_limit": 2,
+      "expected_topics": [
+        "Falme",
+        "Horn of Valere",
+        "Rand",
+        "Seanchan",
+        "Heroes",
+        "Mat"
+      ]
+    },
+    {
+      "question_id": 47,
+      "question": "How does Perrin discover and develop his wolf abilities?",
+      "category": "character",
+      "difficulty": "medium",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Perrin",
+        "wolves",
+        "Wolfbrother",
+        "Elyas",
+        "dreams"
+      ]
+    },
+    {
+      "question_id": 48,
+      "question": "What is the significance of Callandor?",
+      "category": "concept",
+      "difficulty": "medium",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Callandor",
+        "sa'angreal",
+        "Stone of Tear",
+        "Dragon Reborn",
+        "Rand"
+      ]
+    },
+    {
+      "question_id": 49,
+      "question": "Describe Mat's transformation after visiting Rhuidean.",
+      "category": "character",
+      "difficulty": "medium",
+      "temporal_limit": 4,
+      "expected_topics": [
+        "Mat",
+        "Rhuidean",
+        "memories",
+        "Aiel",
+        "Old Tongue",
+        "ashandarei"
+      ]
+    },
+    {
+      "question_id": 50,
+      "question": "What are the five elements used in channeling and what do they represent?",
+      "category": "magic_system",
+      "difficulty": "medium",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Five Powers",
+        "Fire",
+        "Water",
+        "Earth",
+        "Air",
+        "Spirit",
+        "channeling"
+      ]
+    },
+    {
+      "question_id": 51,
+      "question": "How do the Seanchan use channelers differently than in the Westlands?",
+      "category": "concept",
+      "difficulty": "medium",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Seanchan",
+        "damane",
+        "sul'dam",
+        "a'dam",
+        "channelers",
+        "Tuon"
+      ]
+    },
+    {
+      "question_id": 52,
+      "question": "What is Min's viewing ability and how does it work?",
+      "category": "character",
+      "difficulty": "medium",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Min",
+        "viewings",
+        "Rand",
+        "Elayne",
+        "Aviendha",
+        "visions"
+      ]
+    },
+    {
+      "question_id": 53,
+      "question": "Describe the structure and purpose of the different Ajahs.",
+      "category": "concept",
+      "difficulty": "medium",
+      "temporal_limit": null,
+      "expected_topics": [
+        "Ajah",
+        "Blue",
+        "Red",
+        "Green",
+        "White",
+        "Yellow",
+        "Gray",
+        "Brown",
+        "Aes Sedai"
+      ]
+    },
+    {
       "question_id": 54,
       "question": "Why does Rand go to the Aiel Waste in The Shadow Rising?",
       "category": "plot_event",
       "difficulty": "medium",
       "temporal_limit": 4,
       "expected_topics": [
-        "prophecy",
-        "Car'a'carn",
-        "unite Aiel",
+        "Rand",
+        "Aiel Waste",
         "Rhuidean",
-        "answers",
-        "heritage"
+        "Car'a'carn",
+        "prophecy",
+        "Aiel"
       ]
     },
     {
@@ -760,11 +807,11 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "Dark One servants",
-        "within Tower",
-        "secret",
-        "oath forsworn",
-        "trust broken"
+        "Black Ajah",
+        "Dark One",
+        "Aes Sedai",
+        "Darkfriends",
+        "White Tower"
       ]
     },
     {
@@ -774,11 +821,12 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "anger requirement",
-        "struggle",
-        "acceptance",
-        "overcoming",
-        "growth"
+        "Nynaeve",
+        "channeling",
+        "block",
+        "Healing",
+        "Aes Sedai",
+        "anger"
       ]
     },
     {
@@ -788,12 +836,12 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "leaders",
+        "Wise Ones",
+        "Aiel",
         "Dreamwalkers",
-        "authority",
-        "channelers",
-        "not Maidens",
-        "guidance"
+        "channeling",
+        "Aviendha",
+        "Egwene"
       ]
     },
     {
@@ -803,11 +851,12 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "Siuan deposed",
+        "Tower",
+        "Siuan",
         "Elaida",
-        "division",
-        "rebel Aes Sedai",
-        "two Amyrlins"
+        "Amyrlin Seat",
+        "coup",
+        "White Tower"
       ]
     },
     {
@@ -817,11 +866,10 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "honor system",
-        "obligation",
+        "ji'e'toh",
+        "Aiel",
         "toh",
-        "ji",
-        "complex rules",
+        "honor",
         "gai'shain"
       ]
     },
@@ -832,12 +880,11 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "three loves",
-        "bonding",
-        "sharing",
-        "prophecy",
-        "complexity",
-        "acceptance"
+        "Rand",
+        "Elayne",
+        "Min",
+        "Aviendha",
+        "bonding"
       ]
     },
     {
@@ -847,11 +894,11 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "burns pattern",
-        "reverses time",
-        "destroys thread",
-        "reality damage",
-        "dangerous"
+        "balefire",
+        "One Power",
+        "Pattern",
+        "forbidden",
+        "Forsaken"
       ]
     },
     {
@@ -861,11 +908,11 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "male channelers",
+        "Black Tower",
         "Asha'man",
-        "Rand creates",
-        "weapon",
-        "Mazrim Taim"
+        "Mazrim Taim",
+        "Rand",
+        "male channelers"
       ]
     },
     {
@@ -875,11 +922,11 @@
       "difficulty": "medium",
       "temporal_limit": 2,
       "expected_topics": [
+        "Mat",
+        "Horn of Valere",
         "Falme",
-        "Heroes summoned",
-        "bound to Horn",
-        "Hawkwing",
-        "battle"
+        "Heroes",
+        "Hawkwing"
       ]
     },
     {
@@ -889,11 +936,12 @@
       "difficulty": "medium",
       "temporal_limit": 4,
       "expected_topics": [
-        "Trolloc defense",
-        "reluctant",
-        "Manetheren",
-        "Lord Perrin",
-        "responsibility"
+        "Perrin",
+        "Two Rivers",
+        "Trollocs",
+        "Whitecloaks",
+        "Faile",
+        "leadership"
       ]
     },
     {
@@ -903,12 +951,12 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "gentling",
         "stilling",
-        "loss",
-        "despair",
-        "death wish",
-        "Healing possible"
+        "gentling",
+        "severing",
+        "One Power",
+        "Aes Sedai",
+        "Healing"
       ]
     },
     {
@@ -918,11 +966,11 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "chaos",
-        "breaking bonds",
+        "Dragon Reborn",
+        "prophecy",
+        "Rand",
         "Karaethon Cycle",
-        "necessary destruction",
-        "rebirth"
+        "nations"
       ]
     },
     {
@@ -932,11 +980,11 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
+        "Bowl of the Winds",
         "ter'angreal",
-        "weather control",
+        "weather",
         "Sea Folk",
-        "powerful",
-        "seek"
+        "Windfinders"
       ]
     },
     {
@@ -946,12 +994,11 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "succession",
-        "support",
-        "nobles",
-        "challenges",
-        "rightful heir",
-        "struggle"
+        "Elayne",
+        "Andor",
+        "Lion Throne",
+        "Caemlyn",
+        "succession"
       ]
     },
     {
@@ -961,12 +1008,12 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "never healing",
+        "Rand",
+        "wounds",
         "balefire",
-        "Fain's dagger",
-        "linked",
-        "pain",
-        "symbolic"
+        "Fain",
+        "dagger",
+        "never healing"
       ]
     },
     {
@@ -976,12 +1023,11 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "runaways",
-        "secret",
-        "Ebou Dari",
-        "older",
-        "avoid Tower",
-        "revelation"
+        "Kin",
+        "Aes Sedai",
+        "Ebou Dar",
+        "channelers",
+        "runaways"
       ]
     },
     {
@@ -991,11 +1037,12 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "mind control",
+        "Compulsion",
+        "One Power",
+        "weaving",
         "forbidden",
-        "removes free will",
-        "evil",
-        "Forsaken use"
+        "Forsaken",
+        "mind"
       ]
     },
     {
@@ -1005,11 +1052,12 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "gambling",
+        "Mat",
+        "luck",
         "ta'veren",
-        "impossible odds",
-        "grows stronger",
-        "pattern"
+        "dice",
+        "gambling",
+        "Pattern"
       ]
     },
     {
@@ -1019,12 +1067,12 @@
       "difficulty": "medium",
       "temporal_limit": 4,
       "expected_topics": [
-        "Aiel history",
+        "Rand",
+        "Rhuidean",
+        "Aiel",
+        "history",
         "columns",
-        "ancestors",
-        "truth",
-        "Way of the Leaf",
-        "revelation"
+        "visions"
       ]
     },
     {
@@ -1034,11 +1082,11 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "Treesong",
+        "Ogier",
+        "Loial",
         "stedding",
-        "stonemasons",
-        "long-lived",
-        "peace-loving",
+        "Treesong",
+        "Ways",
         "Longing"
       ]
     },
@@ -1049,11 +1097,11 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "Seanchan empire",
-        "consolidate lands",
+        "Seanchan",
+        "Empire",
+        "Corenne",
         "prophecy",
-        "return",
-        "conquest"
+        "Return"
       ]
     },
     {
@@ -1063,11 +1111,11 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "rebel choice",
-        "young",
-        "puppet",
-        "proves herself",
-        "unifies Tower"
+        "Egwene",
+        "Amyrlin Seat",
+        "rebel",
+        "White Tower",
+        "Aes Sedai"
       ]
     },
     {
@@ -1077,11 +1125,11 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
+        "Traveling",
         "gateway",
-        "instant",
-        "must know location",
-        "Skimming slower",
-        "black space"
+        "One Power",
+        "Skimming",
+        "weaving"
       ]
     },
     {
@@ -1091,11 +1139,12 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
-        "face Dark One",
+        "Dragon Reborn",
+        "Tarmon Gai'don",
         "Last Battle",
-        "break seals",
-        "die and live",
-        "necessary"
+        "Rand",
+        "Dark One",
+        "prophecy"
       ]
     },
     {
@@ -1106,11 +1155,10 @@
       "temporal_limit": null,
       "expected_topics": [
         "Tel'aran'rhiod",
-        "prophetic",
-        "Wise Ones",
+        "World of Dreams",
+        "Dreamer",
         "Egwene",
-        "dangerous",
-        "meetings"
+        "Wise Ones"
       ]
     },
     {
@@ -1120,13 +1168,12 @@
       "difficulty": "medium",
       "temporal_limit": null,
       "expected_topics": [
+        "Aviendha",
         "Maiden",
-        "forced",
-        "resistance",
-        "apprentice",
+        "Wise One",
         "channeling",
-        "acceptance",
-        "growth"
+        "Aiel",
+        "Rand"
       ]
     },
     {
@@ -1136,12 +1183,12 @@
       "difficulty": "hard",
       "temporal_limit": 5,
       "expected_topics": [
+        "Dragon Reborn",
+        "prophecy",
+        "Rand",
         "Stone of Tear",
         "Callandor",
-        "Aiel",
-        "born on Dragonmount",
-        "marks",
-        "multiple prophecies"
+        "Aiel"
       ]
     },
     {
@@ -1151,12 +1198,12 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
-        "acceptance",
-        "resistance",
-        "leadership styles",
-        "reluctance",
+        "Rand",
+        "Perrin",
+        "Mat",
+        "ta'veren",
         "Pattern",
-        "different paths"
+        "destiny"
       ]
     },
     {
@@ -1166,12 +1213,12 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
-        "cyclical time",
-        "Heroes reborn",
-        "Lews Therin",
-        "past lives",
-        "pattern",
-        "destiny"
+        "Wheel of Time",
+        "Pattern",
+        "Age Lace",
+        "rebirth",
+        "Heroes",
+        "Dragon"
       ]
     },
     {
@@ -1181,11 +1228,12 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
-        "cultural attitudes",
-        "training methods",
-        "gender roles",
-        "power structures",
-        "philosophy"
+        "One Power",
+        "White Tower",
+        "Black Tower",
+        "Seanchan",
+        "Aiel",
+        "Wise Ones"
       ]
     },
     {
@@ -1195,12 +1243,12 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
-        "Rhuidean revelation",
-        "shame",
-        "bleakness",
-        "pacifist past",
-        "identity crisis",
-        "Rand's impact"
+        "Aiel",
+        "Way of the Leaf",
+        "Tinkers",
+        "Rhuidean",
+        "history",
+        "Rand"
       ]
     },
     {
@@ -1210,12 +1258,11 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
-        "military advantage",
-        "surprise",
-        "logistics",
-        "different methods",
-        "tactical use",
-        "game-changer"
+        "Traveling",
+        "gateway",
+        "Skimming",
+        "Portal Stones",
+        "One Power"
       ]
     },
     {
@@ -1225,12 +1272,12 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
-        "Siuan deposition",
-        "Black Ajah",
+        "White Tower",
+        "Siuan",
         "Elaida",
-        "rebel Aes Sedai",
-        "weakened Tower",
-        "world impact"
+        "Black Ajah",
+        "split",
+        "rebellion"
       ]
     },
     {
@@ -1240,12 +1287,12 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
-        "multiple sources",
-        "interpretation",
-        "fulfillment",
-        "seeming contradictions",
-        "patterns",
-        "certainty"
+        "prophecy",
+        "Rand",
+        "Karaethon Cycle",
+        "Min",
+        "viewings",
+        "Dreamer"
       ]
     },
     {
@@ -1255,12 +1302,12 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
-        "voice in head",
+        "Rand",
+        "Lews Therin",
+        "madness",
         "taint",
-        "two personalities",
-        "integration",
-        "memories",
-        "sanity struggle"
+        "voice",
+        "Dragon Reborn"
       ]
     },
     {
@@ -1270,12 +1317,11 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
-        "individual ambitions",
-        "competing plans",
-        "Dark One's servants",
-        "power struggles",
-        "alliances",
-        "betrayals"
+        "Forsaken",
+        "Dark One",
+        "Age of Legends",
+        "Chosen",
+        "schemes"
       ]
     },
     {
@@ -1285,12 +1331,11 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
-        "multiple power types",
-        "intersections",
-        "conflicts",
-        "balance",
-        "legitimacy",
-        "influence"
+        "One Power",
+        "Aes Sedai",
+        "politics",
+        "nations",
+        "prophecy"
       ]
     },
     {
@@ -1300,12 +1345,12 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
-        "saidin vs saidar",
-        "cultural differences",
-        "Aes Sedai dominance",
-        "partnership",
-        "complementary",
-        "conflict"
+        "saidin",
+        "saidar",
+        "One Power",
+        "Aes Sedai",
+        "Asha'man",
+        "gender"
       ]
     },
     {
@@ -1315,13 +1360,12 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
-        "metaphysics",
-        "balance",
-        "free will",
-        "destiny",
+        "Creator",
+        "Dark One",
+        "Pattern",
+        "Wheel",
         "prison",
-        "threads",
-        "Wheel"
+        "Bore"
       ]
     },
     {
@@ -1331,11 +1375,12 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
-        "different methods",
-        "certainty levels",
-        "interpretation",
-        "symbolism",
-        "literal vs metaphorical"
+        "prophecy",
+        "Foretelling",
+        "Dreaming",
+        "viewings",
+        "Min",
+        "Egwene"
       ]
     },
     {
@@ -1345,12 +1390,11 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
+        "Breaking",
         "Age of Legends",
-        "lost knowledge",
-        "male channeler fear",
-        "Aes Sedai power",
-        "world shaped",
-        "consequences"
+        "Lews Therin",
+        "male channelers",
+        "taint"
       ]
     },
     {
@@ -1360,13 +1404,12 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
-        "leadership styles",
-        "reluctance",
-        "duty",
-        "methods",
-        "strengths",
-        "weaknesses",
-        "growth"
+        "Rand",
+        "Egwene",
+        "Elayne",
+        "Perrin",
+        "Mat",
+        "leadership"
       ]
     },
     {
@@ -1376,11 +1419,11 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
-        "lost technology",
-        "game-changers",
-        "specific items",
-        "strategic importance",
-        "advantages"
+        "angreal",
+        "sa'angreal",
+        "ter'angreal",
+        "One Power",
+        "Callandor"
       ]
     },
     {
@@ -1390,12 +1433,13 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
-        "self-sacrifice",
-        "greater good",
-        "price of power",
-        "burden",
-        "multiple examples",
-        "themes"
+        "sacrifice",
+        "duty",
+        "Rand",
+        "Egwene",
+        "Mat",
+        "Perrin",
+        "heroes"
       ]
     },
     {
@@ -1405,12 +1449,13 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
-        "parallel plots",
-        "convergence",
-        "ta'veren effect",
-        "Pattern weaving",
-        "connections",
-        "timing"
+        "Rand",
+        "Perrin",
+        "Mat",
+        "Elayne",
+        "Nynaeve",
+        "ta'veren",
+        "Pattern"
       ]
     },
     {
@@ -1420,12 +1465,12 @@
       "difficulty": "hard",
       "temporal_limit": null,
       "expected_topics": [
-        "absolute evil",
-        "shades of gray",
-        "motivations",
-        "corrupted good",
-        "cultural evil",
-        "choices"
+        "Dark One",
+        "Forsaken",
+        "Darkfriends",
+        "Seanchan",
+        "evil",
+        "Shai'tan"
       ]
     }
   ]

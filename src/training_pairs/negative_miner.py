@@ -11,7 +11,6 @@ from typing import Dict, List, Set
 from tqdm import tqdm
 
 from src.training_pairs.data_loader import Chunk, TestQuestion
-from src.training_pairs.positive_finder import PositiveMatch
 
 
 @dataclass
@@ -216,7 +215,7 @@ class NegativeMiner:
 
         return [c[0] for c in candidates[:max_candidates]], [c[1] for c in candidates[:max_candidates]], [c[2] for c in candidates[:max_candidates]]
 
-    def mine_hard_negatives(self, question: TestQuestion, positive_matches: List[PositiveMatch], num_negatives: int = None) -> List[NegativeMatch]:
+    def mine_hard_negatives(self, question: TestQuestion, positive_matches: List[Dict], num_negatives: int = None) -> List[NegativeMatch]:
         """
         Mine hard negative chunks for a question
 
@@ -232,8 +231,8 @@ class NegativeMiner:
             num_negatives = self.config.NUM_HARD_NEGATIVES
 
         # Collect positive chunk IDs to exclude
-        positive_ids = {pm.chunk.chunk_id for pm in positive_matches}
-        positive_chunks = [pm.chunk for pm in positive_matches]
+        positive_ids = {pm["chunk"].chunk_id for pm in positive_matches}
+        positive_chunks = [pm["chunk"] for pm in positive_matches]
 
         negatives = []
 
@@ -294,7 +293,7 @@ class NegativeMiner:
 
         return selected[:num_negatives]
 
-    def mine_negatives_batch(self, questions: List[TestQuestion], positive_results: Dict[int, List[PositiveMatch]], num_negatives: int = None) -> Dict[int, List[NegativeMatch]]:
+    def mine_negatives_batch(self, questions: List[TestQuestion], positive_results: Dict[int, List[Dict]], num_negatives: int = None) -> Dict[int, List[NegativeMatch]]:
         """
         Mine negatives for multiple questions
 

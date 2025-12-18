@@ -151,69 +151,75 @@ class QuerySynthesizer:
 
         return expanded
 
+    def _find_positives_for_query(self, query_data: Dict) -> List[Dict]:
+        """Find positive chunks with fallback to ensure coverage"""
+
+        test_question = TestQuestion(
+            question_id=query_data["question_id"], question=query_data["query"], category=query_data["category"], difficulty=query_data["difficulty"], expected_topics=query_data["expected_topics"]
+        )
+
+        # First pass: Try with high quality threshold
+        positives = self.positive_finder.find_positives(question=test_question, top_k=self.config.POSITIVES_PER_QUERY)
+
+        # Fallback: If not enough positives, lower threshold
+        if len(positives) < self.config.MIN_POSITIVES_REQUIRED:
+            print(f"Query {query_data['query_id']}: Only {len(positives)} positives found, retrying with relaxed threshold...")
+
+            # Retry with lower minimum score
+            positives = self.positive_finder.find_positives(question=test_question, top_k=self.config.POSITIVES_PER_QUERY, min_score=self.config.MIN_POSITIVE_SCORE_FALLBACK)
+
+            print(f"Fallback found {len(positives)} positives")
+
+        return positives
+
 
 class TrainingPairGenerator:
     """Complete pipeline for generating training pairs"""
 
     def __init__(self, config=None, paths=None):
-        """
-        Initialize training pair generator
-
-        Args:
-            config: Configuration
-            paths: Paths configuration
-        """
+        """Initialize training pair generator"""
         if config is None:
-            from config import get_finetuning_config
+            from src.config import get_finetuning_config
 
             config = get_finetuning_config()
 
         if paths is None:
-            from paths import get_paths
+            from src.paths import get_paths
 
             paths = get_paths()
 
         self.config = config
         self.paths = paths
 
-        # Initialize components
-        self.data_loader = DataLoader(paths)
-        self.positive_finder = PositiveFinder(config)
-        self.negative_miner = NegativeMiner(config)
-        self.query_synthesizer = QuerySynthesizer(config)
-
-        # Data
-        self.chunks = []
-        self.indexes = {}
-        self.test_questions = []
-
-    def load_data(self, chunks_dir: Path = None, indexes_dir: Path = None, questions_file: Path = None):
-        """
-        Load all required data
-
-        Args:
-            chunks_dir: Directory with chunk files
-            indexes_dir: Directory with index files
-            questions_file: Test questions file
-        """
         print("\n" + "=" * 70)
-        print("LOADING DATA")
+        print("INITIALIZING TRAINING PAIR GENERATOR")
         print("=" * 70)
 
-        # Load chunks
-        self.chunks = self.data_loader.load_all_chunks(chunks_dir)
+        # Load all data
+        self.data_loader = DataLoader(paths)
+        self.data_loader.load_all()
 
-        # Load indexes
-        self.indexes = self.data_loader.load_all_indexes(indexes_dir)
+        # Load test questions  ⬅️ ADD THIS!
+        print("\n4️⃣ Loading test questions...")
+        self.test_questions = self.data_loader.load_test_questions(
+            self.paths.FILE_TEST_QUESTIONS  # or whatever the path constant is
+        )
+        print(f"  ✅ Loaded {len(self.test_questions):,} test questions")
 
-        # Load test questions
-        self.test_questions = self.data_loader.load_test_questions(questions_file)
+        # Initialize positive finder (gets data from data_loader)
+        self.positive_finder = PositiveFinder(self.data_loader, config)
 
-        # Initialize finders with data
-        self.positive_finder.set_data(self.chunks, self.indexes)
-        self.negative_miner.set_data(self.chunks, self.indexes)
+        # Initialize negative miner (needs set_data call)
+        self.negative_miner = NegativeMiner(config)
+        self.negative_miner.set_data(
+            self.data_loader.chunks,
+            {"character": self.data_loader.character_index, "concept": self.data_loader.concept_index, "magic": self.data_loader.magic_index, "prophecy": self.data_loader.prophecy_index},
+        )
 
-        print("\n✅ Data loaded successfully")
+        # Initialize query synthesizer
+        self.query_synthesizer = QuerySynthesizer(config)
+
+        print("\n✅ Training pair generator initialized")
 
     def generate_pairs(self, output_file: Path = None, expand_queries: bool = True, save_intermediate: bool = True) -> List[TrainingPair]:
         """
@@ -234,7 +240,7 @@ class TrainingPairGenerator:
         # Step 1: Expand queries
         if expand_queries:
             print("\n📝 Expanding test questions...")
-            expanded_queries = self.query_synthesizer.expand_test_questions(self.test_questions[:2])
+            expanded_queries = self.query_synthesizer.expand_test_questions(self.test_questions)
             print(f"   Generated {len(expanded_queries)} queries from {len(self.test_questions)} questions")
         else:
             expanded_queries = [(q.question, q) for q in self.test_questions]
@@ -266,6 +272,10 @@ class TrainingPairGenerator:
         for query_text, question in expanded_queries:
             positives = positive_results.get(question.question_id, [])
             negatives = negative_results.get(question.question_id, [])
+            if len(positives) == 0:
+                print(f"\n⚠️  Q{question.question_id} ({question.difficulty}/{question.category}): NO POSITIVES")
+                print(f"   Query: {query_text[:60]}...")
+                print(f"   Expected topics: {question.expected_topics}")
 
             if not positives or not negatives:
                 continue
@@ -275,17 +285,17 @@ class TrainingPairGenerator:
                 pair = TrainingPair(
                     query=query_text,
                     query_id=f"q{question.question_id}_{len(training_pairs)}",
-                    positive_text=pos_match.chunk.text,
-                    positive_chunk_id=pos_match.chunk.chunk_id,
-                    negative_texts=[n.chunk.text for n in negatives],
-                    negative_chunk_ids=[n.chunk.chunk_id for n in negatives],
+                    positive_text=pos_match["chunk"].text,  # ✅ Dict
+                    positive_chunk_id=pos_match["chunk"].chunk_id,  # ✅ Dict
+                    negative_texts=[n.chunk.text for n in negatives],  # ✅ Object
+                    negative_chunk_ids=[n.chunk.chunk_id for n in negatives],  # ✅ Object
                     metadata={
                         "original_question_id": question.question_id,
                         "category": question.category,
                         "difficulty": question.difficulty,
                         "expected_topics": question.expected_topics,
-                        "positive_score": pos_match.score,
-                        "positive_matched_topics": pos_match.matched_topics,
+                        "positive_score": pos_match["score"],  # ✅ Dict
+                        "positive_matched_topics": pos_match["matched_topics"],  # ✅ Dict
                         "num_negatives": len(negatives),
                     },
                 )
@@ -329,6 +339,12 @@ class TrainingPairGenerator:
         for pair in pairs:
             cat = pair.metadata.get("category", "unknown")
             by_category[cat] = by_category.get(cat, 0) + 1
+
+        for cat, count in sorted(by_category.items(), key=lambda x: x[1], reverse=True):
+            pct = (count / len(pairs)) * 100
+            print(f"   {cat:15s}: {count:5,} ({pct:5.1f}%)")
+            by_category[cat] = [by_category[cat], pct]
+
         stats["by_category"] = by_category
 
         # By difficulty
@@ -336,13 +352,20 @@ class TrainingPairGenerator:
         for pair in pairs:
             diff = pair.metadata.get("difficulty", "unknown")
             by_difficulty[diff] = by_difficulty.get(diff, 0) + 1
+
+        for cat, count in sorted(by_difficulty.items(), key=lambda x: x[1], reverse=True):
+            pct = (count / len(pairs)) * 100
+            by_difficulty[diff] = [by_difficulty[diff], pct]
+
         stats["by_difficulty"] = by_difficulty
 
         # Average negatives per pair
         avg_negs = sum(len(p.negative_texts) for p in pairs) / len(pairs) if pairs else 0
         stats["average_negatives_per_pair"] = avg_negs
 
-        return stats
+        result = {"name": "training_pairs", "metrics": stats}
+
+        return result
 
     def _print_statistics(self, pairs: List[TrainingPair]):
         """Print statistics about generated pairs"""

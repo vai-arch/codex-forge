@@ -91,9 +91,6 @@ def main():
         print("\n🚀 Initializing training pair generator...")
         generator = TrainingPairGenerator(config, paths)
 
-        # Load data
-        generator.load_data(chunks_dir=chunks_dir, indexes_dir=indexes_dir, questions_file=questions_file)
-
         # Generate pairs
         training_pairs, stats = generator.generate_pairs(output_file=output_file, expand_queries=not args.no_expand, save_intermediate=True)
 

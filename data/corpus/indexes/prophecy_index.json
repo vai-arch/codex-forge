@@ -29,9 +29,9 @@
     "type": "Prophecy",
     "description": "Charal Drianaan te Calamon was most probably a person who lived in one of the Fourth Ages of the Cycle of Ages and once translated the book \"The Cycle of the Dragon\", whose original author is unknown.\n\nThe only fragment known is the following small paragraph.\n\n\"And it came to pass in those days, as it had come before and would come again, that the Dark lay heavy on the land and weighed down the hearts of men, and the green things failed, and hope died. And men cried out to the Creator, saying, O Light of the Heavens, Light of the World, let the Promised One be born of the mountain, according to the prophecies, as he was in ages past and will be in ages to come. Let the Prince of the Morning sing to the land that green things will grow and the valleys give forth lambs. Let the arm of the Lord of the Dawn shelter us from the Dark, and the great sword of justice defend us. Let the Dragon ride again on the winds of time.\"",
     "categories": [
+      "Prophecies",
       "Books",
-      "Theories",
-      "Prophecies"
+      "Theories"
     ]
   },
   "Egwene's dreams": {
@@ -49,10 +49,10 @@
     "type": "Foretelling",
     "description": "The Essanik Cycle is a set of prophecies in Seanchan which originated from the Karaethon Cycle. It is unknown how similar or different these sets of prophecies are. Some believe this set to be highly corrupted for purposes of propaganda as a key tenet is that the Dragon Reborn must kneel before the Crystal Throne before Tarmon Gai'don, or all is lost.",
     "categories": [
-      "Foretellings",
+      "Prophecies",
       "Short_pages",
       "Seanchan_culture",
-      "Prophecies"
+      "Foretellings"
     ]
   },
   "Foretelling": {
@@ -65,9 +65,9 @@
     "type": "Foretelling",
     "description": "Foretelling is the ability to tell the future with unerring accuracy, if not always great clarity. The ability is believed to be linked to the One Power by Aes Sedai, and is thus classified as a Talent even though it requires no active use of the Power. Indeed, it is usually not under the control of the speaker as to when it comes upon her (or him), and sometimes they do not remember what they themselves have Foretold.",
     "categories": [
-      "Talents",
       "List_pages",
-      "Foretellings"
+      "Foretellings",
+      "Talents"
     ]
   },
   "Jendai Prophecy": {
@@ -98,10 +98,10 @@
     "type": "Foretelling",
     "description": "The Karaethon Cycle contains the Prophecies of the Dragon, which are believed to detail how the Dragon will be Reborn and what his coming will mean for both the Light and the Shadow. They consist of a collection of Foretellings from before, during, and after the War of Power. Many are vague and can only be understood in hindsight. Most people avoid them, and they are banned in many lands.",
     "categories": [
-      "Books",
+      "Prophecies",
       "Foretellings",
       "Citation_needed",
-      "Prophecies"
+      "Books"
     ]
   },
   "Min's viewings": {
@@ -113,10 +113,10 @@
     "type": "Viewing",
     "description": "Min Farshaw ' s ability to discern elements of the future has led to a wealth of foreshadowing ↗ as to what could happen next. Below is a collected list of Min's viewings, both completed and yet unresolved.",
     "categories": [
-      "Citation_needed",
+      "Prophecies",
       "List_pages",
-      "Special_abilities",
-      "Prophecies"
+      "Citation_needed",
+      "Special_abilities"
     ]
   },
   "Perrin's Wolf Dreams": {
@@ -134,8 +134,8 @@
     "type": "Prophecy",
     "description": "The Prophecies of the Shadow are foretellings presumably made by Aes Sedai who followed the Dark One.",
     "categories": [
-      "The_Shadow",
-      "Prophecies"
+      "Prophecies",
+      "The_Shadow"
     ]
   },
   "Prophecy of Rhuidean": {
@@ -145,10 +145,10 @@
     "description": "The Aiel's Prophecy of Rhuidean tells of the coming of the Car'a'carn, the chief of chiefs, and He Who Comes With The Dawn. The prophecy is a compilation of Foretellings and dreams by Wise Ones. This man is destined to unite, destroy, and save a remnant of the Aiel.",
     "categories": [
       "Aiel_culture",
+      "Prophecies",
       "Foretellings",
-      "Articles_to_be_expanded",
       "Citation_needed",
-      "Prophecies"
+      "Articles_to_be_expanded"
     ]
   },
   "Reo Myershi's prophecy": {
@@ -157,8 +157,8 @@
     "type": "Foretelling",
     "description": "Reo Myershi, ancestor of Paital Nachiman heard the prophecy from an Aes Sedai of his own family line. The words were preserved, passed from monarch to monarch through the Arafelan royal family till Paitar Nachiman finally asks Rand about it.\n\nI see him before you! Him, the one who lives many lives, the one who gives deaths, the one who raises mountains. He will break what he must break, but first he stands here, before our king. You will bloody him! Measure his restraint. He speaks! How was the fallen slain? Tellindal Tirraso, murdered by his hand, the darkness that came the day after the light. You must ask, and you must know your fate. If he cannot answer.... then you will be lost. You will bring his end swiftly, so that the final days may have their storm. So that Light may not be consumed by he who was to have preserved it. I see him. And I weep. [ 1 ] I see him before you! Him, the one who lives many lives, the one who gives deaths, the one who raises mountains. He will break what he must break, but first he stands here, before our king. You will bloody him! Measure his restraint. He speaks! How was the fallen slain? Tellindal Tirraso, murdered by his hand, the darkness that came the day after the light. You must ask, and you must know your fate. If he cannot answer.... then you will be lost. You will bring his end swiftly, so that the final days may have their storm. So that Light may not be consumed by he who was to have preserved it. I see him. And I weep. [ 1 ]",
     "categories": [
-      "Foretellings",
-      "Prophecies"
+      "Prophecies",
+      "Foretellings"
     ]
   },
   "The Breaking of the World (book)": {
@@ -178,8 +178,8 @@
     "type": "Prophecy",
     "description": "The Wolf King is a figure in the Karaethon Cycle that signals the end of the age.",
     "categories": [
-      "Wolfbrothers",
-      "Prophecies"
+      "Prophecies",
+      "Wolfbrothers"
     ]
   },
   "Tumbling Dice": {
@@ -188,9 +188,9 @@
     "type": "Foretelling",
     "description": "During the series Mat Cauthon periodically has the impression that dice are tumbling around inside his head. This may be an aspect of Foretelling unique to Mat. This generally indicates some impending event which when reached, the dice will stop. Mat generally has no idea what is going to happen or when. There are times when more than one set of dice are tumbling around.\n\nThe first occurrence of tumbling dice is when he decides to rescue Egwene, Elayne and Nynaeve from the Stone of Tear.",
     "categories": [
-      "Talents",
+      "Foretellings",
       "Special_abilities",
-      "Foretellings"
+      "Talents"
     ]
   }
 }

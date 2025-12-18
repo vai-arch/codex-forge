@@ -1,6 +1,6 @@
 """
-Generic Fine-Tuning Framework - Data Loader
-Loads chunks, indexes, and test questions from Dragon's Codex format.
+Data Loader
+Loads chunks, indexes, and test questions for training pair generation.
 """
 
 import json
@@ -8,7 +8,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional
 
-from utils import files
+from utils import util_files_functions as files
 
 
 @dataclass
@@ -18,23 +18,37 @@ class Chunk:
     chunk_id: str
     text: str
     source: str  # "book" or "wiki"
-    wiki_type: Optional[str]  # "character", "concept", "magic", "prophecy"
-    filename: str
-    temporal_order: Optional[int]
-    character_mentions: List[str]
-    concept_mentions: List[str]
-    magic_mentions: List[str]
-    prophecy_mentions: List[str]
-    metadata: Dict
+    wiki_type: Optional[str] = None  # "character", "concept", etc.
+    filename: Optional[str] = None  # Wiki page filename
+    temporal_order: Optional[int] = None  # Book order
+    character_mentions: List[str] = None
+    concept_mentions: List[str] = None
+    magic_mentions: List[str] = None
+    prophecy_mentions: List[str] = None
+    metadata: Dict = None
+
+    def __post_init__(self):
+        """Initialize empty lists if None"""
+        if self.character_mentions is None:
+            self.character_mentions = []
+        if self.concept_mentions is None:
+            self.concept_mentions = []
+        if self.magic_mentions is None:
+            self.magic_mentions = []
+        if self.prophecy_mentions is None:
+            self.prophecy_mentions = []
+        if self.metadata is None:
+            self.metadata = {}
 
     @classmethod
     def from_dict(cls, data: Dict, chunk_id: str = None):
+        """Create Chunk from dictionary"""
         return cls(
             chunk_id=chunk_id or data.get("chunk_id", ""),
             text=data["text"],
             source=data["source"],
             wiki_type=data.get("wiki_type"),
-            filename=data.get("filename"),  # ← Can be None for books!
+            filename=data.get("filename"),
             temporal_order=data.get("temporal_order"),
             character_mentions=data.get("character_mentions", []),
             concept_mentions=data.get("concept_mentions", []),
@@ -46,14 +60,14 @@ class Chunk:
 
 @dataclass
 class TestQuestion:
-    """Represents a test question with expected topics"""
+    """Represents a test question"""
 
     question_id: int
     question: str
     category: str
     difficulty: str
-    temporal_limit: Optional[int]
     expected_topics: List[str]
+    temporal_limit: Optional[int] = None
 
     @classmethod
     def from_dict(cls, data: Dict):
@@ -63,8 +77,8 @@ class TestQuestion:
             question=data["question"],
             category=data["category"],
             difficulty=data["difficulty"],
-            temporal_limit=data.get("temporal_limit"),
             expected_topics=data.get("expected_topics", []),
+            temporal_limit=data.get("temporal_limit"),
         )
 
 
@@ -79,7 +93,7 @@ class DataLoader:
             paths: Paths instance (if None, creates new one)
         """
         if paths is None:
-            from paths import get_paths
+            from src.paths import get_paths
 
             paths = get_paths()
 
@@ -87,7 +101,16 @@ class DataLoader:
         self.chunks_cache = {}
         self.indexes_cache = {}
 
+        # Will be populated by load_all()
+        self.chunks = None
+        self.character_index = None
+        self.concept_index = None
+        self.magic_index = None
+        self.prophecy_index = None
+        self.filename_map = None
+
     def load_chunks(self, chunk_file: Path):
+        """Load chunks from a single JSONL file"""
         chunks = []
         with open(chunk_file, "r", encoding="utf-8") as f:
             for i, line in enumerate(f):
@@ -296,34 +319,28 @@ class DataLoader:
 
         return stats
 
+    def load_all(self):
+        """
+        Load all data and store as attributes
+        This populates: chunks, indexes, filename_map
+        """
+        print("\n📂 Loading all data...")
 
-# Convenience functions for quick loading
-def load_corpus_data(chunks_dir: Path = None, indexes_dir: Path = None):
-    """
-    Load all corpus data at once
+        # Load chunks
+        print("\n1️⃣ Loading chunks...")
+        self.chunks = self.load_all_chunks()
 
-    Returns:
-        Tuple of (chunks, indexes)
-    """
-    loader = DataLoader()
-    chunks = loader.load_all_chunks(chunks_dir)
-    indexes = loader.load_all_indexes(indexes_dir)
-    return chunks, indexes
+        # Load indexes
+        print("\n2️⃣ Loading indexes...")
+        indexes = self.load_all_indexes()
+        self.character_index = indexes.get("character", {})
+        self.concept_index = indexes.get("concept", {})
+        self.magic_index = indexes.get("magic", {})
+        self.prophecy_index = indexes.get("prophecy", {})
 
+        # Build filename map
+        print("\n3️⃣ Building filename map...")
+        self.filename_map = self.build_filename_to_chunks_map(self.chunks)
+        print(f"  ✅ Mapped {len(self.filename_map):,} unique filenames")
 
-if __name__ == "__main__":
-    # Test data loading
-    from src.paths import get_paths
-
-    paths = get_paths()
-    loader = DataLoader(paths)
-
-    # Test loading
-    print("Testing DataLoader...")
-
-    # Load test questions
-    questions = loader.load_test_questions(paths.FILE_TEST_QUESTIONS)
-    # print(f"\n✅ Loaded {len(questions)} questions")
-
-    print("\n" + "=" * 70)
-    print("DataLoader test complete!")
+        print("\n✅ All data loaded!\n")

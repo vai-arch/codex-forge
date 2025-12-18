@@ -1,272 +1,301 @@
 """
-Generic Fine-Tuning Framework - Positive Chunk Finder
-Finds chunks that match expected topics for a query.
+Positive Chunk Finder
+Finds positive training examples by matching expected topics to chunks.
 """
 
-from collections import defaultdict
-from dataclasses import dataclass
-from typing import Dict, List, Set, Tuple
+from typing import Dict, List, Tuple
 
 from tqdm import tqdm
 
-from src.training_pairs.data_loader import Chunk, TestQuestion
-
-
-@dataclass
-class PositiveMatch:
-    """Represents a positive chunk match with scoring"""
-
-    chunk: Chunk
-    score: float
-    matched_topics: List[str]
-    match_details: Dict[str, any]
+from src.config import get_finetuning_config  # ⬅️ CHANGED THIS
+from src.training_pairs.data_loader import Chunk, DataLoader, TestQuestion
 
 
 class PositiveFinder:
-    """Finds positive chunks for training queries"""
+    """
+    Finds positive chunks for training pairs.
+    Uses multiple strategies:
+    1. Filename-based (for wiki chunks with entity pages)
+    2. Entity mention-based (for all chunks including books)
+    3. Text matching with alias support
+    """
 
-    def __init__(self, config=None):
+    def __init__(self, data_loader: DataLoader, config=None):
         """
-        Initialize positive finder
+        Initialize PositiveFinder
 
         Args:
-            config: Fine-tuning configuration
+            data_loader: DataLoader instance with loaded chunks and indexes
+            config: Config object (if None, loads from get_finetuning_config())
         """
         if config is None:
-            from config import get_finetuning_config
-
-            config = get_finetuning_config()
+            config = get_finetuning_config()  # ⬅️ CHANGED THIS
 
         self.config = config
-        self.filename_map = {}
-        self.indexes = {}
+        # ... rest stays the same
+        self.data_loader = data_loader
+        self.chunks = data_loader.chunks
+        self.filename_map = data_loader.filename_map
 
-    def set_data(self, chunks: List[Chunk], indexes: Dict[str, Dict]):
+        # Indexes for alias lookup
+        self.character_index = data_loader.character_index
+        self.concept_index = data_loader.concept_index
+        self.magic_index = data_loader.magic_index
+        self.prophecy_index = data_loader.prophecy_index
+
+        print(f"✅ PositiveFinder initialized with {len(self.chunks):,} chunks")
+
+    def find_entity_aliases(self, entity_name: str) -> List[str]:
         """
-        Set corpus data for searching
+        Find all aliases for an entity across all indexes
 
         Args:
-            chunks: List of all chunks
-            indexes: Dictionary of indexes (character, concept, magic, prophecy)
-        """
-        # Build filename lookup map
-        self.filename_map = defaultdict(list)
-        for chunk in chunks:
-            self.filename_map[chunk.filename].append(chunk)
-
-        self.indexes = indexes
-
-        print("✅ PositiveFinder initialized:")
-        print(f"   Chunks indexed: {len(chunks):,}")
-        print(f"   Unique files: {len(self.filename_map):,}")
-        print(f"   Indexes loaded: {list(indexes.keys())}")
-
-    def find_entity_aliases(self, entity_name: str, entity_type: str = None) -> Set[str]:
-        """
-        Find all aliases for an entity using indexes
-
-        Args:
-            entity_name: Entity name to search for
-            entity_type: Type hint ("character", "concept", etc.)
+            entity_name: Entity name to look up
 
         Returns:
-            Set of aliases including the entity name itself
+            List of aliases (including the entity name itself)
         """
-        aliases = {entity_name}
+        aliases = [entity_name]  # Always include the entity itself
 
-        # Search appropriate index
-        if entity_type and entity_type in self.indexes:
-            index = self.indexes[entity_type]
-            if entity_name in index:
-                entity_data = index[entity_name]
-                if "aliases" in entity_data:
-                    aliases.update(entity_data["aliases"])
-                if "primary_name" in entity_data:
-                    aliases.add(entity_data["primary_name"])
-        else:
-            # Search all indexes
-            for index_type, index in self.indexes.items():
-                if entity_name in index:
-                    entity_data = index[entity_name]
-                    if "aliases" in entity_data:
-                        aliases.update(entity_data["aliases"])
-                    if "primary_name" in entity_data:
-                        aliases.add(entity_data["primary_name"])
+        # Check character index
+        if entity_name in self.character_index:
+            char_data = self.character_index[entity_name]
+            if isinstance(char_data, dict) and "aliases" in char_data:
+                aliases.extend(char_data["aliases"])
 
-        return aliases
+        # Check concept index
+        if entity_name in self.concept_index:
+            concept_data = self.concept_index[entity_name]
+            if isinstance(concept_data, dict) and "aliases" in concept_data:
+                aliases.extend(concept_data["aliases"])
 
-    def get_entity_filename(self, entity_name: str, entity_type: str = None) -> str:
+        # Check magic index
+        if entity_name in self.magic_index:
+            magic_data = self.magic_index[entity_name]
+            if isinstance(magic_data, dict) and "aliases" in magic_data:
+                aliases.extend(magic_data["aliases"])
+
+        # Check prophecy index
+        if entity_name in self.prophecy_index:
+            prophecy_data = self.prophecy_index[entity_name]
+            if isinstance(prophecy_data, dict) and "aliases" in prophecy_data:
+                aliases.extend(prophecy_data["aliases"])
+
+        # Remove duplicates, preserve order
+        seen = set()
+        unique_aliases = []
+        for alias in aliases:
+            if alias.lower() not in seen:
+                seen.add(alias.lower())
+                unique_aliases.append(alias)
+
+        return unique_aliases
+
+    def get_entity_filename(self, entity_name: str, category: str = None) -> str:
         """
-        Get the filename associated with an entity from indexes
+        Get the wiki filename for an entity
 
         Args:
             entity_name: Entity name
-            entity_type: Type hint
+            category: Optional category hint (character, concept, magic, prophecy)
 
         Returns:
-            Filename or None
+            Filename (e.g., "Rand_al'Thor.txt") or None if not found
         """
-        if entity_type and entity_type in self.indexes:
-            index = self.indexes[entity_type]
-            if entity_name in index:
-                return index[entity_name].get("filename")
-        else:
-            # Search all indexes
-            for index in self.indexes.values():
-                if entity_name in index:
-                    return index[entity_name].get("filename")
+        # Normalize entity name to filename format
+        # "Rand al'Thor" -> "Rand_al'Thor.txt"
+        normalized = entity_name.replace(" ", "_") + ".txt"
+
+        # Check if this filename exists in our filename_map
+        if normalized in self.filename_map:
+            return normalized
+
+        # Try without apostrophes
+        normalized_no_apos = entity_name.replace(" ", "_").replace("'", "") + ".txt"
+        if normalized_no_apos in self.filename_map:
+            return normalized_no_apos
+
+        # Try all aliases
+        aliases = self.find_entity_aliases(entity_name)
+        for alias in aliases:
+            alias_filename = alias.replace(" ", "_") + ".txt"
+            if alias_filename in self.filename_map:
+                return alias_filename
+
+            alias_filename_no_apos = alias.replace(" ", "_").replace("'", "") + ".txt"
+            if alias_filename_no_apos in self.filename_map:
+                return alias_filename_no_apos
 
         return None
 
     def score_chunk_for_topics(self, chunk: Chunk, expected_topics: List[str], query_text: str = None) -> Tuple[float, List[str], Dict]:
         """
-        Score how well a chunk matches expected topics
+        Score a chunk for how well it matches expected topics
 
-        Args:
-            chunk: Chunk to score
-            expected_topics: List of topics that should be present
-            query_text: Optional query text for additional matching
+        Scoring weights:
+        - Text match: 1.0
+        - Alias match: 2.0 (critical for domain terms!)
+        - Entity mention: 0.5
+        - Filename partial match: 2.0
+        - Filename EXACT match: +2.0 (prioritizes bio pages!)
 
         Returns:
-            Tuple of (score, matched_topics, details)
+            tuple: (score, matched_topics, details)
         """
-        matched_topics = []
-        match_details = {"alias_matches": [], "text_matches": [], "mention_matches": [], "filename_matches": []}
-
-        chunk_text_lower = chunk.text.lower()
         score = 0.0
+        matched_topics = []
+        details = {"text_matches": [], "alias_matches": [], "mention_matches": [], "filename_matches": []}
 
+        chunk_text = chunk.text.lower()
+
+        # Get all entity mentions from chunk
+        all_mentions = chunk.character_mentions + chunk.concept_mentions + chunk.magic_mentions + chunk.prophecy_mentions
+        all_mentions_lower = [m.lower() for m in all_mentions]
+
+        # Score each expected topic
         for topic in expected_topics:
             topic_lower = topic.lower()
-            topic_matched = False
+            topic_score = 0.0
 
-            # 1. Check if topic is in chunk text
-            if topic_lower in chunk_text_lower:
-                score += 1.0
-                matched_topics.append(topic)
-                match_details["text_matches"].append(topic)
-                topic_matched = True
+            # 1. Direct text match (weight: 1.0)
+            if topic_lower in chunk_text:
+                topic_score += 1.0
+                details["text_matches"].append(topic)
 
-            # 2. Check if topic matches via aliases (higher weight)
+            # 2. Alias match (weight: 2.0) - CRITICAL!
             aliases = self.find_entity_aliases(topic)
             for alias in aliases:
-                if alias.lower() in chunk_text_lower:
-                    score += self.config.ALIAS_MATCH_WEIGHT
-                    if not topic_matched:
-                        matched_topics.append(topic)
-                        topic_matched = True
-                    match_details["alias_matches"].append(f"{topic} (via {alias})")
+                if alias.lower() in chunk_text:
+                    topic_score += 2.0
+                    details["alias_matches"].append(f"{topic} (alias: {alias})")
+                    break  # Only count once per topic
 
-            # 3. Check entity mentions
-            all_mentions = chunk.character_mentions + chunk.concept_mentions + chunk.magic_mentions + chunk.prophecy_mentions
+            # 3. Entity mention match (weight: 0.5)
+            if topic_lower in all_mentions_lower:
+                topic_score += 0.5
+                details["mention_matches"].append(topic)
 
-            for mention in all_mentions:
-                if topic_lower in mention.lower() or mention.lower() in topic_lower:
-                    score += 0.5
-                    if not topic_matched:
-                        matched_topics.append(topic)
-                        topic_matched = True
-                    match_details["mention_matches"].append(f"{topic} (mention: {mention})")
+            # 4. Filename partial match (weight: 2.0)
+            if chunk.filename:
+                filename_entity = chunk.filename.replace(".txt", "").replace("_", " ").lower()
 
-            # 4. Check if topic has associated filename
-            filename = self.get_entity_filename(topic)
-            if filename and filename == chunk.filename:
-                score += 2.0  # Strong signal!
-                if not topic_matched:
-                    matched_topics.append(topic)
-                    topic_matched = True
-                match_details["filename_matches"].append(f"{topic} (file: {filename})")
+                if topic_lower in filename_entity or filename_entity in topic_lower:
+                    topic_score += 2.0
+                    details["filename_matches"].append(topic)
 
-        # Normalize score by number of expected topics
-        if expected_topics:
-            normalized_score = score / len(expected_topics)
-        else:
-            normalized_score = 0.0
+            # 5. Filename EXACT match bonus (weight: +2.0)
+            if chunk.filename:
+                # Normalize for exact comparison
+                topic_normalized = topic.lower().replace(" ", "_").replace("'", "")
+                filename_normalized = chunk.filename.lower().replace(".txt", "").replace("'", "")
 
-        return normalized_score, matched_topics, match_details
+                # EXACT match = bio/definition page
+                if topic_normalized == filename_normalized:
+                    topic_score += 2.0
+                    details["filename_matches"].append(f"{topic} (EXACT)")
 
-    def find_positives(self, question: TestQuestion, top_k: int = None) -> List[PositiveMatch]:
+                # Check aliases too
+                aliases = self.find_entity_aliases(topic)
+                for alias in aliases:
+                    alias_normalized = alias.lower().replace(" ", "_").replace("'", "")
+                    if alias_normalized == filename_normalized:
+                        topic_score += 2.0
+                        details["filename_matches"].append(f"{topic} via {alias} (EXACT)")
+                        break
+
+            # If any score for this topic, add to matched
+            if topic_score > 0:
+                score += topic_score
+                matched_topics.append(topic)
+
+        # Additional boost if query text provided
+        if query_text:
+            query_lower = query_text.lower()
+            query_words = set(query_lower.split())
+            chunk_words = set(chunk_text.split())
+
+            # Bonus for query word overlap
+            overlap = len(query_words & chunk_words)
+            if overlap > 0:
+                score += overlap * 0.1
+
+        return score, matched_topics, details
+
+    def find_positives(self, question: TestQuestion, top_k: int = None, min_score: float = None) -> List[Dict]:
         """
-        Find positive chunks for a test question
+        Find positive chunks for question
 
         Args:
-            question: TestQuestion with expected topics
-            top_k: Number of positives to return (default from config)
+            question: TestQuestion object
+            top_k: Number of results to return
+            min_score: Minimum score threshold (uses config default if None)
 
         Returns:
-            List of PositiveMatch objects, sorted by score
+            List of dicts with chunk, score, matched_topics, match_details
         """
+        if min_score is None:
+            min_score = self.config.MIN_POSITIVE_SCORE
+
         if top_k is None:
             top_k = self.config.POSITIVES_PER_QUERY
 
         matches = []
 
-        # Strategy 1: Try to find chunks by filename (if topics map to entities)
+        # Strategy 1: Filename-based lookup (for wiki chunks)
         for topic in question.expected_topics:
             filename = self.get_entity_filename(topic, question.category)
+
             if filename and filename in self.filename_map:
                 for chunk in self.filename_map[filename]:
                     score, matched, details = self.score_chunk_for_topics(chunk, question.expected_topics, question.question)
 
-                    if score > 0:
-                        matches.append(PositiveMatch(chunk=chunk, score=score, matched_topics=matched, match_details=details))
+                    if score >= min_score:
+                        matches.append({"chunk": chunk, "score": score, "matched_topics": matched, "match_details": details})
 
-        # Strategy 2: Search all chunks if we don't have enough matches
+        # Strategy 2: Search all chunks if not enough matches
         if len(matches) < top_k:
-            # Score all chunks (expensive but comprehensive)
             for chunks in self.filename_map.values():
                 for chunk in chunks:
-                    # Skip if already matched
-                    if any(m.chunk.chunk_id == chunk.chunk_id for m in matches):
-                        continue
-
                     score, matched, details = self.score_chunk_for_topics(chunk, question.expected_topics, question.question)
 
-                    # Only consider if meets minimum coverage
-                    topic_coverage = len(matched) / len(question.expected_topics) if question.expected_topics else 0
-                    if topic_coverage >= self.config.MIN_TOPIC_COVERAGE:
-                        matches.append(PositiveMatch(chunk=chunk, score=score, matched_topics=matched, match_details=details))
+                    if score >= min_score:
+                        # Avoid duplicates
+                        chunk_ids = [m["chunk"].chunk_id for m in matches]
+                        if chunk.chunk_id not in chunk_ids:
+                            matches.append({"chunk": chunk, "score": score, "matched_topics": matched, "match_details": details})
 
-        # Sort by score and return top_k
-        matches.sort(key=lambda m: m.score, reverse=True)
+        # Sort by score (descending)
+        matches.sort(key=lambda m: m["score"], reverse=True)
+
+        # Return top_k results
         return matches[:top_k]
 
-    def find_positives_batch(self, questions: List[TestQuestion], top_k: int = None) -> Dict[int, List[PositiveMatch]]:
+    def find_positives_batch(self, questions: List[TestQuestion], top_k: int = None) -> Dict[int, List[Dict]]:
         """
-        Find positives for multiple questions
+        Find positives for multiple questions in batch
 
         Args:
             questions: List of TestQuestion objects
-            top_k: Number of positives per question
+            top_k: Number of results per question
 
         Returns:
-            Dictionary mapping question_id to list of PositiveMatch
+            Dict mapping question_id to list of positive matches
         """
-
         results = {}
 
-        with tqdm(questions, desc="Processing questions", unit="q") as pbar:
-            for question in pbar:
-                positives = self.find_positives(question, top_k)
-                results[question.question_id] = positives
-
-                # Update postfix with average positives per question
-                avg_matches = sum(len(p) for p in results.values()) / len(results)
-                pbar.set_postfix(avg_positives=f"{avg_matches:.1f}")
+        for question in tqdm(questions, desc="Finding positives"):
+            positives = self.find_positives(question, top_k)
+            results[question.question_id] = positives
 
         return results
 
-
-if __name__ == "__main__":
-    # Test positive finder
-    print("Testing PositiveFinder...")
-
-    from data_loader import DataLoader
-
-    from src.paths import get_paths
-
-    paths = get_paths()
-    loader = DataLoader(paths)
-
-    # This would load real data
-    print("\n✅ PositiveFinder module ready")
+    def get_stats(self) -> Dict:
+        """Get statistics about positive finding"""
+        return {
+            "total_chunks": len(self.chunks),
+            "filenames_mapped": len(self.filename_map),
+            "character_entities": len(self.character_index),
+            "concept_entities": len(self.concept_index),
+            "magic_entities": len(self.magic_index),
+            "prophecy_entities": len(self.prophecy_index),
+        }

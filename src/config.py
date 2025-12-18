@@ -35,6 +35,11 @@ class FineTuningConfig(BaseConfig if HAS_BASE_CONFIG else object):
         else:
             load_dotenv(override=True)
 
+        # Training pair generation settings
+        self.MIN_POSITIVE_SCORE = 1.0  # ✅ Allows single text matches
+        self.MIN_POSITIVE_SCORE_FALLBACK = 0.5  # ✅ Fallback even lower
+        self.MIN_POSITIVES_REQUIRED = 2  # Need at least 2 positives
+
         # =================================================================
         # FINE-TUNING SETTINGS
         # =================================================================
