@@ -262,7 +262,7 @@ if __name__ == "__main__":
 
     from data_loader import DataLoader
 
-    from paths import get_paths
+    from src.paths import get_paths
 
     paths = get_paths()
     loader = DataLoader(paths)

@@ -11,6 +11,7 @@ from typing import Dict, List, Tuple
 from data_loader import Chunk, DataLoader, TestQuestion
 from negative_miner import NegativeMiner
 from positive_finder import PositiveFinder
+from utils import files  # noqa: F401
 
 
 @dataclass

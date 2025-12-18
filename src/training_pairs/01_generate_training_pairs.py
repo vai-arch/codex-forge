@@ -87,19 +87,6 @@ def main():
     print(f"   Output: {output_file}")
     print(f"   Expand queries: {not args.no_expand}")
 
-    # Validate inputs exist
-    if not chunks_dir.exists():
-        print(f"\n❌ ERROR: Chunks directory not found: {chunks_dir}")
-        return 1
-
-    if not indexes_dir.exists():
-        print(f"\n❌ ERROR: Indexes directory not found: {indexes_dir}")
-        return 1
-
-    if not questions_file.exists():
-        print(f"\n❌ ERROR: Questions file not found: {questions_file}")
-        return 1
-
     try:
         # Initialize generator
         print("\n🚀 Initializing training pair generator...")
