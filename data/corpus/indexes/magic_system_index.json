@@ -1,0 +1,2306 @@
+{
+  "A'dam": {
+    "page_name": "A'dam",
+    "filename": "A'dam.txt",
+    "aliases": [
+      "Leash"
+    ],
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "An a'dam (pronounced: AYE-dam) is a ter'angreal used to control a channeler.",
+    "categories": [
+      "Items_of_Power",
+      "Wotwiki_featured_articles",
+      "Seanchan_culture",
+      "Citation_needed",
+      "Ter'angreal",
+      "Old_Tongue"
+    ]
+  },
+  "Access key": {
+    "page_name": "Access key",
+    "filename": "Access_key.txt",
+    "aliases": [
+      "Access keys"
+    ],
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The access keys are ter'angreal linked to the massive Choedan Kal, the two greatest sa'angreal ever created. As tapping the Choedan Kal unaided is invariably deadly because of the immense quantities of the One Power available through them, and the fact that carrying a gigantic statue is not feasible, the access keys were created both to act as buffers between the user and the sa'angreal while being portable.\n\nThree access keys have been found, two by Rand in Rhuidean and one alone, though there is a possibility that more may exist. The keys are shaped as small-scale replicas of their respective sa'angreal.\n\nRand and Asmodean fought for the male access key found in Rhuidean, with Rand emerging victorious. Lanfear also arrived in search for the female ter'angreal, but concluded that it was either not present or destroyed, although Rand recovered it intact.\n\nThis one known workable female key was destroyed during the cleansing of saidin, along with the female Choedan Kal. The male key was taken into possession by Cadsuane Melaidhrin after the cleansing. A damaged version of the female key was (and presumably still is) in one of the displays within the Panarch's Palace in Tanchico, first found when Egwene al'Vere went Dreamwalking to search for the Black Ajah. The Broken Female one is extremely dangerous to channel into, and even hurt Egwene just by touching it in Tel'aran'rhiod.\n\nAfter Rand banished Cadsuane from his sight, he had her room searched and recovered the male access key, which he then kept with him at all times, nearly using it for disastrously destructive purposes on several occasions.\n\nAfter traveling to the top of Dragonmount and realizing his madness, Rand draws every ounce of saidin that he can through the access key, and then pushes the power back into it, shattering the key and the Choedan Kal deliberately.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Todo"
+    ]
+  },
+  "Age": {
+    "page_name": "Age",
+    "filename": "Age.txt",
+    "aliases": [
+      "Ages"
+    ],
+    "type": "other",
+    "description": "Time is represented by a seven-spoked wheel, The Wheel of Time, which consists of seven Ages. The turning of this wheel and the events of each Age generate the Great Pattern, a predefined plan which defines the past, present and future.\n\nAn Age is a very long period of time. Ages are typically homogeneous, with beginnings and endings marked by dramatic changes and events. Each Age is a specific period of time whose basic design is defined by the Pattern of the Age. The pattern of each Age is fixed by the Great Pattern, but the details of a specific Age can vary considerably from the base pattern. The length of time from one variation of an Age to its next variation is long enough to completely erase all memory and records of the previous Age.\nInto each Age are born individuals who posses the ability to change the Pattern of an Age in either minor or major ways. These people are known as ta'veren, and can have a great influence on events of an Age. Although powerful, ta'veren are still bound to the Pattern of an Age, as well as the Great Pattern. It is theorized that ta'veren are created by the Wheel as a method to assure that the Pattern of an Age is woven properly.\n\nThere is some evidence in the books that we are living in the First Age, for example real-world references.\n\n- First Age\n- Second Age (Age of Legends)\n- Third Age\n- Fourth Age\n- Seventh Age",
+    "categories": [
+      "Citation_needed",
+      "Metaphysics",
+      "Short_pages"
+    ]
+  },
+  "Alabaster figurine": {
+    "page_name": "Alabaster figurine",
+    "filename": "Alabaster_figurine.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The alabaster figurine is a ter'angreal that was stolen from the White Tower by the Black Ajah.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Aligning the Matrix": {
+    "page_name": "Aligning the Matrix",
+    "filename": "Aligning_the_Matrix.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Aligning the Matrix is a weave from the Age of Legends. The weave was used to strengthen metal, and was probably the method used for making power-wrought weapons, the likes which are not found in the present day. Moghedien tried to teach Egwene al'Vere the weave, however Moghedien is poorer at Aligning the Matrix than she is at Healing. The weave probably was rediscovered by Fager Neald while forging.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Amber plaque": {
+    "page_name": "Amber plaque",
+    "filename": "Amber_plaque.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The Amber Plaque is a ter'angreal that was stolen from the White Tower by Liandrin's Group of Black Sisters.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Amber turtle brooch": {
+    "page_name": "Amber turtle brooch",
+    "filename": "Amber_turtle_brooch.txt",
+    "type": "power_object",
+    "object_type": "Angreal",
+    "description": "The amber turtle brooch is an angreal aligned to saidar, found in the Kin's Storeroom in Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ebou_Dari_Stash",
+      "Angreal",
+      "Short_pages"
+    ]
+  },
+  "Angreal": {
+    "page_name": "Angreal",
+    "filename": "Angreal.txt",
+    "type": "power_object",
+    "object_type": "Angreal",
+    "description": "Angreal (ahn-gree-AHL; /ɑŋ.gɹiˈaːɫ/) are objects which allow those who can channel to draw more of the One Power than they normally could without harming themselves in the process.",
+    "categories": [
+      "Items_of_Power",
+      "Angreal"
+    ]
+  },
+  "Arrows of Fire": {
+    "page_name": "Arrows of Fire",
+    "filename": "Arrows_of_Fire.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Arrows of Fire is an intricate weave of Earth and Fire which causes small filaments of superheated material to fly from the channeler's fingertips.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Artham": {
+    "page_name": "Artham",
+    "filename": "Artham.txt",
+    "aliases": [
+      "Dull dagger"
+    ],
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The Artham is a ter'angreal in the form of a dull dagger that hides its bearer from Shadowspawn and the Shadow in general. It was created after Lews Therin 's death and was eventually recovered from the Kin's Store Room in Ebou Dar.\n\nAviendha discovered her talent of Reading ter'angreal by examining the dull dagger.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash",
+      "Short_pages"
+    ]
+  },
+  "Artifice of Brassion": {
+    "page_name": "Artifice of Brassion",
+    "filename": "Artifice_of_Brassion.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The Artifice of Brassion was a ter'angreal created early during the Breaking of the World by a group of Aes Sedai, mostly female, but aided by a small group of male Aes Sedai who had not yet succumbed to the madness of the Taint. Similar to an angreal, the ter'angreal grants one lone Aes Sedai the power to gentle a male channeler without having to link with any other female channelers.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal"
+    ]
+  },
+  "Balefire": {
+    "page_name": "Balefire",
+    "filename": "Balefire.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Balefire is a weapon of the One Power usable by both male and female channelers. Its widespread use during the War of Power began to cause the Pattern to unravel, and it was subsequently banned from use by all wielders of the One Power.",
+    "categories": [
+      "Weaves"
+    ]
+  },
+  "Balescream": {
+    "page_name": "Balescream",
+    "filename": "Balescream.txt",
+    "type": "other",
+    "description": "A balescream is an effect of extreme amounts of balefire being used against a target. The effects are described as the Pattern ripping and howling in pain and groaning in agony.\n\nWhen Rand al'Thor destroyed Natrin's Barrow with a massive bolt of balefire, all of the people in proximity felt the balescream. Graendal, being much closer to the event, felt more of the effects.",
+    "categories": [
+      "Metaphysics",
+      "Short_pages"
+    ]
+  },
+  "Battle in Tel'aran'rhiod": {
+    "page_name": "Battle in Tel'aran'rhiod",
+    "filename": "Battle_in_Tel'aran'rhiod.txt",
+    "type": "place",
+    "description": "The Battle in Tel'aran'rhiod was a skirmish that took place in the White Tower of the World of Dreams.",
+    "categories": [
+      "Tel'aran'rhiod",
+      "Battles"
+    ]
+  },
+  "Bearded man": {
+    "page_name": "Bearded man",
+    "filename": "Bearded_man.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The smiling bearded man is a ter'angreal recovered from the Kin's Store Room in Ebou Dar. It is also referred to as the \"library ter'angreal \".",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash",
+      "Short_pages"
+    ]
+  },
+  "Bent black rod": {
+    "page_name": "Bent black rod",
+    "filename": "Bent_black_rod.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The bent black rod is a ter'angreal used by Asne Zeramene during the confrontation at the residence of the \"Lady Shiaine Avarhin \" in Caemlyn..",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Bent rod": {
+    "page_name": "Bent rod",
+    "filename": "Bent_rod.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The bent rod is a ter'angreal recovered from the Kin's Store Room in Ebou Dar",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash",
+      "Short_pages"
+    ]
+  },
+  "Binding chair": {
+    "page_name": "Binding chair",
+    "filename": "Binding_chair.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "A binding chair is a type of ter'angreal made during the Age of Legends. It is unknown whether any have survived the Breaking of the World.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Binding rod": {
+    "page_name": "Binding rod",
+    "filename": "Binding_rod.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "A binding rod is a type of ter'angreal created in the Age of Legends. Its use is to make oaths binding; that is, it is not possible to knowingly break an oath sworn on a binding rod unless the rod is used again to release the person from it. Binding rods are generally ivory-white and about a foot long with an archaic numeral engraved on it. The binding rod used by the White Tower as the Oath Rod bears the number three, while that used by Sevanna bears the number one hundred and eleven.\n\nBinding rods only work on channelers. Spirit is channeled into its end, and the channeler makes his or her oaths. The binder can also be used to remove oaths previously sworn on it, though this is very painful and few are aware of this ability. Oaths will also be removed when the channeler is severed.\n\nIf it happens that two oaths conflict, so that it is not possible to fulfill both, the channeler is rendered unable to breathe and will soon die if the conflict is not removed.\n\nSwearing oaths causes a painful tightening of the skin, which is responsible for the \"ageless\" look of Aes Sedai. Though Aes Sedai live extended lives, the Oath Rod severely shortens that life extension. Indeed when the Aes Sedai sworn her classical three oaths her remaining lifespan is halved. Conversely each time a channelers is freed from the oath by the binder or severing, his remaining lifespan is restored fully.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal"
+    ]
+  },
+  "Black and white bird": {
+    "page_name": "Black and white bird",
+    "filename": "Black_and_white_bird.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The black and white bird figurine is a ter'angreal recovered from the Kin's Store Room in Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ebou_Dari_Stash",
+      "Parallels",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Bloodknife ring": {
+    "page_name": "Bloodknife ring",
+    "filename": "Bloodknife_ring.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "A Bloodknife ring is a ter'angreal made by the Seanchan.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Blossoms of Fire": {
+    "page_name": "Blossoms of Fire",
+    "filename": "Blossoms_of_Fire.txt",
+    "aliases": [
+      "Fire Blossom",
+      "Red wires"
+    ],
+    "type": "concept",
+    "is_weave": true,
+    "description": "Blossoms of Fire is a weave of the One Power using Earth, Air, and Fire to create a bar of fire less than the width of a large man's forearm, and about ten feet tall. These \"bars of red\" as they are called sometimes make a high pitched whining sound. When another flow of Air is added in, these bars explode to thirty feet across, incinerating and throwing enemies across the battlefield. They have the ability to kill enemies up to one hundred paces away, though the effectiveness at this range is limited. Rand showcased the ability to create six of these at once, then six more in succession once the first six had detonated and so forth. It is unknown whether this is the limit at which they can be woven (as Rand's strength in the Power is the absolute maximum for any human), or if the decision to weave them in this manner was a tactical decision on the part of Lews Therin.\n\nAlong with Arrows of Fire and Deathgates, Fire Blossoms are a recently rediscovered combat weave used by the Asha'man. Lews Therin Telamon showed these weaves to Rand al'Thor when he gained control of saidin in the Battle at Lord Algarin's manor.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Blue woman": {
+    "page_name": "Blue woman",
+    "filename": "Blue_woman.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The blue woman figurine is a ter'angreal recovered from the Kin's Store Room in Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ebou_Dari_Stash",
+      "Parallels",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Bonding": {
+    "page_name": "Bonding",
+    "filename": "Bonding.txt",
+    "aliases": [
+      "Bond",
+      "Warder bond"
+    ],
+    "type": "concept",
+    "power_related": true,
+    "is_weave": true,
+    "description": "Bonding is a weave which creates an enduring psychic link between two individuals; although there are several variants, the most common is the Aes Sedai / Warder bond.",
+    "categories": [
+      "Weaves",
+      "Warders",
+      "One_Power"
+    ]
+  },
+  "Bookmark": {
+    "page_name": "Bookmark",
+    "filename": "Bookmark.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The bookmark is a ter'angreal recently in the possession of Verin Mathwin.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Bowl of the Winds": {
+    "page_name": "Bowl of the Winds",
+    "filename": "Bowl_of_the_Winds.txt",
+    "aliases": [
+      "The Bowl of the Winds"
+    ],
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The Bowl of the Winds is a ter'angreal recovered from the Kin's Storeroom in Ebou Dar.\n\nIt is a powerful bowl-shaped ter'angreal which allows its users to control the weather. It draws both saidin and saidar, no matter which is being channeled at it.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash"
+    ]
+  },
+  "Brilliant red rod": {
+    "page_name": "Brilliant red rod",
+    "filename": "Brilliant_red_rod.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The Brilliant Red Rod is a ter'angreal used by Alviarin Freidhen to summon Mesaana after returning to the White Tower.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Callandor": {
+    "page_name": "Callandor",
+    "filename": "Callandor.txt",
+    "aliases": [
+      "Crown of blades",
+      "Sword That Is Not a Sword"
+    ],
+    "type": "power_object",
+    "object_type": "Sa'angreal",
+    "description": "Callandor, the Sword That Is Not a Sword is a male sa'angreal in the form of a sword which seemed to be made of glass, or perhaps crystal, blade and hilt and crossguard sparkling in the light. It was called the Sword That Cannot Be Touched because it was sealed behind powerful wards of the One Power to ensure only the Dragon Reborn could take it. Despite being a sa'angreal it also functioned as a sword. It could cleave balefire.",
+    "categories": [
+      "Items_of_Power",
+      "Citation_needed",
+      "Sa'angreal"
+    ]
+  },
+  "Callbox": {
+    "page_name": "Callbox",
+    "filename": "Callbox.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "A callbox is a ter'angreal, a few copies of which exist.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Calling Lightning": {
+    "page_name": "Calling Lightning",
+    "filename": "Calling_Lightning.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Calling Lightning is a weave associated with the Talent in weather, also known as Cloud Dancing. This weave uses Fire and Air. Calling lightning is a very easy task, even channelers who are poor at manipulating the weather can call lightning with ease.",
+    "categories": [
+      "Weaves",
+      "Citation_needed"
+    ]
+  },
+  "Caressing the Child": {
+    "page_name": "Caressing the Child",
+    "filename": "Caressing_the_Child.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Caressing the Child is a weave, related to Healing, used to test the health of an unborn child and the mother, and can be used to cure some problems of either. It will only work on a pregnant woman. The weave works best if the one it is being used on is very warm, and causes her to feel as though her body is humming. The weave is known by the Wise Ones, who claim to have known about it since before the Aiel were sent to the Threefold Land. Monaelle uses this weave on Elayne and also teaches it to Sumeko Karistovan. The weave uses Spirit, Fire, and Earth.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Chair of Remorse": {
+    "page_name": "Chair of Remorse",
+    "filename": "Chair_of_Remorse.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The Chair of Remorse is a ter'angreal kept in the second basement of the White Tower.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal"
+    ]
+  },
+  "Champion of the Light": {
+    "page_name": "Champion of the Light",
+    "filename": "Champion_of_the_Light.txt",
+    "type": "other",
+    "description": "The Second and Third Ages involve the defeat and subsequent rebirth and victory of what has been termed the \"Dragon soul\" by fans. In the Turning we read about in the books, this would be Lews Therin Telamon and Rand al'Thor respectively. In Ages where a female champion is needed, the role can be fulfilled by Amaresu.\n\nSince there are seven Ages, there may be may be other (unnamed) souls that perform a similar role, or that named souls we see in the books serve such a role in other Ages. The only thing we know is that the Dragon soul ends at least two Ages and Amaresu at least one. It is not known whether the ends of Ages always involve the Dark One in some way or some other cataclysmic or transformative event. One common theory, for example, is that the Ring of Tamyrlin signaled the end of the First Age by inventing or discovering channelling. Any other possible Champions, however, were not passed down by Robert Jordan.",
+    "categories": [
+      "Exegetic",
+      "Citation_needed",
+      "Metaphysics"
+    ]
+  },
+  "Choedan Kal": {
+    "page_name": "Choedan Kal",
+    "filename": "Choedan_Kal.txt",
+    "aliases": [
+      "The Choedan Kal"
+    ],
+    "type": "power_object",
+    "object_type": "Sa'angreal",
+    "description": "The Choedan Kal are two giant sa'angreal that were created during the War of Power, one for a man and one for a woman. They are the two most powerful sa'angreal ever created.\n\nDuring the War of Power, there were two plans as to how to defeat the Shadow; one was the plan supported by Latra Posae Decume, a female Aes Sedai of great strength and prominence to use the ter'angreal access keys to wield the One Power through the giant sa'angreal in order to defeat the forces of the Shadow and to erect a barrier around Shayol Ghul until a way to deal with the problem could be devised. Using the statues directly was impossible due to the massive amounts of the One Power and due to the difficulty of transporting them to the field of battle.\n\nWhen the access keys and the Choedan Kal were lost to the advancing armies of Sammael, Demandred and Be'lal, Lews Therin and the Hundred Companions felt they had no choice but to employ their alternative plan of sealing the bore.\n\nThe Choedan Kal remained unavailable until recently; the female statue is half-buried on the Sea Folk island of Tremalking and the male statue is being excavated near the village of Tremonsien, in Cairhien. Rand al'Thor first encountered the male statue while en route to Cairhien, following his trip through the Portal Stones. At the time, Selene (Lanfear in disguise), who was with him, panicked and berated Rand about his ignorance in the One Power when the allure of the sa'angreal makes Rand attempt to channel through it without one of the access ter'angreal.\n\nEgwene al'Vere (in Tel'aran'rhiod ), and then later Nynaeve al'Meara (in the waking world) found the top half of a broken female access key in the Panarch 's Palace in Tanchico, but it did not allow full access to the power of the female sa'angreal, and could potentially harm the saidar channeler attempting to use it.\n\nWhile in the Aiel Waste, Rand encountered the male and female access keys in Rhuidean. Rand discovered that Asmodean was in Rhuidean attempting to find an access key ter'angreal which he thought was there. Rand battled Asmodean for control of the key for the male part of Choedan Kal and it revealed that two men touchting the same key can channel through the sa'angreal at the same time, both controlling half of the power equally balanced. He could only won over Asmodean with the extra help of his fat bald man angreal. From this point, Rand had the two access ter'angreal in his possession. Lanfear tried to tempt him by saying a man and woman using the Choedan Kal together could challenge the Dark One, and maybe the Creator himself. It is interesting to note however, that Lews Therin believed that brute force could not stop the Dark One from breaking free, so the truth of Lanfear's statement remains to be determined.\n\nAsmodean discreetly referred to the sa'angreal as the only chance Rand has of winning the Last Battle. It was about this time that Rand began to toy with the idea of using the sa'angreal to cleanse the taint of saidin. Originally, he had planned to use Callandor for the deed, but after Cadsuane Melaidhrin informed him of Callandor's flaw, he realized the Choedan Kal were his last hope.\n\nDuring the Battle near Shadar Logoth, Nynaeve al'Meara and Rand linked outside Shadar Logoth, and tapped the Choedan Kal through the access ter'angreal. Rand was successful in cleansing the taint from saidin, but in the attempt, the female access key was destroyed as well as the sa'angreal itself. The male counterpart remained in Rand's possession. Some comments by Lanfear suggest the female counterpart could be used repeatedly if the channeler was as strong as Lanfear.\n\nThe statues glowed brightly during their intensive use to clean saidin (which appears to be typical behavior for a sa'angreal in use). The native people on Tremalking apparently saw the glowing female statue's orb as a herald to the end of the \"Time of Illusion,\" and shortly thereafter all of the island's inhabitants committed mass suicide.\n\nAfter Semirhage's failed attack on Rand using the Domination Band, he recovered the male access key and took to carrying it around, almost using it on Tuon and Seanchan holdings in the Westlands. Cadsuane considers this Rand's temptation by the access key, and its impact on Rand's psychology, the main reason for stealing Domination band from her box rather than from Seanchan. After Rand's fulfilment of a part of the Prophecy of the Dragon, he draws in as much power as he can through the sa'angreal and drives it back through itself, purposely obliterating it.",
+    "categories": [
+      "Items_of_Power",
+      "Sa'angreal",
+      "Age_of_Legends"
+    ]
+  },
+  "Chora": {
+    "page_name": "Chora",
+    "filename": "Chora.txt",
+    "aliases": [
+      "Avendesora",
+      "Avendoraldera",
+      "Tree of Life"
+    ],
+    "type": "entity",
+    "description": "Chora trees are large, living, tree-like constructs with trefoil-shaped leaves, created during the Age of Legends.",
+    "categories": [
+      "Trees",
+      "Constructs",
+      "Special_objects",
+      "Old_Tongue"
+    ]
+  },
+  "Clear crystal rod": {
+    "page_name": "Clear crystal rod",
+    "filename": "Clear_crystal_rod.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The clear crystal rod is a ter'angreal that was stolen from the White Tower by Liandrin's group of Black Sisters.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Cloud Dancing": {
+    "page_name": "Cloud Dancing",
+    "filename": "Cloud_Dancing.txt",
+    "type": "concept",
+    "is_weave": true,
+    "is_talent": true,
+    "description": "Cloud Dancing is a Talent in the use of the One Power that is the ability to control and change the weather. This Talent has been cultivated by Sea Folk Windfinders who refer to it as the Weaving of Winds.",
+    "categories": [
+      "Weaves",
+      "Talents"
+    ]
+  },
+  "Compulsion": {
+    "page_name": "Compulsion",
+    "filename": "Compulsion.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Compulsion is the name for the art of subjugating another person's will through the use of the One Power.\n\nThe lesser form of Compulsion is described like a whip, and makes the subject nervous and giddy, but the more advanced Compulsion compels the subject to worship the user. Both forms require using the Power to stimulate and control nerves in the brain, and forcing too hard can damage a person's mind permanently once they are released. Additionally, the greater the user's knowledge of the functions and anatomy of the human brain, the more effective their Compulsion becomes; this in part explains Graendal 's unmatched mastery of it.\n\nNormal use of Compulsion is to channel the Compulsion weave, often described as whip-like and making use of mostly Spirit, and then to issue a command. The victim will then carry out the command of the channeler. Through normal use, Compulsion is not thought to have any lasting effects. Repeated use on the same subject, however, can lead to the subject being more likely to be obedient, even if not under active Compulsion.\n\nSome people have the strength of mind to try and resist Compulsion subconsciously. If they are able to resist, they are then able to free themselves of the implanted command. This does not, however, protect the victim from a subsequent or more powerful use of Compulsion. Someone actively embracing the One Power cannot be placed under compulsion.\n\nIf one is commanded under Compulsion to commit an action that is an innermost desire, the command will persist for the remainder of that person's life. Conversely, the weaker forms of Compulsion have no effect on a person who is currently holding the One Power.\n\nCompulsion can be placed on a person permanently as well. By leaving the weaves tied off on a person's mind, their orders or even entire thoughts can be left by the channeler to stay with them until it is either lifted or they die. The more complex the Compulsion weaves, the harder it is to remove them. Lesser Compulsion can be lifted by an experienced enough channeler. However, extremely complex weaves literally end up taking the place of one's mind, rather than manipulating it, so lifting them evidently results in brain damage or death.\n\nCompulsion is used extensively by Graendal, and to a lesser extent by all followers of the Shadow with the ability to channel. Since strong use of Compulsion can completely remove a person's free will, it is forbidden from use by the current Aes Sedai.\n\nIt is often found that novices with the spark will have learned some crude form of Compulsion before coming to the White Tower. Normally, this type of Compulsion is simply an unintended prod on another person's mind in order to get something that they strongly want. These women are strongly disciplined and discouraged from using it again.\n\nRecently, Nynaeve al'Meara was able to learn how to work with those under Compulsion. She was able to lift extremely heavy weaves from the mind of one of Graendal 's victims. The youth was able to regain his mind for just a few moments in order give Rand and Nynaeve vital information before dying.\n\nThe female weave for Compulsion as used by Moghedien is described by Nynaeve as \"a complex weave of Spirit streaked by Water and Air\". The weave that she lifted from the aforementioned youth also consisted of these elements. A weaker form of Compulsion that Verin has discovered uses all five elements.",
+    "categories": [
+      "Weaves"
+    ]
+  },
+  "Constructs": {
+    "page_name": "Constructs",
+    "filename": "Constructs.txt",
+    "aliases": [
+      "Construct",
+      "Nym"
+    ],
+    "type": "entity",
+    "description": "During the Age of Legends, many different types of life were created using the Power and technology. The creation of such constructs was overseen by a strict code of ethics, which made genetic alteration on living creatures above the level of plants illegal. For some unknown reason, most constructs are incapable of passing through gateways, making weaves such as Deathgates effective weapons against them.",
+    "categories": [
+      "Constructs",
+      "Age_of_Legends",
+      "Concepts"
+    ]
+  },
+  "Creation": {
+    "page_name": "Creation",
+    "filename": "Creation.txt",
+    "type": "other",
+    "description": "Creation refers to the Creator bringing everything into existence from nothing. It is also the concept which contains the Wheel of Time, the Pattern, and the known universe.\n\nAt the exact moment of Creation, the Creator bound the Dark One in Shayol Ghul so he would be unable to unravel the Pattern, thereby ending all existence.",
+    "categories": [
+      "Metaphysics"
+    ]
+  },
+  "Creator": {
+    "page_name": "Creator",
+    "filename": "Creator.txt",
+    "aliases": [
+      "The Creator"
+    ],
+    "type": "entity",
+    "description": "The Creator is the name given to the entity who created the universe, the Wheel of Time and reality itself. It is unclear if The Creator also created the Dark One; it is suggested that The Creator imprisoned the Dark One, its antithesis, at the moment of Creation, very probably in order to give his creations free will without allowing the Dark One to directly influence anything in the Pattern.\n\nVirtually nothing is known of The Creator. He is not worshiped as a god in the traditional sense, although his name and the term \"the Light \" appear to be interchangeable. By the Third Age it is common knowledge that The Creator will not directly intervene in the affairs of humankind. Consequently, there are no organized religious bodies that have anything to do with him, with the strange exception of the Children of the Light.\n\nDespite his lack of a presence in the Pattern, he may have spoken to Rand al\"Thor twice in the series. The first time is after Rand has first learned to channel after killing Aginor at the Eye of the World. In this instance, the voice remarked that it would not interfere, and that only Rand could undertake the struggle to help humankind. The second occurred immediately before Rand went to confront the Dark One at the Last Battle, when Rand was doubting whether or not he had prepared carefully enough for his confrontation with the Dark One. As Rand is about to step into the Pit of Doom, the same voice (as confirmed by Rand's thoughts) spoke aloud that the time for Rand to confront the Dark One was ripe.\n\nThe closest thing to the intervention of the Creator was through Nakomi, a woman of the surviving Jenn Aiel. Her purpose was to be the latest in a line of Jenn who acted as something close to a vessel or avatar of the Creator. Nakomi was not the Creator, but close to the Creator, and inhabited in part by something of the Creator.\n\nInterestingly, Rand hypothesized at one point that if the Dark One did break free of its prison then only that one world would be affected, not all of time and space (in contradiction of other prophecies ). He suggested that The Creator had created many worlds as a gardener had grown many grapes on a vine, and if one of the grapes shriveled and died, then the gardener would be regretful but would move on. Lews Therin Telamon, or at least the voice representing his personality within Rand's mind, seemed to agree with this conclusion.\n\nOne particular issue that the people of the world take with the Creator is that, despite the Dark One clearly being willing and able to meddle in the affairs of humans, the Creator is not. This is perceived by many, including a despairing Rand himself at one point, to have been an indifferent abandonment of humanity to a force of evil it cannot possibly defeat. It is only at the very end of the series that the reason for this is approach by the Creator is made, albeit indirectly. Due to the impregnable nature of the Dark One's prison, he ultimately has absolutely no power over reality outside of indirectly influencing humans to make evil choices. He only can directly touch the world if humanity, whether out of pride, hate, hopelessness or malice, allows him to. It was humanity that drilled into his prison in their arrogance, and humanity that wrought all the evils of the War of Power. It was ultimately humans, and only humans, that were responsible for the suffering that the Dark One is blamed for during the time the Bore was drilled to the time it was sealed again, and humans that ultimately managed to fix their mistakes. But due to the Dark One's inability to learn or change and the cyclical nature of time and history, the Dark One can't actually win unless humans permit him to by fully surrendering to him. Ultimately, it is entirely the choice of humanity whether to allow evil into their lives or not. The nature of the reality that the Creator incepted allows humans to make of the world what they will, for good or ill.",
+    "categories": [
+      "Extradimensional_entities",
+      "Citation_needed",
+      "Metaphysics"
+    ]
+  },
+  "Crystal statue of a nude woman with child": {
+    "page_name": "Crystal statue of a nude woman with child",
+    "filename": "Crystal_statue_of_a_nude_woman_with_child.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The crystal statue is described laying on its side unbroken near the redstone doorframe in Rhuidean during the fight of Rand al'Thor and Asmodean. It was laying among all other ter'angreal.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Crystal Throne": {
+    "page_name": "Crystal Throne",
+    "filename": "Crystal_Throne.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The Crystal Throne is the seat of the Emperor or Empress at the Court of the Nine Moons in Seanchan. It was a great ter'angreal that caused anyone who approached it to feel immense awe and wonder. Of course, only the reigning monarch was ever allowed to use it. Its disposition was unknown after the chaos in Seanchan and the death of Empress Radhanan. The term could also be used for any throne on which the Emperor or Empress sat.\n\nThe Throne does not require a Channeler or the One Power in any form to work.",
+    "categories": [
+      "Items_of_Power",
+      "Seanchan_culture",
+      "Thrones",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Crystal vial": {
+    "page_name": "Crystal vial",
+    "filename": "Crystal_vial.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The crystal vial is a ter'angreal recovered from the Kin's Store Room in Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash",
+      "Short_pages"
+    ]
+  },
+  "Cutting weaves": {
+    "page_name": "Cutting weaves",
+    "filename": "Cutting_weaves.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "The Cutting weaves are a kind of weave in the One Power used in a duel among channellers to cut and so dispel the forming weaves of an adversary. It is woven differently by women and men. Women's weaves are composed of threads of Fire and Air and in some cases the threads of fire can be reinforced by Earth. For men the weave is composed of spirit, fire and earth.\n\nHessalam during the battle in Thakan'dar Valley showed a great ability in cutting down the attacks of her opponents.\n\nAnother example is when Rand al'Thor used this weave to cut off the weaves that Lanfear was using to cause Egwene and Aviendha agony in Cairhien.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Darkhound": {
+    "page_name": "Darkhound",
+    "filename": "Darkhound.txt",
+    "aliases": [
+      "Dark Hunt",
+      "Darkhounds",
+      "Shadowbrother",
+      "Shadowbrothers",
+      "Wild Hunt"
+    ],
+    "type": "entity",
+    "is_shadowspawn": true,
+    "description": "A darkhound is a \"species\" of Shadowspawn.",
+    "categories": [
+      "Antagonists",
+      "Shadowspawn",
+      "Constructs",
+      "Balefired",
+      "Animals"
+    ]
+  },
+  "Deathgates": {
+    "page_name": "Deathgates",
+    "filename": "Deathgates.txt",
+    "aliases": [
+      "Deathgate"
+    ],
+    "type": "concept",
+    "is_weave": true,
+    "description": "Deathgates are a weave of the One Power using Spirit, Earth, and Fire that opens and closes gateways very rapidly, sending them speeding along the ground. Any Shadowspawn that pass through these Deathgates die because the Shadowspawn are constructs of the One Power, and cannot survive such a trip. The destination shifts every time a Deathgate opens, and the destinations themselves are random, preventing too many Shadowspawn corpses from accumulating in a single area. Like with a typical gateway, a Deathgate's size is determined by the amount of Power the user can hold.\n\nAlong with Arrows of Fire and Fire Blossoms, Deathgates are a recently rediscovered combat weave used by the Asha'man. These weaves were shown to Rand al'Thor when Lews Therin Telamon gained control of the One Power in the Battle at Lord Algarin's manor.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Delving": {
+    "page_name": "Delving",
+    "filename": "Delving.txt",
+    "type": "concept",
+    "is_weave": true,
+    "is_talent": true,
+    "description": "Delving is the name given to two different weaves involving the One Power. Both manifest themselves as Talents in some people.\n\nAmong the people of the Westlands, Delving is the act of \"feeling around\" with the One Power to look for injuries and illnesses. This is often used directly before Healing. The ability to Delve, and discover an illness or injury, does not necessarily mean one possesses sufficient Healing ability to cure it. Verin Mathwin thinks that she is unsurpassed at Delving. Nynaeve al'Meara also seems to possess this ability, allowing her to detect compulsion placed by Graendal on Lord Piqor Ramshalan, which allows Rand al'Thor to discover Graendal's hideout. Also, Nynaeve uses this to detect the madness of Naeff, Jahar Narishma, and Damer Flinn.\n\nAmong the Seanchan, Delving refers to the use of the Power by damane to search the earth for metal ores and such, and to extract the ores from the ground. This is a greatly sought-after ability for the Seanchan and damane who possess this Talent are highly prized.\n\nIt is thought that this was the traditional meaning of Delving, however as very few women have the talent, let alone sufficient strength in Earth, to perform this type of delving and the meaning has changed to mean to the talent described above. A reason for this could be that very, very few damane are used for healing due to their nature as possessions in Seanchan society.",
+    "categories": [
+      "Weaves",
+      "Talents"
+    ]
+  },
+  "Disguise": {
+    "page_name": "Disguise",
+    "filename": "Disguise.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Disguise is a weave of Spirit used to disguise a channeler's ability. In women, it stops others from sensing the ability to channel, as well as hiding the light of saidar and stopping men from feeling the goosebumps caused by women channeling. The effects of a man using the weave are unknown. Using inverted weaves is the same as disguising.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Domination Band": {
+    "page_name": "Domination Band",
+    "filename": "Domination_Band.txt",
+    "aliases": [
+      "Male a'dam",
+      "Sad bracelets"
+    ],
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The Domination Bands are a male version of the a'dam, a ter'angreal for controlling men who can channel. They take the form of a finely jointed collar and two bracelets of dull black metal. The Domination Bands are made of a form of cuendillar and are nearly impossible to destroy.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal"
+    ]
+  },
+  "Draghkar": {
+    "page_name": "Draghkar",
+    "filename": "Draghkar.txt",
+    "aliases": [
+      "Dragkhar"
+    ],
+    "type": "entity",
+    "is_shadowspawn": true,
+    "description": "The Draghkar are Shadowspawn that appear as humanoids with leathery wings and are used as assassins and overseers by the Dark One and his lieutenants.",
+    "categories": [
+      "Antagonists",
+      "Constructs",
+      "Shadowspawn",
+      "Wotwiki_featured_articles"
+    ]
+  },
+  "Dreamshard": {
+    "page_name": "Dreamshard",
+    "filename": "Dreamshard.txt",
+    "type": "place",
+    "description": "A dreamshard is a pocket dimension created by a powerful Dreamer or dreamwalker. It exists between the real world and Tel'aran'rhiod. The creator of a dreamshard has complete control over the contents of the dreamshard and the people that are brought into it. Ishamael was very fond of dreamshards, using them often.",
+    "categories": [
+      "Tel'aran'rhiod"
+    ]
+  },
+  "Dreamshards": {
+    "page_name": "Dreamshards",
+    "filename": "Dreamshards.txt",
+    "type": "place",
+    "categories": [
+      "Tel'aran'rhiod"
+    ]
+  },
+  "Dreamspike": {
+    "page_name": "Dreamspike",
+    "filename": "Dreamspike.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The dreamspike is a ter'angreal made during the Age of Legends.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Age_of_Legends"
+    ]
+  },
+  "Dreamwalking": {
+    "page_name": "Dreamwalking",
+    "filename": "Dreamwalking.txt",
+    "aliases": [
+      "Dreamwalker"
+    ],
+    "type": "place",
+    "description": "The Talent to enter Tel'aran'rhiod at will, Dreamwalking, is an ability unrelated to the One Power found in both channelers and non-channelers.\n\nThe terms \"Dreamwalker\" and \"Dreamwalking\" are not always capitalised.",
+    "categories": [
+      "Tel'aran'rhiod"
+    ]
+  },
+  "Eavesdropping": {
+    "page_name": "Eavesdropping",
+    "filename": "Eavesdropping.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Eavesdropping is a weave in the One Power; it is usually formed by flows of Air with a touch of Fire. It is used to listen and spy on a conversation from a distance, or from a room to a nearby room or in another floor inside a building. Moiraine used it a lot and also many other characters.\n\nSome specific Ward weaves can be used against this kind of spying.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Eight-pointed star": {
+    "page_name": "Eight-pointed star",
+    "filename": "Eight-pointed_star.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The golden eight-pointed star ornament is a ter'angreal in the possession of Cadsuane Melaidhrin as a part of her paralis-net.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal"
+    ]
+  },
+  "Fancloth ter'angreal": {
+    "page_name": "Fancloth ter'angreal",
+    "filename": "Fancloth_ter'angreal.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The fancloth ter'angreal is a ter'angreal in the possession of the White Tower.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Fat bald man angreal": {
+    "page_name": "Fat bald man angreal",
+    "filename": "Fat_bald_man_angreal.txt",
+    "aliases": [
+      "Fatman Angreal"
+    ],
+    "type": "power_object",
+    "object_type": "Angreal",
+    "description": "The fat little man angreal was found by Rand al'Thor in the Stone of Tear. It is the only known example of a male angreal compared to the multitude in the possession of women. It is shaped as a little fat man sitting cross-legged with a sword across his knees. It is carved of shiny dark green stone. Its size is most probably very small. Several times it is mentioned that Rand tucked it into his waistband or into the pocket of his coat.",
+    "categories": [
+      "Items_of_Power",
+      "Angreal",
+      "Short_pages"
+    ]
+  },
+  "Finder": {
+    "page_name": "Finder",
+    "filename": "Finder.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "A finder is a type of weave made with the One Power.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Fire ball": {
+    "page_name": "Fire ball",
+    "filename": "Fire_ball.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "The channeler uses a simple weave of fire to create the fire ball. This is one of the most common weaves in combat and proves to be very effective. This ball of fire travels from the location of the caster and detonates upon impact. The severity and effectiveness of this detonation varies widely and appears to be dependent upon a number of factors, one of which is a factor of strength with the One Power. It is noted several times through the series that this weave becomes less effective as the channeler becomes fatigued, indicating a wide degree of variation dependent upon the \"strength\" of the weave. One may assume that this refers to the thickness of the flows\n\nWhile it has been taught in the White Tower that this weave requires a throwing motion, the Aiel Wise Ones have exhibited an overall stronger variation of the weave which does not require physical movement.",
+    "categories": [
+      "Weaves"
+    ]
+  },
+  "Flame of Tar Valon": {
+    "page_name": "Flame of Tar Valon",
+    "filename": "Flame_of_Tar_Valon.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "For the chapter in The Great Hunt called \"The Flame of Tar Valon\", see The Great Hunt/Chapter 1 .\n\nThe Flame of Tar Valon is the official symbol of the White Tower and the Amyrlin Seat. It is the opposite of the Dragon's Fang.\n\nThe Flame is an ancient symbol, though its original meaning has been forgotten by present-day people.\n\nIn the Age of Legends, the Flame, along with the Dragon's Fang, was part of the ancient symbol of the Aes Sedai. Since the Breaking and the splitting of the Aes Sedai to remove the men, the Flame has taken on another meaning. It is no longer connected with female channelers by the common person, and its origins are lost to common knowledge by the passing of years, but superstition still regards the Flame as a sign of female Aes Sedai.\n\nThe Flame of Tar Valon is also a title of the Amyrlin Seat, often used when the Keeper of the Chronicles announces her to the Hall of the Tower, or in official correspondence.",
+    "categories": [
+      "Titles",
+      "Weaves",
+      "White_Tower",
+      "Symbols"
+    ]
+  },
+  "Flexible black rod": {
+    "page_name": "Flexible black rod",
+    "filename": "Flexible_black_rod.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The flexible black rod is a ter'angreal recovered from the Kin 's storeroom in Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Fluted black rod": {
+    "page_name": "Fluted black rod",
+    "filename": "Fluted_black_rod.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The fluted black rod is a ter'angreal that was stolen from the White Tower by Liandrin's Group of Black Sisters. It was used by Jeaine Caide against Nynaeve al'Meara in the Panarch's Palace in Tarabon and later by Asne Zeramene against the Andoran force that made a rescue attempt on the kidnapped Elayne Trakand.\n\nIt is assumed now in the custody of the Queen of Andor.",
+    "categories": [
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Folded Light": {
+    "page_name": "Folded Light",
+    "filename": "Folded_Light.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Folded Light is a weave that uses threads of Fire and Air.\n\nThis weave folds light around an object, such as a person, so that any attempt to view the object slides past it and behind it. This effectively renders the subject invisible.\n\nWhile typically stationary, it has been claimed that Rand uses this ability to mask his presence while he walks.",
+    "categories": [
+      "Weaves"
+    ]
+  },
+  "Glass blacksmith's puzzle": {
+    "page_name": "Glass blacksmith's puzzle",
+    "filename": "Glass_blacksmith's_puzzle.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The glass blacksmith's puzzle is a ter'angreal found in the Kin's Store Room in Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash",
+      "Short_pages"
+    ]
+  },
+  "Glass bracelet": {
+    "page_name": "Glass bracelet",
+    "filename": "Glass_bracelet.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The glass bracelet is a ter'angreal that was stolen from the White Tower by the Black Ajah.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Glass columns": {
+    "page_name": "Glass columns",
+    "filename": "Glass_columns.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The glass columns are a ter'angreal found in Rhuidean. They were among the ter'angreal and angreal entrusted to the Aiel during the Breaking of the World.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal"
+    ]
+  },
+  "Glass man": {
+    "page_name": "Glass man",
+    "filename": "Glass_man.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The glass man is a ter'angreal recovered from the Kin's Store Room in Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash",
+      "Short_pages"
+    ]
+  },
+  "Golden carp": {
+    "page_name": "Golden carp",
+    "filename": "Golden_carp.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The golden carp ornament is a ter'angreal in the possession of Cadsuane Melaidhrin as a part of her paralis-net.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Golden crescents": {
+    "page_name": "Golden crescents",
+    "filename": "Golden_crescents.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The golden crescents are a ter'angreal in the possession of Cadsuane Melaidhrin as part of her paralis-net.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Golden hummingbird": {
+    "page_name": "Golden hummingbird",
+    "filename": "Golden_hummingbird.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The golden hummingbird is a ter'angreal in the possession of Cadsuane Melaidhrin as a part of her paralis-net.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Golden jeweled bracelet": {
+    "page_name": "Golden jeweled bracelet",
+    "filename": "Golden_jeweled_bracelet.txt",
+    "aliases": [
+      "Golden bracelet",
+      "Red stone bracelet"
+    ],
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The golden jeweled bracelet is a ter'angreal in the possession of Nynaeve al'Meara. It was recovered from the Kin's Storeroom in the Rahad district of Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Golden sleek fish": {
+    "page_name": "Golden sleek fish",
+    "filename": "Golden_sleek_fish.txt",
+    "aliases": [
+      "Sleek fish"
+    ],
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The golden sleek fish ornament is a ter'angreal in the possession of Cadsuane Melaidhrin as a part of her paralis-net.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Golden swallow": {
+    "page_name": "Golden swallow",
+    "filename": "Golden_swallow.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The golden swallow is a ter'angreal in the possession of Cadsuane Melaidhrin as a part of her paralis-net.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Golden trout": {
+    "page_name": "Golden trout",
+    "filename": "Golden_trout.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The golden trout ornament is a ter'angreal in the possession of Cadsuane Melaidhrin as a part of her paralis-net.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Gold bracelet and rings": {
+    "page_name": "Gold bracelet and rings",
+    "filename": "Gold_bracelet_and_rings.txt",
+    "aliases": [
+      "Gold bracelet"
+    ],
+    "type": "power_object",
+    "object_type": "Angreal",
+    "description": "The Gold bracelet, attached to four gold finger rings by little chains, is a very powerful angreal aligned to Saidar the female half of the One Power. This strange jewelry was found in the Kin's Storeroom in Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ebou_Dari_Stash",
+      "Angreal",
+      "Short_pages"
+    ]
+  },
+  "Green stone disc": {
+    "page_name": "Green stone disc",
+    "filename": "Green_stone_disc.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The green stone disc is a ter'angreal created by Elayne Trakand. It was one of the first successful ter'angreal she made, and the only working copy out of the five of its like she attempted, with two doing nothing and two others making the user nauseous.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Guardian": {
+    "page_name": "Guardian",
+    "filename": "Guardian.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The Guardians of Far Madding is a ter'angreal that sits in the Hall of Council's chambers and prohibits channelling in Far Madding. It also detects if somehow a woman or a man could channel in the city e.g. using a Well.",
+    "categories": [
+      "Items_of_Power",
+      "Far_Madding",
+      "Ter'angreal"
+    ]
+  },
+  "Hardened Air": {
+    "page_name": "Hardened Air",
+    "filename": "Hardened_Air.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Flows of Air can be woven into the form of a three-dimensional object, or hardened air which can be used in a variety of ways; to hit, cut, stab people or to slice or peel things. This same weave is used to form tentacles or ties to move objects, or hold or restrain things and even to bind people. With them it is also possible to make a covering to shelter beneath or behind.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Healing": {
+    "page_name": "Healing",
+    "filename": "Healing.txt",
+    "aliases": [
+      "Heal",
+      "Healed",
+      "Healer"
+    ],
+    "type": "concept",
+    "is_weave": true,
+    "is_talent": true,
+    "description": "Healing is a Talent of channelers and also a method to cure physical or mental injuries and illnesses with the use of the One Power. Healing can be applied to both humans and animals.",
+    "categories": [
+      "Weaves",
+      "Citation_needed",
+      "Talents"
+    ]
+  },
+  "Heating": {
+    "page_name": "Heating",
+    "filename": "Heating.txt",
+    "aliases": [
+      "Heating a liquid",
+      "Heating the air"
+    ],
+    "type": "concept",
+    "is_weave": true,
+    "description": "Heating are weaves in the One Power.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Hedgehog": {
+    "page_name": "Hedgehog",
+    "filename": "Hedgehog.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The hedgehog is a ter'angreal that was stolen from the White Tower by Liandrin's Group of Black Sisters.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Helmet of metal feathers": {
+    "page_name": "Helmet of metal feathers",
+    "filename": "Helmet_of_metal_feathers.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The helmet of metal feathers is a ter'angreal that was recovered in the Kin's Store Room in Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash",
+      "Short_pages"
+    ]
+  },
+  "Insects control": {
+    "page_name": "Insects control",
+    "filename": "Insects_control.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Insects control is a weave in the One Power; it is used to attract or repel and generally to manipulate the behaviour of the insects. Moiraine used it against Lan sending to him hordes of ants; Moiraine also affirmed that this was one of the secret weaves of the Blue Ajah. But also Cadsuane know it very well and used it to repel swarms of flies from inside a barn.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Inverting": {
+    "page_name": "Inverting",
+    "filename": "Inverting.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Inverting is a means of hiding weaves of the One Power. An inverted weave is manipulated such that only the channeler that wove it can detect it.\n\nIt is first seen taught by Asmodean to Rand al'Thor, when he goes back to the Stone of Tear and inverts his weaves around Callandor.\n\nMoghedien, while trapped and collared by the a'dam, teaches Elayne and Nynaeve how to invert their weaves. They teach Egwene who in turn teaches the rest of the Aes Sedai in Salidar. Cadsuane had learned inversion sometime before the Battle near Shadar Logoth.\n\nThe act of inverting a weave is referred to as \"reversing\" by various Forsaken.",
+    "categories": [
+      "Weaves"
+    ]
+  },
+  "Iron disc": {
+    "page_name": "Iron disc",
+    "filename": "Iron_disc.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The iron disc is a ter'angreal that was stolen from the White Tower by Liandrin's Group of Black Sisters.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Ivory box": {
+    "page_name": "Ivory box",
+    "filename": "Ivory_box.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The ivory box is a ter'angreal that was found in the Kin's Storeroom in Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash",
+      "Short_pages"
+    ]
+  },
+  "Ivory bracelet": {
+    "page_name": "Ivory bracelet",
+    "filename": "Ivory_bracelet.txt",
+    "aliases": [
+      "Aged ivory bracelet"
+    ],
+    "type": "power_object",
+    "object_type": "Angreal",
+    "description": "The Ivory bracelet is an angreal aligned to saidar. It is in the shape of an acrobat bent backwards so his wrists are tied to his ankles.\n\nThe bracelet was found by Moiraine in Rhuidean and brought by her in Cairhien. During Moiraine and Lanfear fight on the docks, this angreal was put by the Aes Sedai over a chart to lure the Forsaken in the position to be pushed inside the twisted redstone doorframe which transported both to the land of the Finn.\n\nWhile there Moiraine bargained the possession of the bracelet with the Eelfinn and it is still in her possession.\n\nThis bracelet is a very powerful angreal, nearly strong enough to be considered a sa'angreal. Now that Moiraine's strength in saidar is dramatically reduced to the point that she wouldn’t be strong enough to be tested for Accepted, with the use of this bracelet she claimed that she could be more powerful than she was before being reduced.",
+    "categories": [
+      "Items_of_Power",
+      "Angreal",
+      "Short_pages"
+    ]
+  },
+  "Ivory knife": {
+    "page_name": "Ivory knife",
+    "filename": "Ivory_knife.txt",
+    "type": "power_object",
+    "object_type": "Angreal",
+    "description": "The small, carved Ivory knife is an angreal aligned to saidar. After Graendal lost her Little Gold Ring angreal during the destruction of Natrin's Barrow, she obtained this new angreal by Mesaana trading it with precious informations.\n\nIt is not known how strong this angreal could be, most probably not much, but still enough to step Graendal up over the top male level of strength.",
+    "categories": [
+      "Items_of_Power",
+      "Angreal",
+      "Short_pages"
+    ]
+  },
+  "Ivory seated woman": {
+    "page_name": "Ivory seated woman",
+    "filename": "Ivory_seated_woman.txt",
+    "type": "power_object",
+    "object_type": "Angreal",
+    "description": "The ivory seated woman is an angreal aligned to saidar. It has the shape of seated woman covered by her own hair, it was found in the Kin's Store Room from Ebou Dar. It is the weakest of the three angreal found there.",
+    "categories": [
+      "Items_of_Power",
+      "Ebou_Dari_Stash",
+      "Citation_needed",
+      "Angreal",
+      "Short_pages"
+    ]
+  },
+  "Jeweled belt": {
+    "page_name": "Jeweled belt",
+    "filename": "Jeweled_belt.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The jeweled belt is a ter'angreal in the possession of Nynaeve al'Meara. It was recovered from the Kin's Storeroom in the Rahad district of Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash",
+      "Short_pages"
+    ]
+  },
+  "Jewelry Sets": {
+    "page_name": "Jewelry Sets",
+    "filename": "Jewelry_Sets.txt",
+    "aliases": [
+      "Jewelry set"
+    ],
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The jewelry sets are ter'angreal recovered from the Kin 's store room in Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash",
+      "Short_pages"
+    ]
+  },
+  "Jumara (Shadowspawn)": {
+    "page_name": "Jumara (Shadowspawn)",
+    "filename": "Jumara_(Shadowspawn).txt",
+    "aliases": [
+      "Jumara'nai",
+      "Worm"
+    ],
+    "type": "entity",
+    "is_shadowspawn": true,
+    "description": "A jumara, also known as a Worm, is a type of Shadowspawn that was created by Aginor sometime before or during the War of Power, and found in the Blight. They can live for thousands of years and get stronger if the One Power is used against them. The only source depicting any direct encounter with a jumara, juvenile or mature, is the River of Souls sequence that was cut from A Memory of Light.",
+    "categories": [
+      "Antagonists",
+      "Constructs",
+      "Shadowspawn"
+    ]
+  },
+  "Keeping": {
+    "page_name": "Keeping",
+    "filename": "Keeping.txt",
+    "type": "concept",
+    "power_related": true,
+    "is_weave": true,
+    "description": "K eeping is special weave of the One Power and were used to preserve things. It adheres of the surface and somehow time is not passing inside of it. Using on a breathing creature would certainly kill it.\n\nKeepings were usually used on food, preserving them for as long as is needed. With a constant Keeping present, food can go unspoiled for years on end. Keepings do need to be reinforced every so often, depending on the length of its existence and the quantity that it has been placed on.\n\nAs the Last Battle was coming the Dark One had stronger and stronger touch on the world. Even Keeping was not able to preserve food from getting spoiled.",
+    "categories": [
+      "Weaves",
+      "Citation_needed",
+      "One_Power",
+      "Short_pages"
+    ]
+  },
+  "Leveling the ground": {
+    "page_name": "Leveling the ground",
+    "filename": "Leveling_the_ground.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Leveling the ground is a weave in the One Power based mainly in threads of Earth. It was used by some Asha'man Soldiers near the Black Tower to prepare rugged grounds for growing crops.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Light": {
+    "page_name": "Light",
+    "filename": "Light.txt",
+    "aliases": [
+      "The Light"
+    ],
+    "type": "other",
+    "description": "The Light is the force of good in the world, considered to be \"from the Creator,\" and the antithesis of the Dark One 's powers. Randland 's population is unusually polarized, with very few people not feeling a strong allegiance to either the Shadow or the Light. The Light is less manifest in the world in concrete terms than the Shadow is, as the Creator has taken a somewhat hands-off approach to his/her/their/its creation. This is contrasted with the Dark One, who takes an active role in the world, with a voice and a quasi-physical (if artificially restrained) presence.",
+    "categories": [
+      "Metaphysics"
+    ]
+  },
+  "Lily brooch": {
+    "page_name": "Lily brooch",
+    "filename": "Lily_brooch.txt",
+    "type": "power_object",
+    "object_type": "Angreal",
+    "description": "The Lily brooch is a female angreal in the shape of a flower similar to a lily but too-many-petaled. It seems to be carved from a stone.\n\nIt is considered weaker than average. If Cadsuane 's weak Shrike angreal enables her to reach the strength of the top male level, it can be assumed that this brooch permitted Verin to reach almost the top female levels.\n\nVerin had secretly kept the flower brooch for forty years. It is not known if she discovered it somewhere or if she snatched it from the White Tower angreal storeroom.\n\nShe used it for added strength in weaving her mild Compulsion on the captured Aes Sedai in the Aiel camp near Cairhien.\n\nVerin later used the flower brooch to open a gateway so that Mat and the Band of the Red Hand can Travel to Caemlyn.",
+    "categories": [
+      "Items_of_Power",
+      "Angreal",
+      "Short_pages"
+    ]
+  },
+  "Liquids manipulation": {
+    "page_name": "Liquids manipulation",
+    "filename": "Liquids_manipulation.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Liquids manipulation are weaves in the One Power; they are composed primarily by threads of element Water. This kind of weaves are used to attract, repel, collect and generally manipulate all the kind of liquid substances. For example Moiraine used this weaves to splash Lan, attracting a little pillar of water from a near pond. Siuan Sanche used them to expel some ink from a tissue. Nynaeve used them to dry her dress by sending away all the water that was wetting it.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Little Gold Ring": {
+    "page_name": "Little Gold Ring",
+    "filename": "Little_Gold_Ring.txt",
+    "type": "power_object",
+    "object_type": "Angreal",
+    "description": "The Little Gold Ring was a weak angreal aligned to saidar. It was a very little plain ring of gold that entered only in the small finger of Graendal. she found it searching in Sammael 's quarters in Illian while the Forsaken was fighting against Rand in Shadar Logoth, or just a little time after. Previously the ring was probably stolen from the Kin's Storeroom in Ebou Dar by a group of Darkfriends and given to Sammael.\n\nGraendal used it against Moghedien and Cyndane when they come to give her orders from the Nae'blis. She probably used it also in the Battle near Shadar Logoth against the circle led by Verin.\n\nThe ring was destroyed by Rand's balefire assault on Graendal's fortress of Natrin's Barrow.",
+    "categories": [
+      "Items_of_Power",
+      "Angreal"
+    ]
+  },
+  "Madness of the Taint": {
+    "page_name": "Madness of the Taint",
+    "filename": "Madness_of_the_Taint.txt",
+    "type": "concept",
+    "description": "After the Hundred Companions and Lews Therin sealed the Dark One back up with the Seven Seals, in the last moment the Dark One struck back and tainted Saidin with a darkness that overwhelmed all those channeling at the Bore at that time, driving them instantly mad, to tear up the world and create chaos, ending the Age of Legends.As those men who weren't with these doomed survivors of the assault on Shayol Ghul were exposed to the Taint by drawing on Saidin, these men slowly were consumed with the same madness that turned Lews Therin Telamon into the Kinslayer.",
+    "categories": [
+      "Saidin",
+      "Taint"
+    ]
+  },
+  "Mah'alleinir": {
+    "page_name": "Mah'alleinir",
+    "filename": "Mah'alleinir.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "Mah'alleinir is the war hammer of Perrin Aybara. It is a Power-wrought weapon and its name means \"He who soars\" in the Old Tongue. It is named after Hopper who died the final death in Tel'aran'rhiod shortly before its creation.\n\nIt measures about four feet long, has a large brick shaped head, a long metal handle, and the imprint of a leaping wolf on the side of its head. It is described as resembling an outsized blacksmith's hammer more than it does a \"traditional\" warhammer, with a wedge-shaped back in place of the typical armor-piercing spike common on typical warhammer designs.\n\nIt was the first Power-wrought weapon to be made since the Trolloc Wars, and was made with the help of both saidin (from Asha'man Fager Neald ) and saidar (a circle of Wise Ones ). When used by Perrin, it feels warm to the touch, but it seems to burn both Shadowspawn and anyone on the receiving end of its blows. It has also proven capable of permanently killing Darkhounds.",
+    "categories": [
+      "Items_of_Power",
+      "Weapons",
+      "Ter'angreal",
+      "Special_objects"
+    ]
+  },
+  "Making a Bridge": {
+    "page_name": "Making a Bridge",
+    "filename": "Making_a_Bridge.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Making a Bridge is a weave of the One Power; it is formed by a combination of threads of Air with an intricate lace of Fire; after the formation of the bridge, it can carry any amount of weight. It was formed by Rand over the river Alguenya between the boat where he was and a boat of the Sea Folk.\n\nFor some reason, despite Rand's strength he can only make a bridge about twenty paces long; any longer and it would \"fall apart at the first step\". He also notes that a woman could use saidar to make a longer bridge, even if she did not have as much strength.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Making Fog": {
+    "page_name": "Making Fog",
+    "filename": "Making_Fog.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Making Fog is a weave in the One Power; it combines threads of Water and Air and it needs a great resource of water in the vicinity. It was used by Moiraine to form a wall of fog to slow down the followers during the flee from the Two Rivers.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Making Ice": {
+    "page_name": "Making Ice",
+    "filename": "Making_Ice.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Making Ice is a weave in the One Power. Ice is very simple to make with the One Power, it is drawn from the air with a weave of Water and Air.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Making Light": {
+    "page_name": "Making Light",
+    "filename": "Making_Light.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Making Light is a weave in the One Power; it is formed by a combination of threads of Fire and Air. For example it is used by Aes Sedai to illuminate some dark place forming balls of light floating around them. The lights can be coloured as demonstrated by Egwene forming balls of light in the colours of every Ajah.",
+    "categories": [
+      "Weaves"
+    ]
+  },
+  "Masking the Power": {
+    "page_name": "Masking the Power",
+    "filename": "Masking_the_Power.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Masking the Power or Masking the Spark is a weave of the One Power; it is a permanent form of Disguise, that is used to mask the ability to channel to the other channellers. For example it was used by Moghedien in many times: when she poised as a servant among some Black Ajah sisters, when she assumed the identity of Marigan, when she infiltrated the Seanchan high command as a spy. It was also used by Semirhage when she assumed the identity of Anath.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Metal balls": {
+    "page_name": "Metal balls",
+    "filename": "Metal_balls.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The metal balls are a ter'angreal recovered from the Kin's Storeroom in Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash",
+      "Short_pages"
+    ]
+  },
+  "Metal gauntlets": {
+    "page_name": "Metal gauntlets",
+    "filename": "Metal_gauntlets.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The metal gauntlets are a ter'angreal in the possession of the White Tower.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Metal helmet": {
+    "page_name": "Metal helmet",
+    "filename": "Metal_helmet.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The metal helmet is a ter'angreal recovered from the Kin's Storeroom in Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash",
+      "Short_pages"
+    ]
+  },
+  "Milking Tears": {
+    "page_name": "Milking Tears",
+    "filename": "Milking_Tears.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Milking Tears is a lost weave from the Age of Legends remembered by Moghedien. Since the weave is lost, it is impossible to explain how it worked and what its effects were, but the name suggests that controlling emotions might be involved.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Mirror of Mists": {
+    "page_name": "Mirror of Mists",
+    "filename": "Mirror_of_Mists.txt",
+    "aliases": [
+      "Illusion",
+      "Mask of Mirrors"
+    ],
+    "type": "concept",
+    "is_weave": true,
+    "description": "The Mirror of Mists, called also Illusion and known as the Mask of Mirrors in Age of Legends, has several functions, each performed by a variation of the weave. The effect of this weave is the ability to alter one's appearance.\n\nIt has been reported that according to an interview, this weave can also be used to alter one's voice.",
+    "categories": [
+      "Weaves"
+    ]
+  },
+  "Myrddraal": {
+    "page_name": "Myrddraal",
+    "filename": "Myrddraal.txt",
+    "aliases": [
+      "Eyeless",
+      "Eyeless ones",
+      "Fade",
+      "Fades",
+      "Halfman",
+      "Lurk",
+      "Myddraal",
+      "Myrrdraal",
+      "Neverborn",
+      "Shadowman"
+    ],
+    "type": "entity",
+    "is_shadowspawn": true,
+    "description": "Myrddraal (pronounced: MUHRD-draal), often known as Fades, are Shadowspawn, muscular and serpent-quick, with lank black hair and waxy-white skin. They have no eyes, but can \"see\" with perfect clarity. Their appearance never varies; they are always male in appearance, with identical features and builds described as being like that of a tall man. They were the battle leaders of the Shadow during the imprisonment of the Forsaken, after the demise of the Dreadlords.",
+    "categories": [
+      "Antagonists",
+      "Shadowspawn",
+      "Constructs",
+      "Races",
+      "Citation_needed",
+      "Wotwiki_featured_articles"
+    ]
+  },
+  "Night's Shade": {
+    "page_name": "Night's Shade",
+    "filename": "Night's_Shade.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Night's Shade is a not very known weave that is activated by the Bloodknife ring, a ter'angreal. It provides the ring wearer with more strength and speed and allows them to better blend in with the shadows. However, the granted attributes come at the cost of the user's life. In fact, the weave rapidly consumes the vital resources of the person activating it so their life is shortened to only few weeks after the first use. The weave is activated by dropping the user’s blood over the ring.\n\nThe name of this weave is from the Age of Legends and it was mentioned by Demandred while duelling with Gawyn, who was using the ring.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Oath Rod": {
+    "page_name": "Oath Rod",
+    "filename": "Oath_Rod.txt",
+    "aliases": [
+      "Ageless look",
+      "Binder"
+    ],
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The Oath Rod is a ter'angreal that makes oaths sworn upon it unbreakable. Its origins are in the Age of Legends, in which it was called a Binder. It can be used only on channelers.\n\nIn the Third Age there are only two binders known. They are smooth, ivory-white cylinders, a foot long and wrist-thick with odd, cursive script carved on one flat end. They feel almost like glass, cool to the touch. Every one is activated by a thin thread of Spirit added to the numeral that is carved into it.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "White_Tower"
+    ]
+  },
+  "One Power": {
+    "page_name": "One Power",
+    "filename": "One_Power.txt",
+    "aliases": [
+      "Channel",
+      "The True Source",
+      "True Source"
+    ],
+    "type": "concept",
+    "power_related": true,
+    "description": "The One Power emanates from the True Source, which is made up of two complementary parts: saidin, the male half, and saidar, the female half. People who can wield it are called channelers.\n\nFor a list of all known strengths given in The Wheel of Time Companion, see One Power strength rankings.",
+    "categories": [
+      "Metaphysics",
+      "One_Power"
+    ]
+  },
+  "Oval ring": {
+    "page_name": "Oval ring",
+    "filename": "Oval_ring.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The oval ring is a ter'angreal in possession of the White Tower.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Paralis-net": {
+    "page_name": "Paralis-net",
+    "filename": "Paralis-net.txt",
+    "type": "power_object",
+    "object_type": "Angreal",
+    "description": "A paralis-net is a type of ter'angreal set device first created during the Age of Legends. Specifically, it is a ter'angreal platform on which a group of angreal and ter'angreal can be worn and/or used together as a complete set.\n\nSemirhage reveals the name of such a set as a paralis-net.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Citation_needed",
+      "Angreal"
+    ]
+  },
+  "Peaceful illusions ter'angreal": {
+    "page_name": "Peaceful illusions ter'angreal",
+    "filename": "Peaceful_illusions_ter'angreal.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The peaceful illusions ter'angreal is a ter'angreal in the possession of the White Tower.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Protective Cocoon": {
+    "page_name": "Protective Cocoon",
+    "filename": "Protective_Cocoon.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "The Protective Cocoon is a weave in the One Power. It is formed using flows of Air Fire and Earth to protect the person inside the cocoon. It can repel any kind of harmful One Power attack apart from Balefire. But it has a disadvantage: inside the cocoon the fresh air is consumed very fast so it can be used only for a very short time.\n\nRand used this weave in the Sun Palace in Cairhien to protect himself after the attack from some renegade Asha'man.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Protective Whirlwind": {
+    "page_name": "Protective Whirlwind",
+    "filename": "Protective_Whirlwind.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "The Protective Whirlwind is a weave in the One Power, it is formed mainly by flows of Air. It was used by Alise, linked to others Kinswomen, to protect Queen Elayne when she took possession of the Kingdom of Cairhien. It was conceived specifically after a request by Birgitte to repel arrow attacks from a distance, when the Queen was on a open ground outside the city walls.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Red crystal chair": {
+    "page_name": "Red crystal chair",
+    "filename": "Red_crystal_chair.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The red crystal chair is a ter'angreal that was found in Rhuidean.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Red rod": {
+    "page_name": "Red rod",
+    "filename": "Red_rod.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The red rod is a ter'angreal that was recovered from the Kin's Storeroom in Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash",
+      "Short_pages"
+    ]
+  },
+  "Refresh": {
+    "page_name": "Refresh",
+    "filename": "Refresh.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Refresh is a weave associated with Healing. While it does not remove a targets exhaustion, it does mask it, allowing a person or animal to perform as if they are well rested. Care must be taken with this weave as a subject of the weave, such as a horse, becomes mostly ignorant of their true physical state and may run up until the time that they fall over dead from exhaustion.",
+    "categories": [
+      "Weaves",
+      "Updates_needed"
+    ]
+  },
+  "Reincarnation": {
+    "page_name": "Reincarnation",
+    "filename": "Reincarnation.txt",
+    "aliases": [
+      "Rebirth",
+      "Reborn"
+    ],
+    "type": "other",
+    "description": "Reincarnation, or rebirth, is the process by which a soul is born again, either through the Pattern or the Dark One.",
+    "categories": [
+      "Metaphysics"
+    ]
+  },
+  "Relativity in The Wheel of Time": {
+    "page_name": "Relativity in The Wheel of Time",
+    "filename": "Relativity_in_The_Wheel_of_Time.txt",
+    "type": "other",
+    "description": "The passage of time is somewhat fluid in the world of The Wheel of Time. However, there are limits to this and the existence of a little time dilation here or a past-changing balefire blast there do not indicate that \"anything goes\" with regards to the passage of time and causality within Robert Jordan's world. As with all other supernatural or pseudo-scientific phenomena, there are fairly clearly defined limits on what is and isn't possible.",
+    "categories": [
+      "Metaphysics"
+    ]
+  },
+  "Ring with green stone": {
+    "page_name": "Ring with green stone",
+    "filename": "Ring_with_green_stone.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The ring is a ter'angreal in the possession of Nynaeve al'Meara. It was recovered from the Kin's Storeroom in the Rahad district of Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash",
+      "Short_pages"
+    ]
+  },
+  "Riven Earth": {
+    "page_name": "Riven Earth",
+    "filename": "Riven_Earth.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Riven Earth is a weave uses flows of Earth and Fire.\n\nThis weave is associated with the Talent Earth Singing. It affects a stretch of ground by causing it to explode. The earth erupts and causes devastation to any ground force, such as an army, which is unfortunate enough to stand above it. What is left behind is a long line of charred and churned earth. This weave does not have to start at the channelers location, but can run perpendicular.\n\nRiven Earth is a term used in The Wheel of Time Roleplaying Game to refer to a combat weave which is used prolifically by both the Seanchan and the Asha'man.",
+    "categories": [
+      "Weaves"
+    ]
+  },
+  "Robed woman angreal": {
+    "page_name": "Robed woman angreal",
+    "filename": "Robed_woman_angreal.txt",
+    "aliases": [
+      "Moiraine's angreal"
+    ],
+    "type": "power_object",
+    "object_type": "Angreal",
+    "description": "The robed woman angreal is an angreal used many times by Moiraine Damodred. It seems to be made from a smooth, dark ivory. It is a little statue of a woman in flowing robes, with long hair that falls about her shoulders.\n\nIt is described with an average strength, however if Cadsuane 's weak Shrike angreal enables her to reach the strength of the top male level, it can be assumed that this statuette enabled Moiraine to reach almost the top female levels.\n\nThe first time Moiraine used it to heal Rand al'Thor 's father, Tam al'Thor, from a wound inflicted by a Trolloc weapon, a wound that would have otherwise been fatal. It was seen used last time by Moiraine to heal Shienaran soldiers in the Mountains of Mist, but now it is no longer in Moraine's hand, probably she returned it to Siuan by Min, who was sent to the White Tower with important informations for the Amyrlin Seat.",
+    "categories": [
+      "Items_of_Power",
+      "Angreal"
+    ]
+  },
+  "Root-like carving": {
+    "page_name": "Root-like carving",
+    "filename": "Root-like_carving.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The root-like carving is a ter'angreal recovered from the Kin's Storeroom in Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash",
+      "Short_pages"
+    ]
+  },
+  "Sa'angreal": {
+    "page_name": "Sa'angreal",
+    "filename": "Sa'angreal.txt",
+    "type": "power_object",
+    "object_type": "Sa'angreal",
+    "description": "Sa'angreal (pronounced: SAH-ahn-GREE-ahl; /ˌsɑː.ʔɑŋˈgɹiː.aɫ/) are objects similar to angreal in that they allow channelers to use more of the One Power safely than they could unaided, but they are much stronger and rarer.\n\nThe amount of Power that could be wielded with the aid of a sa'angreal in comparison to the power with the aid of an angreal is analogous to what a channeler can wield unaided versus with an angreal. Sa'angreal vary in strength, but they are similar to angreal in that they multiply the power of the channeler using them; the stronger the channeler, the more power they will be able to draw through a sa'angreal. Also like angreal, sa'angreal are either attuned to saidar or saidin; no examples have been found that can magnify both. For unknown reasons, sa'angreal are generally larger than angreal, and any crystal in their construction glows while the objects are in use.\n\nBy the Third Age, they are much rarer than the already rare angreal. In the Age of Legends, they were more common. During the Breaking of the World, Aes Sedai gave wagons of objects to the Da'shain Aiel in Paaran Disen with orders to take them to a safe place.",
+    "categories": [
+      "Items_of_Power",
+      "Sa'angreal",
+      "Parallels"
+    ]
+  },
+  "Sakarnen": {
+    "page_name": "Sakarnen",
+    "filename": "Sakarnen.txt",
+    "type": "power_object",
+    "object_type": "Sa'angreal",
+    "description": "Sakarnen (meaning \"causer or instrument of greatest punishment\" in the Old Tongue ), also known as D'jedt or simply the Scepter during the Age of Legends, is a male sa'angreal used by the forces of the Shadow during the Last Battle. Sakarnen is the second-most powerful sa'angreal ever made for saidin; more powerful than Callandor, but not as powerful as the male Choedan Kal. It is in the shape of a scepter with an hourglass-shaped goblet affixed atop it, made entirely of gold. The sa'angreal can be separated into two pieces; a golden rod as long as a man's forearm, splaying out into a disc shape just below the end, and a golden cup that can be locked into place by sliding it down the rod.\n\nDemandred claimed to have bonded Sakarnen to himself, and that channeling the One Power through it against himself would cause it to burn the channeler from the Pattern. Whether this was a bluff or the sa'angreal can actually be attuned to a person remains unknown. M'Hael believed that channeling through Sakarnen caused more than just the regular fatigue brought on by channeling the Power.",
+    "categories": [
+      "Items_of_Power",
+      "Sa'angreal"
+    ]
+  },
+  "Sapphire ring": {
+    "page_name": "Sapphire ring",
+    "filename": "Sapphire_ring.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The sapphire ring is a ter'angreal in the possession of Nynaeve al'Meara. It was recovered from the Kin's Storeroom in the Rahad district of Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash",
+      "Short_pages"
+    ]
+  },
+  "Seed": {
+    "page_name": "Seed",
+    "filename": "Seed.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "A Seed is a ter'angreal which is used to create an angreal. The crafter uses the ter'angreal to pour the One Power for a very long period into an empty vessel. The process is said to greatly weaken the channeler that created the angreal for several months.\n\nJust prior to the Last Battle Rand al'Thor gave a Seed to Elayne Trakand, as his last gift, revealing to her the existence of such items and how to use them. The one she is given takes the form of a small statue of a woman standing upright, with a shawl about her shoulders, though she does not look like an Aes Sedai. The woman has a mature face, aged and wise, with a wise look about her and a smile on her face.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Severing": {
+    "page_name": "Severing",
+    "filename": "Severing.txt",
+    "aliases": [
+      "Burning out",
+      "Gentle",
+      "Gentling",
+      "Still",
+      "Stilled",
+      "Stilling"
+    ],
+    "type": "concept",
+    "power_related": true,
+    "is_weave": true,
+    "description": "Severing is an archaic gender-neutral term from the Age of Legends for cutting a channeler off permanently from the One Power thus rendering them incapable of Channeling. It is a weave of pure Spirit.\n\nThe more common New Era terms are stilling when applied to a woman, gentling for a man, and \" burning out \" when it occurs by accident.",
+    "categories": [
+      "Weaves",
+      "One_Power"
+    ]
+  },
+  "Shadow-Forger": {
+    "page_name": "Shadow-Forger",
+    "filename": "Shadow-Forger.txt",
+    "aliases": [
+      "Forger",
+      "Forgers",
+      "Thakan'dar blade"
+    ],
+    "type": "entity",
+    "is_shadowspawn": true,
+    "description": "Shadow-Forgers are man-shaped entities which work in the forges of Thakan'dar. Demandred refers to them as forgers (lower case). It is assumed, though never stated, that they were also created by Aginor.",
+    "categories": [
+      "Antagonists",
+      "Constructs",
+      "Citation_needed",
+      "Shadowspawn"
+    ]
+  },
+  "Shadow": {
+    "page_name": "Shadow",
+    "filename": "Shadow.txt",
+    "type": "other",
+    "description": "The Shadow is the manifestation of evil in the world and is used as a metonym for the power and demesne of the Dark One and his servants. The battle between good and evil is often referred to as Light vs. Shadow.",
+    "categories": [
+      "Metaphysics",
+      "Short_pages"
+    ]
+  },
+  "Shadowed moon": {
+    "page_name": "Shadowed moon",
+    "filename": "Shadowed_moon.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The golden shadowed moon ornament is a ter'angreal in the possession of Cadsuane Melaidhrin as a part of her paralis-net.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Shadowspawn": {
+    "page_name": "Shadowspawn",
+    "filename": "Shadowspawn.txt",
+    "aliases": [
+      "Cafar"
+    ],
+    "type": "entity",
+    "is_shadowspawn": true,
+    "description": "Shadowspawn (occasionally \" Shadowwrought \" ) is a generic term for creatures of the Dark One. Different varieties often have very little in common with each other except that nearly all of them will instantly die if they attempt to pass through a gateway. Most are a form of artificially created life which were known as constructs in the Age of Legends, and virtually all were created by the Forsaken known as Aginor. Others were created later by Dreadlords.",
+    "categories": [
+      "Antagonists",
+      "Constructs",
+      "Citation_needed",
+      "Shadowspawn"
+    ]
+  },
+  "Shielding": {
+    "page_name": "Shielding",
+    "filename": "Shielding.txt",
+    "aliases": [
+      "Shield"
+    ],
+    "type": "concept",
+    "power_related": true,
+    "is_weave": true,
+    "description": "Shielding is the act of forming a weave that will block another channeler from accessing the One Power, though the blocked channeler will still be able to sense it. During the Age of Legends, the weave was referred to as a buffer. The act of shielding is an incredibly useful tactic when a channeling foe needs to be subdued. It is a complex weave of Spirit.\n\nWhile any person who channels can lay a shield on another, if the one being shielded is much stronger in the power than the other, the shield can be broken through.\n\nA shield placed upon a person who can channel can be tied off and left, though such a weave can eventually be broken by someone with enough patience or pain tolerance. However, the more complex the weaves in the shield are, the harder it is for even another channeler to undo with the power. Shielding weaves can also be made semi-permanent if tied off expertly, but will still eventually break, so is not as final as severing.\n\nIt is possible to be exceptionally talented with shielding. An individual with this talent is able to hold a shield that even a much stronger channeler cannot break through. Instead of breaking, the shield stretches and bends. Berowin is the only person with this talent that is mentioned in the books, and while her strength is comparable to that of the weakest Aes Sedai, she successfully holds two shields on stronger channelers as Nynaeve and Elayne, and both at the same time. Berowin claims she would be able to hold a shield even on one of the Forsaken. Such talent with shielding is either unique to Berowin or extremely uncommon, as it seems Nynaeve was not prepared for it despite her time studying as Accepted; she considers it impossible. It is unknown if this shield will break eventually.\n\nTraditionally, to overwhelm the power of the strongest male channelers (the Dragon Reborn or some False Dragon ) a shield formed by the power of a full circle of thirteen Aes Sedai is needed, and a circle of six Sisters to maintain it.\n\nTo maintain a shield over the strongest female channelers a circle of two Aes Sedai is usually enough. However, in the case of the captured Semirhage, Cadsuane decided to always use a circle of three Sisters.",
+    "categories": [
+      "Weaves",
+      "One_Power"
+    ]
+  },
+  "Shield of Air": {
+    "page_name": "Shield of Air",
+    "filename": "Shield_of_Air.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "The Shield of Air is a weave in the One Power; it is a specific kind of the Hardened Air weave, and it is used as protection against enemy attacks.\n\nThe shield can take any shape and dimension, from a simple wall to a great dome over a large portion of the ground. Depending on its hardness it can repel totally a projectile from an adversary or more simply slow the run of some arrows, to make them drop on the ground before they can touch their objective harmfully.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Shrike": {
+    "page_name": "Shrike",
+    "filename": "Shrike.txt",
+    "type": "power_object",
+    "object_type": "Angreal",
+    "description": "Among Cadsuane 's hair ornaments (a Paralis-net set) there is a golden bird that looks \"a little like a shrike \" and which is an angreal aligned to saidar; it is not very powerful but still stepped her up to the top male level of strength, above any unaided woman.",
+    "categories": [
+      "Items_of_Power",
+      "Angreal",
+      "Short_pages"
+    ]
+  },
+  "Silver arches": {
+    "page_name": "Silver arches",
+    "filename": "Silver_arches.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The silver arches are a ter'angreal made of of three connected arches. They are in the possession of the White Tower. The original purpose of the arches is unknown, but it is now used in the test to raise a novice to Accepted.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal"
+    ]
+  },
+  "Silver foxhead medallion": {
+    "page_name": "Silver foxhead medallion",
+    "filename": "Silver_foxhead_medallion.txt",
+    "aliases": [
+      "Foxhead Medallion"
+    ],
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "For the Towers of Midnight chapter by a similar name, see Foxheads .\n\nThe silver foxhead medallion is a ter'angreal that was given to Mat Cauthon when he emerged from the Rhuidean twisted doorframe ter'angreal. It is one of his most prized possessions, and he keeps it on or with him almost all the time, though he did once offer it as protection to Elayne Trakand and Nynaeve al'Meara, and he eventually agreed to let Elayne study it in return for a favour.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Aelfinn_and_Eelfinn"
+    ]
+  },
+  "Silver ring": {
+    "page_name": "Silver ring",
+    "filename": "Silver_ring.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The silver ring is a ter'angreal in the possession of Elayne Trakand. It was recently held by Ispan Shefar, but had it taken upon her capture as a Black sister.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Silver rose medallions": {
+    "page_name": "Silver rose medallions",
+    "filename": "Silver_rose_medallions.txt",
+    "aliases": [
+      "Silver rose"
+    ],
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The silver rose medallions are a number of ter'angreal made by Elayne Trakand copying the properties of Mat 's foxhead medallion.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Six-pointed star": {
+    "page_name": "Six-pointed star",
+    "filename": "Six-pointed_star.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The golden six-pointed star ornament is a ter'angreal in the possession of Cadsuane Melaidhrin as a part of her paralis-net.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Parallels",
+      "Short_pages"
+    ]
+  },
+  "Six spotted dice": {
+    "page_name": "Six spotted dice",
+    "filename": "Six_spotted_dice.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The six spotted dice are a ter'angreal that was stolen from the White Tower by Liandrin's Group of Black Sisters.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Skimming": {
+    "page_name": "Skimming",
+    "filename": "Skimming.txt",
+    "type": "concept",
+    "is_weave": true,
+    "is_talent": true,
+    "description": "Skimming is a specialized use of the One Power. It is the simplest form of Traveling, but while the ability to Travel is considered a Talent, the ability for Skimming is not and all channelers who know the weave can use it when the required strength is provided.\n\nSkimming is performed by opening a gateway to a pitch dark area where the user creates a platform, gets on it, and moves in any direction he or she wishes. If anyone falls off that platform, that person will fall forever and die of starvation or sheer terror, unless he or she can channel another platform to stop the fall.\n\nAs Skimming is a more indirect version of Traveling, the channeler does not need to know his or her surroundings and destination quite as thoroughly. Some familiarity with the area is still required, but it can usually be gained with only about a half hour of examination. If the destination is completely unfamiliar, the channeler can still use skimming, but must estimate the distance and direction and will not be able to open a gateway in any specific place.\n\nSkimming was first rediscovered in the Third Age by Rand al'Thor. It is mentioned in A Crown of Swords that unless two people attempt to skim with exactly the same start and destination, they will never see each other while skimming. This seems like it would make Rand encountering Asmodean while skimming to Rhuidean very unlikely, but he is Ta'veren after all.\n\nAmong female channelers, Egwene al'Vere holds the credit after discovering Traveling and then being taught the alteration by Moghedien, as knowledge of Skimming's existence hadn't survived to the Third Age.\n\nThe name may have come from the Age of Legends or Asmodean.",
+    "categories": [
+      "Weaves",
+      "Talents"
+    ]
+  },
+  "Sky Lights": {
+    "page_name": "Sky Lights",
+    "filename": "Sky_Lights.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Sky Lights are similar to fireworks, only made with the One Power.",
+    "categories": [
+      "Weaves",
+      "Seanchan_culture"
+    ]
+  },
+  "Sleepweaver": {
+    "page_name": "Sleepweaver",
+    "filename": "Sleepweaver.txt",
+    "aliases": [
+      "Dream ter'angreal",
+      "Stone ring",
+      "Striped stone ring"
+    ],
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "A sleepweaver is a ter'angreal that provides the user access to Tel'aran'rhiod. The most well known sleepweaver in the series was given to Egwene al'Vere by Verin Mathwin and was studied by Corianin Nedeal, the last Dreamer of the White Tower before Egwene. Other sleepweavers still in existence come in many shapes described in the list below.\n\nThe purpose of all sleepweavers is to allow the user to enter the World of Dreams while sleeping. They differ by shape, material, and requirements for usage (some require channeling of Spirit, some require no channeling). Sleepweavers were apparently made during the Age of Legends to be used as practice for dreamwalking, and as such, most will cause the user to appear misty and transparent. Copies of sleepweavers made by Elayne Trakand also left the user appearing misty and insubstantial.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal"
+    ]
+  },
+  "Small bent rod": {
+    "page_name": "Small bent rod",
+    "filename": "Small_bent_rod.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The small bent rod is a ter'angreal that was in the possession of some Black Ajah sisters; it was recovered by them from Moghedien 's rooms in Samara after the Forsaken was captured by Nynaeve.\n\nIt can be assumed that now this item is in possession of Elayne, since this Black sisters were captured in Caemlyn.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Short_pages"
+    ]
+  },
+  "Someshta": {
+    "page_name": "Someshta",
+    "filename": "Someshta.txt",
+    "aliases": [
+      "Green Man",
+      "The Green Man"
+    ],
+    "type": "entity",
+    "description": "Someshta, also known as the Green Man, was the last living Nym in Westland from the Age of Legends guarding the Eye of the World in the Blight. In the Age of Legends Nym were created for farming. They were essential part of the Seed Singing events, where they danced the threads of the Song of Growing into the soil and the seeds in it. Small part of his past is revealed through Rand's visions in the ter'angreal of Rhuidean.",
+    "categories": [
+      "Other_non-humans",
+      "Constructs",
+      "Deceased",
+      "Age_of_Legends_(people)"
+    ]
+  },
+  "Song": {
+    "page_name": "Song",
+    "filename": "Song.txt",
+    "type": "other",
+    "description": "For a category listing of songs, see Songs .\n\nFinding the Song is one of the main focus of the Tuatha'an philosophy and their life. They never stop, search for it throughout the world and believe that when they find it, what is lost will come back – meaning the peace and prosperity of AoL. The other one is keeping The Way of the Leaf.",
+    "categories": [
+      "Tuatha'an",
+      "Metaphysics"
+    ]
+  },
+  "Sound amplification": {
+    "page_name": "Sound amplification",
+    "filename": "Sound_amplification.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "The Sound amplification is a weave in the One Power; in its more simple form it is composed by only flows of element Air. It is used for example to amplify the voice of someone that is giving a speech to a crowd. With a touch of Fire it can be even more effective, but also very disturbing inside as when Egwene used it inside the Hall, to take the attention from the discussing Sitters.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Spinning Earthfire": {
+    "page_name": "Spinning Earthfire",
+    "filename": "Spinning_Earthfire.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Spinning Earthfire is a weave of the One Power. Nothing is known about this weave, save that it was from the Age of Legends. Moghedien thought about this weave as well as Milking Tears. Due to its name, flows of Earth and Fire are probably involved. The name suggests that it could be related to controlling magma, or \"earth fire.\"",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Spying Portal": {
+    "page_name": "Spying Portal",
+    "filename": "Spying_Portal.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "A Spying Portal is a weave in the One Power. It is very similar to the portal for Traveling, but it opens in horizontal, not in vertical. It was conceived by Yukiri opening it very far above in sky to spy an enemy army on the ground.\n\nYukiri made also two modification to this kind of portal: added a weave to make it invisible from the enemies on the ground and another one, like a transparent not frangible glass, to prevent anyone to drop into the portal by accident.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Stick": {
+    "page_name": "Stick",
+    "filename": "Stick.txt",
+    "type": "entity",
+    "is_shadowspawn": true,
+    "description": "A stick is a denizen of the Great Blight. They look like their name, a part of a tree, however their vines lash out like snakes strangling those who walk by them. Their bite is deadly. It releases a type of poison into the persons bloodstream that digests them from inside out. The only way to save a person bitten by a stick is to amputate the bitten limb. The trees on which they live seem fleshy, rather than woody like the trees in the south. They have sores that leak red sap that looks like blood. Unlike many other animals of the Great Blight, Sticks do not attack unless someone touches or irritates them.",
+    "categories": [
+      "Constructs",
+      "Shadowspawn",
+      "Short_pages"
+    ]
+  },
+  "Stunning": {
+    "page_name": "Stunning",
+    "filename": "Stunning.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Stunning is a weave formed with the One Power, it is very painful and it is used to stun and to paralyze an adversary. The male version of this weave is formed by Spirit and Fire, as was demonstrated by Osan'gar. Another version is formed by Spirit, Air, Water and a touch of Fire used by the Red Ajah, to stun and capture male channelers. Because male channelers are usually stronger than female channelers, an Aes Sedai alone would normally not be capable of maintaining a shield over a male channeler, posing a possible danger when hunting for False Dragons or maddened male channelers. This is overcome by stunning them to be shielded later by a circle of six for transport to the White Tower and gentling.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Tel'aran'rhiod": {
+    "page_name": "Tel'aran'rhiod",
+    "filename": "Tel'aran'rhiod.txt",
+    "aliases": [
+      "Dream world",
+      "Tel'aran'riod",
+      "The Unseen World",
+      "The World of Dreams",
+      "Unseen World",
+      "Wolf dream",
+      "World of dreams"
+    ],
+    "type": "place",
+    "description": "Tel'aran'rhiod (tel-AYE-rahn-rhee-ODD; Old Tongue: The Unseen World ), also known as the World of Dreams and the Wolf Dream, is a parallel world where all the possibilities of the Wheel of Time connect. It is linked to the myriad of worlds that exist within the Wheel. It is both of those worlds and apart from them. Anyone can enter the World of Dreams but only a Dreamwalker does so at will. Entering Tel'aran'rhiod can be extremely dangerous for the uninitiated and lead to injuries carried into the waking world, even death.",
+    "categories": [
+      "Citation_needed",
+      "Tel'aran'rhiod",
+      "Wotwiki_featured_articles"
+    ]
+  },
+  "Ter'angreal": {
+    "page_name": "Ter'angreal",
+    "filename": "Ter'angreal.txt",
+    "aliases": [
+      "Standing Flows",
+      "Terangreal"
+    ],
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "Ter'angreal (pronounced: tear-ANH-gree-all) are objects of the One Power that perform specific functions. Some ter'angreal do not require the One Power to be used for their activation, such as the striped stone ring that Verin Sedai gave to Egwene al'Vere, and the twisted redstone doorframes that lead into the realms of the Aelfinn and Eelfinn. While not as rare as angreal or sa'angreal, the method of making them was believed to be lost for thousands of years, until recently. Aside from the White Tower, many ter'angreal have been found in the Stone of Tear, in Rhuidean and in Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal"
+    ]
+  },
+  "Three rings": {
+    "page_name": "Three rings",
+    "filename": "Three_rings.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The three rings are a ter'angreal found in Rhuidean.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal"
+    ]
+  },
+  "Thunderclap": {
+    "page_name": "Thunderclap",
+    "filename": "Thunderclap.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Thunderclap is a weave of the One Power that causes an enormous amount of noise so that people affected become temporarily deaf. Elayne Trakand uses this weave during the Last Battle to prevent the Dragkhar from attracting people.",
+    "categories": [
+      "Weaves"
+    ]
+  },
+  "Traveling": {
+    "page_name": "Traveling",
+    "filename": "Traveling.txt",
+    "aliases": [
+      "Gateway",
+      "Travel",
+      "Traveled",
+      "Travelling",
+      "Travels"
+    ],
+    "type": "concept",
+    "is_weave": true,
+    "is_talent": true,
+    "description": "For the Gareth Bryne 's horse, see Traveler .\n\nTraveling is a method that uses the One Power to transport people and things nearly instantaneously over vast distances through a portal called a Gateway. Traveling is also related to Skimming, a simpler but slower way to travel faster than any previously known method. Traveling is considered one of the most strategically important and useful Weaves rediscovered at the end of the Third Age.",
+    "categories": [
+      "Weaves",
+      "Citation_needed",
+      "Talents",
+      "Parallels"
+    ]
+  },
+  "Trolloc": {
+    "page_name": "Trolloc",
+    "filename": "Trolloc.txt",
+    "aliases": [
+      "Ahf'frait",
+      "Ahf'rait",
+      "Al'ghol",
+      "Bhan'sheen",
+      "Dha'vol",
+      "Dhai'mon",
+      "Dhjin'nen",
+      "Fist",
+      "Ghar'geal",
+      "Ghar'ghael",
+      "Gho'hlem",
+      "Ghob'hlin",
+      "Ghob'lin",
+      "Ghraem'lan",
+      "Kno'mon",
+      "Ko'bal",
+      "Trollocs"
+    ],
+    "type": "entity",
+    "is_shadowspawn": true,
+    "description": "A Trolloc (pronounced: TRAHL-lohk) is a type of Shadowspawn created in the Age of Legends that comprises the bulk of the Dark One 's armies. A horrifying crossing of human and animal stock with physical characteristics of both. While capable of speech and a cruel and twisted humor, they are less intelligent than humans and require supervision in battle. They are carnivorous, as is shown by many references in the first two books of Trollocs eating their human prey, sadistic, fearful, and violent. Unlike other Shadowspawn, Trollocs are social creatures, grouped by several distinct tribes. They are called “Twisted Ones” by the wolves.",
+    "categories": [
+      "Antagonists",
+      "Shadowspawn",
+      "Constructs",
+      "Races",
+      "Citation_needed",
+      "Wotwiki_featured_articles"
+    ]
+  },
+  "True Power": {
+    "page_name": "True Power",
+    "filename": "True_Power.txt",
+    "type": "other",
+    "description": "The True Power is a source of energy similar to the One Power but which finds its source in the Dark One rather than the force that drives the Wheel of Time itself. It is not differentiated into male and female halves, which work constantly with and against each other, but rather as one reservoir of power that is available to members of either sex. The True Power is only available to Channelers whom the Dark One allows to wield it.",
+    "categories": [
+      "The_Shadow",
+      "Metaphysics"
+    ]
+  },
+  "Turning": {
+    "page_name": "Turning",
+    "filename": "Turning.txt",
+    "aliases": [
+      "13x13 trick",
+      "Turned"
+    ],
+    "type": "concept",
+    "is_weave": true,
+    "description": "Turning is the name for a technique the Shadow uses to convert people of the Light to the Dark.",
+    "categories": [
+      "Weaves",
+      "The_Shadow"
+    ]
+  },
+  "Twisted redstone doorframe": {
+    "page_name": "Twisted redstone doorframe",
+    "filename": "Twisted_redstone_doorframe.txt",
+    "aliases": [
+      "Redstone doorframe",
+      "Twisted redstone doorway"
+    ],
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The books Dealings with the Territory of Mayene, 500 to 700 of the New Era and The Treasures of the Stone of Tear describe the doorways. The twisted redstone doorframes are a pair of ter'angreal of polished redstone. One doorway has three lines of triangles, points down, along each upright; the other has three sinuous lines running down each upright from top to bottom. These symbols allow the user to discern which inhabitants on the other side of the door they will interact with. The doorways look twisted and cause one's eyes to slip away before being able to tell how it connects at the top. Any person can step through the doorway, since channeling is not required, but they can use the ter'angreal only once. When the person steps through, they experience white light accompanied by a vast roar of sound. One is located in Tear, the other was discovered in Rhuidean.\n\nThe doorways provide protected access to the domains of the Aelfinn and Eelfinn, in the parallel world of the Finn. The Tower of Ghenjei in Andor can be entered by applying the rhyme from Snakes and Foxes, but this approach gives the entrant no protection from the wiles of the Finn. Aside from entering the Tower directly, the twisted redstone doorframes are the only known intersections between the human world and the Sindhol.\n\nIn this ter'angreal the user and the Finn are bound to an agreement. The petitioner can ask three requests from the Eelfinn or three questions from the Aelfinn and the Finn will always grant them…at a very high price. As well as the price, the Finn savor the petitioner's experiences and emotions and forge a mental link so they can harvest their experiences and memories when the petitioner returns to their own world. The petitioner must also abide by the treaties and agreements and carry no iron, instruments of music, or devices for making light. The petitioner must ask all three questions, and hear the answers before leaving. \"Frivolous questions\" are punished (the same question may or may not be frivolous depending on who is asking), and questions about the Shadow can have dire consequences for the petitioner.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Aelfinn_and_Eelfinn",
+      "Parallels"
+    ]
+  },
+  "Twisted stone ring": {
+    "page_name": "Twisted stone ring",
+    "filename": "Twisted_stone_ring.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The flattened, twisted stone ring is a sleepweaver ter'angreal originally given to Egwene by Verin Mathwin.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal"
+    ]
+  },
+  "Vacuole": {
+    "page_name": "Vacuole",
+    "filename": "Vacuole.txt",
+    "type": "entity",
+    "description": "A vacuole is a bubble in the Pattern where time flows differently. They can sometimes be entered and manipulated much like the rest of the world. However, they are really outside the Pattern and can sometimes close up, or break off and drift away, leaving whatever is inside the vacuole gone forever. Time flows differently in vacuoles, sometimes slower, and sometimes much faster, though it's said that researchers had done great experiments in vacuoles during the Age of Legends. An example of a vacuole could be the Bore, in which the Dark One is held.\n\nMoghedien was held in a vacuole and punished by the Dark One for an unspecified period of time after her rescue from Salidar.",
+    "categories": [
+      "Constructs",
+      "Short_pages"
+    ]
+  },
+  "Vora's sa'angreal": {
+    "page_name": "Vora's sa'angreal",
+    "filename": "Vora's_sa'angreal.txt",
+    "aliases": [
+      "Vora",
+      "White Rod"
+    ],
+    "type": "power_object",
+    "object_type": "Sa'angreal",
+    "description": "Vora's sa'angreal, once known as the white rod, is a female sa'angreal in the form of a fluted white wand. It was one of the most powerful sa'angreal in the White Tower's possession. The rod is kept in a storeroom in the Tower with other objects of the One Power, inside a narrow unadorned wooden box nestled in red silk. The wand itself is about the length of a woman's forearm, made of an unknown material that looks as though it could be bone or ivory, though it is neither.\n\nThis rod was used to Heal Matrim Cauthon 's affliction from the ruby-hilted dagger from Shadar Logoth. It was later used by Egwene al'Vere when the Seanchan attacked the Tower. It helped overcome the effects of the forkroot in her system.\n\nMuch like Callandor, which is attuned to saidin, Vora's sa'angreal lacks a buffer to protect the channeler from taking in too much saidar.\n\nLater on, as Amyrlin Seat, Egwene wielded Vora's sa'angreal in the Last Battle with great proficiency, destroying countless enemies in awesome displays of the Power. Her first engagement was with the White Tower against a vast horde of Trollocs advancing from conquered Kandor. The Trolloc army was decimated with relative ease, at least until the arrival of the Sharans. Towards the end of the Last Battle she faced Mazrim Taim, who had been renamed M'Hael and elevated to the rank of Chosen, and was also wielding a sa'angreal, the scepter Sakarnen. Refusing to use balefire like Taim, she found its counterweave, the Flame of Tar Valon, which she used to destroy Taim and nearly all of the Sharan channelers. Out of grief for her Warder 's death and exhaustion, Egwene drew too deeply of saidar and joined her weave, becoming a crystalline pillar, Vora's sa'angreal frozen at its center.\n\nThe pillar and the condition of the sa'angreal was discovered shortly afterwards by Leane Sharif. The Polov Heights collapsed toward the aftermath due to the enormous amounts of the Power that had been used on them, particularly the balefire. Vora's sa'angreal is presumably still buried beneath the rubble of the Heights.",
+    "categories": [
+      "Items_of_Power",
+      "Sa'angreal"
+    ]
+  },
+  "Ward": {
+    "page_name": "Ward",
+    "filename": "Ward.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "A ward is a weave of the One Power that creates a barrier or triggers an effect if crossed.",
+    "categories": [
+      "Weaves"
+    ]
+  },
+  "Water vase": {
+    "page_name": "Water vase",
+    "filename": "Water_vase.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The water vase is a ter'angreal recovered from the Kin's Storeroom in Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash",
+      "Short_pages"
+    ]
+  },
+  "Weave": {
+    "page_name": "Weave",
+    "filename": "Weave.txt",
+    "aliases": [
+      "Pick apart"
+    ],
+    "type": "concept",
+    "power_related": true,
+    "is_weave": true,
+    "description": "A weave is a combination of One Power flows manipulated by a channeler to elicit a specific effect. During the Age of Legends channelers refered to the concept as a Web.\n\nThere are five different flows that can be manipulated with the One Power: Air, Earth, Fire, Spirit, and Water; these are known as the Five Powers. Each of the Five Powers produces a different effect when woven. For example, weaving Fire on a candle wick ignites it, lighting the candle. More complex weaves require more than one flow to be used, but produce more spectacular results.\n\nTheoretically, weaves of the One Power are similar to textile weaves, and weaving Saidar has been compared to folding silk. Once a weave has been created, the channeler can \"hold\" it to keep the effect ongoing, or knot the flows, a process called \"tying the weave off\". A weave that has been tied off persists even after the channeler has released the True Source or left the area.\n\nA channeler of Saidin or Saidar is able to see the weaves created using the same half of the Power, but not the other. For this reason, a man cannot teach a woman how to create a weave and vice versa. Although a channeler can intuitively create a weave (such as when Rand wove Balefire for the first time), most channelers learn by watching others create the weave. Once it has been created, they then practice creating it themselves until they can recreate it by memory. A channeler with the knowledge of how to invert their weaves can hide them from the sight of others.",
+    "categories": [
+      "Weaves",
+      "One_Power"
+    ]
+  },
+  "Welding stones": {
+    "page_name": "Welding stones",
+    "filename": "Welding_stones.txt",
+    "type": "concept",
+    "is_weave": true,
+    "description": "Welding stones is a weave in the One Power. It is based mainly on flows of Earth and it was used by the Asha'man to build the walls around the Black Tower. The walls with stones joined by this weave are described as more resistant and cohesive than any with stones joined by any kind of concrete or lime.",
+    "categories": [
+      "Weaves",
+      "Short_pages"
+    ]
+  },
+  "Well": {
+    "page_name": "Well",
+    "filename": "Well.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "A Well is a ter'angreal that is able to store the One Power so that a channeler can use it as a separate source.\n\nConceivably, an Aes Sedai could use this while shielded since it works inside another ter'angreal that cuts off the True Source. Far Madding 's Guardian is an example of such a ter'angreal that inhibits access to the True Source; Aes Sedai can only channel in Far Madding with the use of a Well. It can also be used to channel inside a stedding.\n\nThe only two known Wells are owned by Nynaeve al'Meara and Cadsuane Melaidhrin, both attuned to Saidar, the female part of the One Power. Nynaeve's Well is a belt and Cadsuane's Well is the golden hummingbird hair ornament in her paralis-net.\n\nThe Eye of the World was also functionally similar to a Well in that it stored within itself a great amount of Saidin (the male part of the One Power) purified from the taint, but it has been depleted and it is unknown whether it could potentially be refilled.\n\nWells appear to differ in terms of the amount of the Power they can contain, and it is known that Nynaeve's Well has a significantly higher capacity than Cadsuane's hummingbird.\n\nTo fill or refill a Well the user simply embraces saidar or seizes saidin through it as though using an angreal.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal"
+    ]
+  },
+  "Wheel of Time": {
+    "page_name": "Wheel of Time",
+    "filename": "Wheel_of_Time.txt",
+    "aliases": [
+      "Age Lace",
+      "Lace of Ages",
+      "Pattern",
+      "Pattern of an Age",
+      "Ta'maral'ailen",
+      "The Wheel",
+      "Web of Destiny",
+      "Wheel",
+      "Wheel of Time (object)"
+    ],
+    "type": "concept",
+    "power_related": true,
+    "description": "The Wheel of Time is the great seven-spoked cosmic loom that weaves the Great Pattern, using the lives of people as threads. It is believed to encompass all worlds and realities into a Pattern of the Ages.",
+    "categories": [
+      "Metaphysics",
+      "One_Power"
+    ]
+  },
+  "White bowl": {
+    "page_name": "White bowl",
+    "filename": "White_bowl.txt",
+    "type": "power_object",
+    "object_type": "Ter'angreal",
+    "description": "The white bowl is a ter'angreal recovered from the Kin's Storeroom in Ebou Dar.",
+    "categories": [
+      "Items_of_Power",
+      "Ter'angreal",
+      "Ebou_Dari_Stash",
+      "Short_pages"
+    ]
+  }
+}

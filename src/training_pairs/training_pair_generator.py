@@ -6,12 +6,13 @@ Orchestrates complete training pair generation: test questions → synthetic exp
 import json
 from dataclasses import asdict, dataclass
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Any, Dict, List, Tuple
 
-from data_loader import Chunk, DataLoader, TestQuestion
-from negative_miner import NegativeMiner
-from positive_finder import PositiveFinder
 from utils import files  # noqa: F401
+
+from src.training_pairs.data_loader import Chunk, DataLoader, TestQuestion
+from src.training_pairs.negative_miner import NegativeMiner
+from src.training_pairs.positive_finder import PositiveFinder
 
 
 @dataclass
@@ -233,7 +234,7 @@ class TrainingPairGenerator:
         # Step 1: Expand queries
         if expand_queries:
             print("\n📝 Expanding test questions...")
-            expanded_queries = self.query_synthesizer.expand_test_questions(self.test_questions)
+            expanded_queries = self.query_synthesizer.expand_test_questions(self.test_questions[:2])
             print(f"   Generated {len(expanded_queries)} queries from {len(self.test_questions)} questions")
         else:
             expanded_queries = [(q.question, q) for q in self.test_questions]
@@ -299,7 +300,7 @@ class TrainingPairGenerator:
         # Statistics
         self._print_statistics(training_pairs)
 
-        return training_pairs
+        return training_pairs, self.compute_statistics(training_pairs)
 
     def _save_pairs(self, pairs: List[TrainingPair], output_file: Path):
         """Save training pairs to file"""
@@ -312,6 +313,36 @@ class TrainingPairGenerator:
                 f.write(json.dumps(pair.to_dict(), ensure_ascii=False) + "\n")
 
         print(f"   ✅ Saved {len(pairs):,} pairs")
+
+    def compute_statistics(self, pairs: List["TrainingPair"]) -> Dict[str, Any]:
+        """
+        Compute statistics for a list of TrainingPair objects.
+        Returns a dictionary suitable for logging with log_results().
+        """
+        stats: Dict[str, Any] = {}
+
+        # Overall
+        stats["overall"] = {"total_pairs": len(pairs)}
+
+        # By category
+        by_category: Dict[str, int] = {}
+        for pair in pairs:
+            cat = pair.metadata.get("category", "unknown")
+            by_category[cat] = by_category.get(cat, 0) + 1
+        stats["by_category"] = by_category
+
+        # By difficulty
+        by_difficulty: Dict[str, int] = {}
+        for pair in pairs:
+            diff = pair.metadata.get("difficulty", "unknown")
+            by_difficulty[diff] = by_difficulty.get(diff, 0) + 1
+        stats["by_difficulty"] = by_difficulty
+
+        # Average negatives per pair
+        avg_negs = sum(len(p.negative_texts) for p in pairs) / len(pairs) if pairs else 0
+        stats["average_negatives_per_pair"] = avg_negs
+
+        return stats
 
     def _print_statistics(self, pairs: List[TrainingPair]):
         """Print statistics about generated pairs"""

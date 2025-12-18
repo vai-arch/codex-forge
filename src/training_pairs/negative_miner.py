@@ -8,8 +8,10 @@ from collections import defaultdict
 from dataclasses import dataclass
 from typing import Dict, List, Set
 
-from data_loader import Chunk, TestQuestion
-from positive_finder import PositiveMatch
+from tqdm import tqdm
+
+from src.training_pairs.data_loader import Chunk, TestQuestion
+from src.training_pairs.positive_finder import PositiveMatch
 
 
 @dataclass
@@ -306,22 +308,21 @@ class NegativeMiner:
         """
         results = {}
 
-        print(f"\n⛏️  Mining hard negatives for {len(questions)} questions...")
+        with tqdm(questions, desc="Mining negatives", unit="q") as pbar:
+            for question in pbar:
+                positives = positive_results.get(question.question_id, [])
 
-        for i, question in enumerate(questions, 1):
-            positives = positive_results.get(question.question_id, [])
+                if not positives:
+                    tqdm.write(f"   ⚠️  Q{question.question_id}: No positives found, skipping negatives")
+                    results[question.question_id] = []
+                    continue
 
-            if not positives:
-                print(f"   ⚠️  Q{question.question_id}: No positives found, skipping negatives")
-                results[question.question_id] = []
-                continue
+                negatives = self.mine_hard_negatives(question, positives, num_negatives)
+                results[question.question_id] = negatives
 
-            negatives = self.mine_hard_negatives(question, positives, num_negatives)
-            results[question.question_id] = negatives
-
-            if i % 10 == 0 or i == len(questions):
+                # Update average negatives in the progress bar
                 avg_negs = sum(len(n) for n in results.values()) / len(results)
-                print(f"   Processed {i}/{len(questions)} questions (avg {avg_negs:.1f} negatives/question)")
+                pbar.set_postfix(avg_negatives=f"{avg_negs:.1f}")
 
         return results
 

@@ -29,13 +29,12 @@ class Chunk:
 
     @classmethod
     def from_dict(cls, data: Dict, chunk_id: str = None):
-        """Create Chunk from dictionary"""
         return cls(
             chunk_id=chunk_id or data.get("chunk_id", ""),
             text=data["text"],
             source=data["source"],
             wiki_type=data.get("wiki_type"),
-            filename=data["filename"],
+            filename=data.get("filename"),  # ← Can be None for books!
             temporal_order=data.get("temporal_order"),
             character_mentions=data.get("character_mentions", []),
             concept_mentions=data.get("concept_mentions", []),
@@ -88,29 +87,18 @@ class DataLoader:
         self.chunks_cache = {}
         self.indexes_cache = {}
 
-    def load_chunks(self, chunk_file: Path, cache: bool = True) -> List[Chunk]:
-        """
-        Load chunks from JSONL file
-
-        Args:
-            chunk_file: Path to .jsonl file
-            cache: Whether to cache loaded chunks
-
-        Returns:
-            List of Chunk objects
-        """
-        if cache and str(chunk_file) in self.chunks_cache:
-            return self.chunks_cache[str(chunk_file)]
-
+    def load_chunks(self, chunk_file: Path):
         chunks = []
         with open(chunk_file, "r", encoding="utf-8") as f:
             for i, line in enumerate(f):
                 data = json.loads(line)
+
+                # Handle missing filename for book chunks
+                if "filename" not in data:
+                    data["filename"] = None  # Explicit None
+
                 chunk = Chunk.from_dict(data, chunk_id=f"{chunk_file.stem}_{i}")
                 chunks.append(chunk)
-
-        if cache:
-            self.chunks_cache[str(chunk_file)] = chunks
 
         return chunks
 
@@ -169,7 +157,7 @@ class DataLoader:
         """
         indexes = {}
 
-        index_files = files.find_files_in_folder(path_folder=self.paths.INDEXES_PATH)
+        index_files = files.find_files_in_folder(path_folder=self.paths.INDEXES_PATH, extension=".json")
 
         for index_file in index_files:
             # Extract index type from filename (e.g., "character_index.json" -> "character")

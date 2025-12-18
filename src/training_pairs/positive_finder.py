@@ -7,7 +7,9 @@ from collections import defaultdict
 from dataclasses import dataclass
 from typing import Dict, List, Set, Tuple
 
-from data_loader import Chunk, TestQuestion
+from tqdm import tqdm
+
+from src.training_pairs.data_loader import Chunk, TestQuestion
 
 
 @dataclass
@@ -240,18 +242,17 @@ class PositiveFinder:
         Returns:
             Dictionary mapping question_id to list of PositiveMatch
         """
+
         results = {}
 
-        print(f"\n🔍 Finding positive chunks for {len(questions)} questions...")
+        with tqdm(questions, desc="Processing questions", unit="q") as pbar:
+            for question in pbar:
+                positives = self.find_positives(question, top_k)
+                results[question.question_id] = positives
 
-        for i, question in enumerate(questions, 1):
-            positives = self.find_positives(question, top_k)
-            results[question.question_id] = positives
-
-            # Progress update
-            if i % 10 == 0 or i == len(questions):
+                # Update postfix with average positives per question
                 avg_matches = sum(len(p) for p in results.values()) / len(results)
-                print(f"   Processed {i}/{len(questions)} questions (avg {avg_matches:.1f} positives/question)")
+                pbar.set_postfix(avg_positives=f"{avg_matches:.1f}")
 
         return results
 

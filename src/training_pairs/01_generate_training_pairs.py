@@ -18,8 +18,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-# Add parent directory to path for imports
-sys.path.insert(0, str(Path(__file__).parent.parent))
+from utils import statistics
 
 from src.config import get_finetuning_config, print_config
 from src.paths import get_paths, print_paths
@@ -96,18 +95,20 @@ def main():
         generator.load_data(chunks_dir=chunks_dir, indexes_dir=indexes_dir, questions_file=questions_file)
 
         # Generate pairs
-        training_pairs = generator.generate_pairs(output_file=output_file, expand_queries=not args.no_expand, save_intermediate=True)
+        training_pairs, stats = generator.generate_pairs(output_file=output_file, expand_queries=not args.no_expand, save_intermediate=True)
 
         # Summary
         end_time = datetime.now()
-        duration = end_time - start_time
+        total_time = end_time - start_time
+
+        statistics.total_statistics_logging(stats, total_time, "TRAINING PAIR GENERATOR", "01_generate_training_pairs", tables=False, configuration_section=None)
 
         print("\n" + "=" * 70)
         print("✅ TRAINING PAIR GENERATION COMPLETE")
         print("=" * 70)
-        print(f"\nGenerated: {len(training_pairs):,} training pairs")
+        # print(f"\nGenerated: {len(training_pairs):,} training pairs")
         print(f"Saved to: {output_file}")
-        print(f"Duration: {duration}")
+        print(f"Duration: {total_time}")
         print(f"Completed: {end_time.strftime('%Y-%m-%d %H:%M:%S')}")
 
         print("\n📊 Next step:")
