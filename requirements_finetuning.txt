@@ -1,0 +1,15 @@
+# CodexForge - Fine-Tuning Requirements
+# Install with: pip install -r requirements_finetuning.txt
+
+# Core fine-tuning libraries
+sentence-transformers>=2.2.2
+transformers>=4.30.0
+torch>=2.0.0
+
+# Utilities
+tqdm>=4.65.0
+numpy>=1.24.0
+
+# Optional: For GPU acceleration
+# Install CUDA-compatible PyTorch separately if needed
+# See: https://pytorch.org/get-started/locally/

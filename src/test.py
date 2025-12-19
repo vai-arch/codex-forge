@@ -1,11 +1,4 @@
-# Load and examine
-import json
+import torch
 
-from utils import files
-
-from src.paths import get_paths
-
-paths = get_paths()
-
-pair = files.load_json_line_by_line(paths.FILE_TRAINING_PAIRS)
-print(json.dumps(pair, indent=2))
+print(f"CUDA available: {torch.cuda.is_available()}")
+print(f"Device: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU'}")

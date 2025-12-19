@@ -27,14 +27,13 @@ class Paths:
         # INPUT: Source corpus
         # =====================================================================
         self.CORPUS_PATH = self.DATA_PATH / "corpus"
-        self.RAW_CORPUS_PATH = self.CORPUS_PATH / "raw"  # Original text files
         self.INDEXES_PATH = self.CORPUS_PATH / "indexes"  # Domain indexes (entities, terms)
+        self.CHUNKS_PATH = self.PROCESSED_PATH / "chunks"  # Chunked text
 
         # =====================================================================
         # PROCESSING: Intermediate files
         # =====================================================================
         self.PROCESSED_PATH = self.DATA_PATH / "processed"
-        self.CHUNKS_PATH = self.PROCESSED_PATH / "chunks"  # Chunked text
         self.TRAINING_PAIRS_PATH = self.PROCESSED_PATH / "pairs"  # (query, doc) pairs
 
         # =====================================================================
@@ -47,9 +46,9 @@ class Paths:
         # =====================================================================
         # MODEL: Fine-tuning artifacts
         # =====================================================================
-        self.MODELS_PATH = self.PROJECT_ROOT_PATH / "models"
-        self.CHECKPOINTS_PATH = self.MODELS_PATH / "checkpoints"  # Training checkpoints
-        self.FINETUNED_MODEL_PATH = self.MODELS_PATH / "finetuned"  # Final model
+        self.MODEL_PATH = self.PROJECT_ROOT_PATH / "models"
+        self.MODEL_CHECKPOINTS_PATH = self.MODEL_PATH / "checkpoints"  # Training checkpoints
+        self.MODEL_FINETUNED_PATH = self.MODEL_PATH / "finetuned"  # Final model
 
         # =====================================================================
         # EVALUATION: Test sets and results
@@ -79,8 +78,8 @@ class Paths:
         # Training files
         self.FILE_TRAINING_PAIRS = self.TRAINING_PAIRS_PATH / "training_pairs.jsonl"
         self.FILE_VALIDATION_PAIRS = self.TRAINING_PAIRS_PATH / "validation_pairs.jsonl"
-        self.FILE_TRAINING_CHECKPOINT = self.CHECKPOINTS_PATH / "checkpoint_latest.pt"
-        self.FILE_TRAINING_CONFIG = self.MODELS_PATH / "training_config.json"
+        self.FILE_TRAINING_CHECKPOINT = self.MODEL_CHECKPOINTS_PATH / "checkpoint_latest.pt"
+        self.FILE_TRAINING_CONFIG = self.MODEL_PATH / "training_config.json"
 
         # Embedding files
         self.FILE_BASE_EMBEDDINGS = self.BASE_EMBEDDINGS_PATH / "base_embeddings.pkl"

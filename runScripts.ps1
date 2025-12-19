@@ -5,7 +5,7 @@ $srcChunks = Join-Path $PSScriptRoot "..\dragon-codex\data\chunks"
 $destChunks = Join-Path $PSScriptRoot "data\processed\chunks"
 
 $srcIndexes = Join-Path $PSScriptRoot "..\dragon-codex\data\metadata\wiki"
-$destIndexes = Join-Path $PSScriptRoot "data\corpus\indexes" 
+$destIndexes = Join-Path $PSScriptRoot "data\corpus\indexes"
 
 # Ensure destination folder exists
 if (-not (Test-Path $destChunks)) {
@@ -17,7 +17,8 @@ Get-ChildItem -Path $srcIndexes -Filter "*_index.json" | Copy-Item -Destination 
 
 # List of Python modules to run
 $modules = @(
-    "src.training_pairs.01_generate_training_pairs"
+    # "src.training_pairs.01_generate_training_pairs"
+    "src.finetuning.02_finetune_embedding_model"
 )
 
 foreach ($module in $modules) {
