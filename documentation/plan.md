@@ -1,11 +1,5 @@
 # Plan
 
-## Phase 2A (Current - in progress)
-
-Fine-tune model with SentenceTransformer
-Complete training (~2 hours remaining)
-Save fine-tuned model
-
 ## # TODO Phase 2A-1
 
 tokenize the samples so im sure im not trunkating them.
@@ -15,6 +9,7 @@ in dragon adjust the size of chunks based on the testings
 
 from tqdm import tqdm  # For progress bar
 
+(Creamos primero el model y de ahi cogemos su max_seq_length)
 max_tokens = model.max_seq_length
 truncated_count = 0
 max_observed = 0
@@ -31,7 +26,7 @@ for example in tqdm(train_examples):  # Or your list of sentences/InputExamples
 print(f"Max observed tokens: {max_observed}")
 print(f"Examples that will be truncated: {truncated_count} ({truncated_count/len(train_examples)*100:.2f}%)")
 
-## Phase 2B Only if Phase 2B shows improvement SEE [THRESHOLDS](#realistic-thresholds-without-bm25)
+## Phase 2B
 
 After training finishes:
 
@@ -50,7 +45,7 @@ evaluate_retrieval.py (compare scores)
 
 We reuse 90% of Dragon's Codex code. Only change: how embeddings are generated (fine-tuned vs base model).
 
-## Phase 2D FINE-TUNE THE HYPERT PARAMETERS
+## Phase 2D FINE-TUNE THE HYPERT PARAMETERS Only if Phase 2B shows improvement SEE [THRESHOLDS](#realistic-thresholds-without-bm25)
 
 Run 1 (current): Baseline fine-tuning
 
@@ -110,3 +105,61 @@ Grid search the key params:
 
 - ≥2.0 = success, proceed with optimization
 - <2.0 = fine-tuning doesn't help enough, pivot strategy
+
+## Upgrade to v3.0+ and Use the New Trainer ( IF EVERYTHING ELSE GOES RIGHT)
+
+The new training system (v3.0 released ~2024) is much more powerful: supports gradient accumulation properly, better logging, multi-GPU, evaluators, etc.
+
+Upgrade the library:Bashpip install -U sentence-transformers(Current latest as of 2025 is >v3.0)
+Switch to the new style (example adaptation of your code):Pythonfrom sentence_transformers import SentenceTransformerTrainer, SentenceTransformerTrainingArguments
+from sentence_transformers.training_args import BatchSamplers
+
+### Your model, train_dataset (instead of examples + dataloader), loss already set up
+
+args = SentenceTransformerTrainingArguments(
+    output_dir=str(output_path / "checkpoints"),
+    num_train_epochs=self.num_epochs,
+    per_device_train_batch_size=16,  # Your real batch size
+    gradient_accumulation_steps=4,   # ← Now supported! Effective batch=64
+    warmup_steps=self.warmup_steps,
+    learning_rate=self.learning_rate,
+    fp16=True,  # Equivalent to use_amp=True (better name now)
+    save_strategy="steps",
+    save_steps=self.save_steps,
+    save_total_limit=3,
+    logging_steps=10,  # Optional: more feedback
+    run_name="wheel-of-time-embedding",  # Optional
+    batch_sampler=BatchSamplers.NO_DUPLICATES,  # Good for in-batch negatives
+)
+
+trainer = SentenceTransformerTrainer(
+    model=model,
+    args=args,
+    train_dataset=train_dataset,  # A Hugging Face Dataset with your examples
+    loss=train_loss,
+)
+
+trainer.train()
+You'll need to convert your train_examples to a HF Dataset (easy: from datasets import Dataset; train_dataset = Dataset.from_list([ex.__dict__ for ex in train_examples]) or similar).
+Full docs: <https://sbert.net/docs/sentence_transformer/training_overview.html>
+
+This upgrade gives you gradient accumulation properly, plus many other improvements.
+
+## Add callback for execution statistics
+
+from transformers import TrainerCallback
+
+class FinalStatsCallback(TrainerCallback):
+    def on_train_end(self, args, state, control, logs=None, **kwargs):
+        print("\n🎉 TRAINING COMPLETED!")
+        print(f"Final training loss: {state.log_history[-1].get('loss', 'N/A')}")
+        # Access full history: state.log_history
+
+### In your trainer
+
+trainer = SentenceTransformerTrainer(
+    ...,
+    callbacks=[FinalStatsCallback()],  # Add here (list)
+)
+
+trainer.train()

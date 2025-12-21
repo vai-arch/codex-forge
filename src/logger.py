@@ -8,8 +8,8 @@ import sys
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
-from .config import get_finetuning_config
-from .paths import get_paths
+from src.config import get_finetuning_config
+from src.paths import get_paths
 
 config = get_finetuning_config()
 paths = get_paths()

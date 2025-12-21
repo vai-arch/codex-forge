@@ -18,11 +18,10 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from utils import statistics
-
 from src.config import get_finetuning_config, print_config
 from src.paths import get_paths, print_paths
 from src.training_pairs.training_pair_generator import TrainingPairGenerator
+from utils import statistics
 
 
 def parse_args():

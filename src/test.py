@@ -1,4 +1,6 @@
-import torch
+import os
+import shutil
 
-print(f"CUDA available: {torch.cuda.is_available()}")
-print(f"Device: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU'}")
+cache_dir = os.path.expanduser("~/.cache/huggingface/datasets")
+print("Clearing cache at:", cache_dir)
+shutil.rmtree(cache_dir, ignore_errors=True)  # Deletes everything—safe, will re-download

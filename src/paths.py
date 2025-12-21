@@ -28,7 +28,7 @@ class Paths:
         # =====================================================================
         self.CORPUS_PATH = self.DATA_PATH / "corpus"
         self.INDEXES_PATH = self.CORPUS_PATH / "indexes"  # Domain indexes (entities, terms)
-        self.CHUNKS_PATH = self.PROCESSED_PATH / "chunks"  # Chunked text
+        self.CHUNKS_PATH = self.CORPUS_PATH / "chunks"  # Chunked text
 
         # =====================================================================
         # PROCESSING: Intermediate files
@@ -77,6 +77,7 @@ class Paths:
 
         # Training files
         self.FILE_TRAINING_PAIRS = self.TRAINING_PAIRS_PATH / "training_pairs.jsonl"
+        self.FILE_TRAINING_PAIRS_MIXED = self.TRAINING_PAIRS_PATH / "training_pairs_mixed.jsonl"
         self.FILE_VALIDATION_PAIRS = self.TRAINING_PAIRS_PATH / "validation_pairs.jsonl"
         self.FILE_TRAINING_CHECKPOINT = self.MODEL_CHECKPOINTS_PATH / "checkpoint_latest.pt"
         self.FILE_TRAINING_CONFIG = self.MODEL_PATH / "training_config.json"

@@ -37,7 +37,7 @@ class EmbeddingFineTuner:
         self.config = get_finetuning_config()
 
         # Training hyperparameters (can be moved to config later)
-        self.batch_size = self.batch_size
+        self.batch_size = self.config.BATCH_SIZE_GPU
         self.num_epochs = self.config.NUM_EPOCHS
         self.warmup_steps = self.config.WARMUP_STEPS
         self.learning_rate = self.config.LEARNING_RATE
@@ -63,6 +63,7 @@ class EmbeddingFineTuner:
             raise FileNotFoundError(f"Training file not found: {training_file}")
 
         examples = []
+        metadata_list = []  # Track source
 
         with open(training_file, "r", encoding="utf-8") as f:
             for line_num, line in enumerate(f, 1):
@@ -70,14 +71,14 @@ class EmbeddingFineTuner:
                     pair = json.loads(line)
 
                     # Extract query and positive chunk
-                    query = pair["query"]
-                    positive = pair["positive_text"]  # Single positive text string
+                    query = f"search_query: {pair['query']}"
+                    positive = f"search_document: {pair['positive_text']}"
 
                     # Create InputExample (query, positive)
                     # MultipleNegativesRankingLoss uses in-batch negatives
                     example = InputExample(texts=[query, positive])
                     examples.append(example)
-
+                    metadata_list.append(pair.get("source", "unknown"))  # Store source
                 except Exception as e:
                     logger.warning(f"⚠️  Skipping line {line_num}: {e}")
                     continue
@@ -86,28 +87,27 @@ class EmbeddingFineTuner:
             raise ValueError("❌ No training examples loaded!")
 
         logger.info(f"✅ Loaded {len(examples):,} training examples")
-        return examples
+        return examples, metadata_list
 
-    # TODO volver a entrenar el modelo con validation_split a 0 antes de irme a casa de maria
-    def split_train_validation(self, examples):
-        """
-        Split examples into train and validation sets
+    def split_train_validation(self, examples, metadata_list):
+        """Split with WoT-only validation, respecting validation_split config"""
 
-        Args:
-            examples: List of InputExample objects
-            validation_split: Fraction for validation (default 0.1 = 10%)
+        # Separate by source
+        wot_examples = [examples[i] for i, src in enumerate(metadata_list) if src == "wot"]
+        general_examples = [examples[i] for i, src in enumerate(metadata_list) if src == "general"]
 
-        Returns:
-            tuple: (train_examples, val_examples)
-        """
-        total = len(examples)
-        val_size = int(total * self.validation_split)
-        train_size = total - val_size
+        # Use validation_split percentage of WoT data for validation
+        wot_val_size = int(len(wot_examples) * self.validation_split)
 
-        train_examples = examples[:train_size]
-        val_examples = examples[train_size:]
+        # Split WoT
+        wot_train = wot_examples[wot_val_size:]
+        wot_val = wot_examples[:wot_val_size]
 
-        logger.info(f"📊 Split: {train_size:,} train / {val_size:,} validation")
+        # All general goes to training
+        train_examples = general_examples + wot_train
+        val_examples = wot_val
+
+        logger.info(f"📊 Split: {len(train_examples):,} train ({len(general_examples):,} general + {len(wot_train):,} WoT) / {len(val_examples):,} validation (WoT only)")
 
         return train_examples, val_examples
 
@@ -126,28 +126,44 @@ class EmbeddingFineTuner:
         train_dataloader = DataLoader(train_examples, shuffle=True, batch_size=self.batch_size, pin_memory=True)
 
         # Define loss function
-        # MultipleNegativesRankingLoss: Uses in-batch negatives
-        # More efficient than providing explicit negatives
-        train_loss = losses.MultipleNegativesRankingLoss(model)
+        # MultipleNegativesRankingLoss: Uses in-batch negatives. More efficient than providing explicit negatives.
+        # Trains model to work at multiple embedding dimensions simultaneously.
+        # Benefits:
+
+        # MatryoshkaLoss -> Preserves nomic's multi-dim capability
+        # More robust fine-tuning
+        # Can use lower dims later for speed
+        base_loss = losses.MultipleNegativesRankingLoss(model)
+        train_loss = losses.MatryoshkaLoss(model, base_loss, matryoshka_dims=[768, 512, 384, 256, 128, 64])
 
         # Calculate total steps
         steps_per_epoch = len(train_dataloader)
         total_steps = steps_per_epoch * self.num_epochs
 
-        stats = {
-            "name": "fine_tuning",
+        finetuning_parameters_stats = {
+            "name": "fine_tuning_parameters",
             "metrics": {
                 "total_examples": len(train_examples),
                 "batch_size": self.batch_size,
                 "num_epochs": self.num_epochs,
                 "total_steps": total_steps,
                 "learning_rate": self.learning_rate,
+                "checkpoints_steps": self.checkpoints_steps,
                 "warmup_steps": self.warmup_steps,
                 "output_path": str(model_finetuned_path),
             },
         }
 
-        statistics.print_results(stats)
+        statistics.print_results(finetuning_parameters_stats)
+
+        from sentence_transformers.evaluation import InformationRetrievalEvaluator
+
+        # Load 10% validation pairs
+        val_queries = {f"q{i}": train_examples[i].texts[0] for i in range(len(train_examples))}
+        val_corpus = {f"d{i}": train_examples[i].texts[1] for i in range(len(train_examples))}
+        val_relevant = {f"q{i}": {f"d{i}"} for i in range(len(train_examples))}
+
+        evaluator = InformationRetrievalEvaluator(val_queries, val_corpus, val_relevant)
 
         # Train the model
         model.fit(
@@ -159,13 +175,15 @@ class EmbeddingFineTuner:
             checkpoint_save_steps=self.checkpoints_steps,
             checkpoint_save_total_limit=3,
             show_progress_bar=True,
+            evaluator=evaluator,
+            evaluation_steps=steps_per_epoch,  # evaluo una vez al final de cada epoch, es MUY costoso, mas de una hora por evaluación (1 step = total_examples / batch_size)
             use_amp=True,
         )
 
         model.save(str(model_finetuned_path))
         logger.info("\n✅ Fine-tuning complete! Model saved to: {model_finetuned_path}")
 
-        return stats
+        return finetuning_parameters_stats
 
 
 def main():
@@ -179,22 +197,35 @@ def main():
     fine_tuner = EmbeddingFineTuner()
 
     logger.info("📋 STEP 1: Load Training Data")
-    examples = fine_tuner.load_training_data(paths.FILE_TRAINING_PAIRS)
+    examples, metadata_list = fine_tuner.load_training_data(paths.FILE_TRAINING_PAIRS_MIXED)
 
     logger.info("\n📋 STEP 2: Split Train/Validation")
-    train_examples, val_examples = fine_tuner.split_train_validation(examples)
+    train_examples, val_examples = fine_tuner.split_train_validation(examples, metadata_list)
+
+    print("\n" + "=" * 70)
+    print("VALIDATION SET DEBUG")
+    print("=" * 70)
+    print(f"Total validation examples: {len(val_examples)}")
+    print("\nFirst 5 validation examples:")
+    for i in range(min(5, len(val_examples))):
+        print(f"\n--- Example {i + 1} ---")
+        print(f"Query: {val_examples[i].texts[0][:100]}...")
+        print(f"Positive: {val_examples[i].texts[1][:100]}...")
+    print("=" * 70 + "\n")
 
     logger.info("\n📋 STEP 3: Load Base Model")
-    model, model_stats = create_model(config.BASE_MODEL)
+    model, model_creation_stats = create_model(config.BASE_MODEL)
 
     logger.info("\n📋 STEP 4: Fine-Tune Model")
-    finetune_stats = fine_tuner.fine_tune(model, train_examples, paths.MODEL_CHECKPOINTS_PATH, paths.MODEL_FINETUNED_PATH)
+    finetuning_parameters_stats = fine_tuner.fine_tune(model, train_examples, paths.MODEL_CHECKPOINTS_PATH, paths.MODEL_FINETUNED_PATH)
 
-    # Step 5: Summary
     total_time = datetime.now() - start_time
 
-    # TODO combinar las 2 estadisticas creacion y finetune
-    statistics.total_statistics_logging(finetune_stats, total_time, "FINE-TUNING STATISTICS", "02_finetune_embedding_model", False)
+    global_stats = []
+    global_stats.append(model_creation_stats)
+    global_stats.append(finetuning_parameters_stats)
+
+    statistics.total_statistics_logging(global_stats, total_time, "FINE-TUNING STATISTICS", "02_finetune_embedding_model", False)
 
 
 if __name__ == "__main__":
